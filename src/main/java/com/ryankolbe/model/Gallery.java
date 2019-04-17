@@ -40,6 +40,32 @@ public class Gallery {
         return galleryPostalCode;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Builder)) return false;
+        Builder builder = (Builder) o;
+        return galleryId.equals(builder.galleryId) &&
+                galleryName.equals(builder.galleryName) &&
+                galleryStreetNumber.equals(builder.galleryStreetNumber) &&
+                galleryPostalCode.equals(builder.galleryPostalCode);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(galleryId, galleryName, galleryStreetNumber, galleryPostalCode);
+    }
+
+    @Override
+    public String toString() {
+        return "Builder{" +
+                "galleryId='" + galleryId + '\'' +
+                ", galleryName='" + galleryName + '\'' +
+                ", galleryStreetNumber='" + galleryStreetNumber + '\'' +
+                ", galleryPostalCode='" + galleryPostalCode + '\'' +
+                '}';
+    }
+
     public static class Builder {
         private String galleryId;
         private String galleryName;
@@ -74,32 +100,6 @@ public class Gallery {
 
         public Gallery build() {
             return new Gallery(this);
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (!(o instanceof Builder)) return false;
-            Builder builder = (Builder) o;
-            return galleryId.equals(builder.galleryId) &&
-                    galleryName.equals(builder.galleryName) &&
-                    galleryStreetNumber.equals(builder.galleryStreetNumber) &&
-                    galleryPostalCode.equals(builder.galleryPostalCode);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(galleryId, galleryName, galleryStreetNumber, galleryPostalCode);
-        }
-
-        @Override
-        public String toString() {
-            return "Builder{" +
-                    "galleryId='" + galleryId + '\'' +
-                    ", galleryName='" + galleryName + '\'' +
-                    ", galleryStreetNumber='" + galleryStreetNumber + '\'' +
-                    ", galleryPostalCode='" + galleryPostalCode + '\'' +
-                    '}';
         }
     }
 }

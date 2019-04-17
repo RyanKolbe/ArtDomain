@@ -12,7 +12,6 @@ public class Artist {
     private Artist() {
     }
 
-
     private Artist(Builder builder) {
         this.id = builder.id;
         this.name = builder.name;
