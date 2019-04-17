@@ -13,7 +13,7 @@ public class Artist {
     }
 
 
-    public Artist(Builder builder) {
+    private Artist(Builder builder) {
         this.id = builder.id;
         this.name = builder.name;
         this.age = builder.age;

@@ -8,7 +8,7 @@ public class ArtistFactoryTest {
 
     @Test
     public void createArtist() {
-        Artist a = ArtistFactory.createArtist("1","Lindi",25,"Cape Town");
+        Artist a = ArtistFactory.createArtist("Lindi",25,"Cape Town");
         Assert.assertEquals("Lindi",  a.getName());
     }
 }
