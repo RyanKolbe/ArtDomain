@@ -42,3 +42,4 @@ The focus of the application is transfer of information and not actual monetary 
 ------
 
 #### <u>Please see UML Class Diagram below:</u>
+ArtworkDomain.jpg
