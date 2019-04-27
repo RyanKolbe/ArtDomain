@@ -5,11 +5,12 @@ import com.ryankolbe.util.Misc;
 
 public class AddressFactory {
 
-    public static Address createAddress(String postalCode, String suburb) {
+    public static Address createAddress(String streetNumber, String streetName, String streetType) {
         return new Address.Builder()
                 .addressId(Misc.generateId())
-                .postalCode(postalCode)
-                .suburb(suburb)
+                .streetNumber(streetNumber)
+                .streetName(streetName)
+                .streetType(streetType)
                 .build();
     }
 }

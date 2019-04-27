@@ -3,87 +3,104 @@ package com.ryankolbe.model;
 import java.util.Objects;
 
 public class Artist {
-
-    private String id;
-    private String name;
-    private int age;
-    private String location;
+    private String artistId;
+    private Name name;
+    private Address address;
+    private Locality locality;
+    private Contact contact;
 
     private Artist() {
     }
 
     private Artist(Builder builder) {
-        this.id = builder.id;
+        this.artistId = builder.artistId;
         this.name = builder.name;
-        this.age = builder.age;
-        this.location = builder.location;
+        this.address = builder.address;
+        this.locality = builder.locality;
+        this.contact = builder.contact;
     }
 
-    public String getId() {
-        return id;
+    public String getArtistId() {
+        return artistId;
     }
 
-    public String getName() {
+    public Name getName() {
         return name;
     }
 
-    public int getAge() {
-        return age;
+    public Address getAddress() {
+        return address;
     }
 
-    public String getLocation() {
-        return location;
+    public Locality getLocality() {
+        return locality;
+    }
+
+    public Contact getContact() {
+        return contact;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Artist)) return false;
         Artist artist = (Artist) o;
-        return age == artist.age &&
-                id.equals(artist.id) &&
-                name.equals(artist.name) &&
-                location.equals(artist.location);
+        return getArtistId().equals(artist.getArtistId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, age, location);
+        return Objects.hash(getArtistId());
     }
 
     @Override
     public String toString() {
         return "Artist{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", location='" + location + '\'' +
+                "artistId='" + artistId + '\'' +
+                ", name=" + name +
+                ", address=" + address +
+                ", locality=" + locality +
+                ", contact=" + contact +
                 '}';
     }
 
     public static class Builder {
-        private String id;
-        private String name;
-        private int age;
-        private String location;
+        private String artistId;
+        private Name name;
+        private Address address;
+        private Locality locality;
+        private Contact contact;
 
-        public Builder id(String id) {
-            this.id = id;
+        public Builder artistId(String artistId) {
+            this.artistId = artistId;
             return this;
         }
 
-        public Builder name(String name) {
+        public Builder name(Name name) {
             this.name = name;
             return this;
         }
 
-        public Builder age(int age) {
-            this.age = age;
+        public Builder address(Address address) {
+            this.address = address;
+            return this;
+        }
+        public Builder locality(Locality locality){
+            this.locality = locality;
             return this;
         }
 
-        public Builder location(String location) {
-            this.location = location;
+        public Builder contact(Contact contact) {
+            this.contact = contact;
+            return this;
+        }
+
+        public Builder copy(Artist artist) {
+            this.artistId = artist.artistId;
+            this.name = artist.name;
+            this.address = artist.address;
+            this.locality = artist.locality;
+            this.contact = artist.contact;
             return this;
         }
 

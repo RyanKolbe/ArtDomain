@@ -5,11 +5,12 @@ import com.ryankolbe.util.Misc;
 
 public class ContactFactory {
 
-    public static Contact createContact(String contactMethod, String contactDetails) {
+    public static Contact createContact(String contactNumber, String contactNumberType, String emailAddress) {
         return new Contact.Builder()
-                .id(Misc.generateId())
-                .contactMethod(contactMethod)
-                .contactDetails(contactDetails)
+                .contactId(Misc.generateId())
+                .contactNumber(contactNumber)
+                .contactNumberType(contactNumberType)
+                .emailAddress(emailAddress)
                 .build();
     }
 }

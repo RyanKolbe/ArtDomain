@@ -2,73 +2,97 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Address {
+public class Address implements Comparable<Address> {
     private String addressId;
-    private String postalCode;
-    private String suburb;
+    private String streetNumber;
+    private String streetName;
+    private String streetType;
 
     private Address() {
     }
 
     private Address(Builder builder) {
         this.addressId = builder.addressId;
-        this.postalCode = builder.postalCode;
-        this.suburb = builder.suburb;
+        this.streetNumber = builder.streetNumber;
+        this.streetName = builder.streetName;
+        this.streetType = builder.streetType;
     }
 
     public String getAddressId() {
         return addressId;
     }
 
-    public String getPostalCode() {
-        return postalCode;
+    public String getStreetNumber() {
+        return streetNumber;
     }
 
-    public String getSuburb() {
-        return suburb;
+    public String getStreetName() {
+        return streetName;
+    }
+
+    public String getStreetType() {
+        return streetType;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Builder)) return false;
-        Builder builder = (Builder) o;
-        return addressId.equals(builder.addressId) &&
-                postalCode.equals(builder.postalCode) &&
-                suburb.equals(builder.suburb);
+        if (!(o instanceof Address)) return false;
+        Address address = (Address) o;
+        return getAddressId().equals(address.getAddressId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(addressId, postalCode, suburb);
+        return Objects.hash(getAddressId());
     }
 
     @Override
     public String toString() {
         return "Address{" +
                 "addressId='" + addressId + '\'' +
-                ", postalCode='" + postalCode + '\'' +
-                ", suburb='" + suburb + '\'' +
+                ", streetNumber='" + streetNumber + '\'' +
+                ", streetName='" + streetName + '\'' +
+                ", streetType='" + streetType + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Address address) {
+        return this.addressId.compareTo(address.addressId);
     }
 
     public static class Builder {
         private String addressId;
-        private String postalCode;
-        private String suburb;
+        private String streetNumber;
+        private String streetName;
+        private String streetType;
 
         public Builder addressId(String addressId) {
             this.addressId = addressId;
             return this;
         }
 
-        public Builder postalCode(String postalCode) {
-            this.postalCode = postalCode;
+        public Builder streetNumber(String streetNumber) {
+            this.streetNumber = streetNumber;
             return this;
         }
 
-        public Builder suburb(String suburb) {
-            this.suburb = suburb;
+        public Builder streetName(String streetName) {
+            this.streetName = streetName;
+            return this;
+        }
+
+        public Builder streetType(String streetType) {
+            this.streetType = streetType;
+            return this;
+        }
+
+        public Builder copy(Address address) {
+            this.addressId = address.addressId;
+            this.streetNumber = address.streetNumber;
+            this.streetName = address.streetName;
+            this.streetType = address.streetType;
             return this;
         }
 

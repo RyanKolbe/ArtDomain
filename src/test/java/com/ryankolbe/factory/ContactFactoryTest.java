@@ -8,7 +8,8 @@ public class ContactFactoryTest {
 
     @Test
     public void createContact() {
-        Contact contact = ContactFactory.createContact("Email", "lindiv@vectorlog.com");
+        Contact contact = ContactFactory.createContact("0219597000", "Landline",
+                "lindiv@vectorlog.com");
         Assert.assertNotNull(contact);
     }
 }

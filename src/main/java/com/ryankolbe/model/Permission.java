@@ -3,7 +3,7 @@ package com.ryankolbe.model;
 import java.util.Objects;
 
 public class Permission {
-    private String id;
+    private String permissionId;
     private String permissionRole;
     private String permissionTitle;
     private String permissionModule;
@@ -13,15 +13,15 @@ public class Permission {
     }
 
     private Permission(Builder builder) {
-        this.id = builder.id;
+        this.permissionId = builder.permissionId;
         this.permissionRole = builder.permissionRole;
         this.permissionTitle = builder.permissionTitle;
         this.permissionModule = builder.permissionModule;
         this.permissionDescription = builder.permissionDescription;
     }
 
-    public String getId() {
-        return id;
+    public String getPermissionId() {
+        return permissionId;
     }
 
     public String getPermissionRole() {
@@ -45,22 +45,18 @@ public class Permission {
         if (this == o) return true;
         if (!(o instanceof Permission)) return false;
         Permission that = (Permission) o;
-        return getId().equals(that.getId()) &&
-                getPermissionRole().equals(that.getPermissionRole()) &&
-                getPermissionTitle().equals(that.getPermissionTitle()) &&
-                getPermissionModule().equals(that.getPermissionModule()) &&
-                getPermissionDescription().equals(that.getPermissionDescription());
+        return getPermissionId().equals(that.getPermissionId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getPermissionRole(), getPermissionTitle(), getPermissionModule(), getPermissionDescription());
+        return Objects.hash(getPermissionId());
     }
 
     @Override
     public String toString() {
         return "Permission{" +
-                "id='" + id + '\'' +
+                "permissionId='" + permissionId + '\'' +
                 ", permissionRole='" + permissionRole + '\'' +
                 ", permissionTitle='" + permissionTitle + '\'' +
                 ", permissionModule='" + permissionModule + '\'' +
@@ -69,14 +65,14 @@ public class Permission {
     }
 
     public static class Builder {
-        private String id;
+        private String permissionId;
         private String permissionRole;
         private String permissionTitle;
         private String permissionModule;
         private String permissionDescription;
 
-        public Builder id(String id) {
-            this.id = id;
+        public Builder id(String permissionId) {
+            this.permissionId = permissionId;
             return this;
         }
 
@@ -97,6 +93,15 @@ public class Permission {
 
         public Builder permissionDescription(String permissionDescription) {
             this.permissionDescription = permissionDescription;
+            return this;
+        }
+
+        public Builder copy(Permission permission) {
+            this.permissionId = permission.permissionId;
+            this.permissionRole = permission.permissionRole;
+            this.permissionTitle = permission.permissionTitle;
+            this.permissionModule = permission.permissionModule;
+            this.permissionDescription = permission.permissionDescription;
             return this;
         }
 

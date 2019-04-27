@@ -58,6 +58,12 @@ public class Calendar {
             return this;
         }
 
+        public Builder copy(Calendar calendar) {
+            this.date = calendar.date;
+            this.year = calendar.year;
+            return this;
+        }
+
         public Calendar build() {
             return new Calendar(this);
         }

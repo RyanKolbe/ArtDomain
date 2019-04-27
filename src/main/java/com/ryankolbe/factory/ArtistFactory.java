@@ -5,12 +5,9 @@ import com.ryankolbe.util.Misc;
 
 public class ArtistFactory {
 
-    public static Artist createArtist(String name, int age, String location) {
+    public static Artist createArtist() {
         return new Artist.Builder()
-                .id(Misc.generateId())
-                .name(name)
-                .age(age)
-                .location(location)
+                .artistId(Misc.generateId())
                 .build();
     }
 }

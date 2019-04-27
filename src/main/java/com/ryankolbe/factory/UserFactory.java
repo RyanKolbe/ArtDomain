@@ -5,13 +5,9 @@ import com.ryankolbe.util.Misc;
 
 public class UserFactory {
 
-    public static User createUser(String userName, String userEmail, String userRole, String dob) {
+    public static User createUser() {
         return new User.Builder()
-                .id(Misc.generateId())
-                .userName(userName)
-                .userEmail(userEmail)
-                .userRole(userRole)
-                .dob(dob)
+                .userId(Misc.generateId())
                 .build();
     }
 }

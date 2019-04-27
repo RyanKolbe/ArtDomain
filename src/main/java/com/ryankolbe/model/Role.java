@@ -33,14 +33,12 @@ public class Role {
         if (this == o) return true;
         if (!(o instanceof Role)) return false;
         Role role = (Role) o;
-        return getRoleId().equals(role.getRoleId()) &&
-                getRoleTitle().equals(role.getRoleTitle()) &&
-                getRoleDescription().equals(role.getRoleDescription());
+        return getRoleId().equals(role.getRoleId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getRoleId(), getRoleTitle(), getRoleDescription());
+        return Objects.hash(getRoleId());
     }
 
     @Override
@@ -70,6 +68,13 @@ public class Role {
 
         public Builder roleDescription(String roleDescription) {
             this.roleDescription = roleDescription;
+            return this;
+        }
+
+        public Builder copy(Role role) {
+            this.roleId = role.roleId;
+            this.roleTitle = role.roleTitle;
+            this.roleDescription = role.roleDescription;
             return this;
         }
 

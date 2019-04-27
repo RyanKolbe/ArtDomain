@@ -2,42 +2,30 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class User {
-    private String id;
-    private String userName;
-    private String userEmail;
-    private String userRole;
-    private String dob;
+public class User implements Comparable<User> {
+    private String userId;
+    private Name name;
+    private Contact contact;
 
     private User() {
     }
 
     private User(Builder builder) {
-        this.id = builder.id;
-        this.userName = builder.userName;
-        this.userEmail = builder.userEmail;
-        this.userRole = builder.userRole;
-        this.dob = builder.dob;
+        this.userId = builder.userId;
+        this.name = builder.name;
+        this.contact = builder.contact;
     }
 
-    public String getId() {
-        return id;
+    public String getUserId() {
+        return userId;
     }
 
-    public String getUserName() {
-        return userName;
+    public Name getName() {
+        return name;
     }
 
-    public String getUserEmail() {
-        return userEmail;
-    }
-
-    public String getUserRole() {
-        return userRole;
-    }
-
-    public String getDob() {
-        return dob;
+    public Contact getContact() {
+        return contact;
     }
 
     @Override
@@ -45,58 +33,52 @@ public class User {
         if (this == o) return true;
         if (!(o instanceof User)) return false;
         User user = (User) o;
-        return getId().equals(user.getId()) &&
-                getUserName().equals(user.getUserName()) &&
-                getUserEmail().equals(user.getUserEmail()) &&
-                getUserRole().equals(user.getUserRole()) &&
-                getDob().equals(user.getDob());
+        return getUserId().equals(user.getUserId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getUserName(), getUserEmail(), getUserRole(), getDob());
+        return Objects.hash(getUserId());
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id='" + id + '\'' +
-                ", userName='" + userName + '\'' +
-                ", userEmail='" + userEmail + '\'' +
-                ", userRole='" + userRole + '\'' +
-                ", dob='" + dob + '\'' +
+                "userId='" + userId + '\'' +
+                ", name=" + name +
+                ", contact=" + contact +
                 '}';
     }
 
+    @Override
+    public int compareTo(User user) {
+        return this.name.compareTo(user.name);
+    }
+
     public static class Builder {
-        private String id;
-        private String userName;
-        private String userEmail;
-        private String userRole;
-        private String dob;
+        private String userId;
+        private Name name;
+        private Contact contact;
 
-        public Builder id(String id) {
-            this.id = id;
+        public Builder userId(String userId) {
+            this.userId = userId;
             return this;
         }
 
-        public Builder userName(String userName) {
-            this.userName = userName;
+        public Builder name(Name name) {
+            this.name = name;
             return this;
         }
 
-        public Builder userEmail(String userEmail) {
-            this.userEmail = userEmail;
+        public Builder contact(Contact contact) {
+            this.contact = contact;
             return this;
         }
 
-        public Builder userRole(String userRole) {
-            this.userRole = userRole;
-            return this;
-        }
-
-        public Builder dob(String dob) {
-            this.dob = dob;
+        public Builder copy(User user) {
+            this.userId = user.userId;
+            this.name = user.name;
+            this.contact = user.contact;
             return this;
         }
 

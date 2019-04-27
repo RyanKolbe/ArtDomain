@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Name {
+public class Name implements Comparable<Name> {
     private String firstName;
     private String middleName;
     private String lastName;
@@ -52,6 +52,11 @@ public class Name {
                 '}';
     }
 
+    @Override
+    public int compareTo(Name name) {
+        return this.firstName.compareToIgnoreCase(name.firstName);
+    }
+
     public static class Builder {
         private String firstName;
         private String middleName;
@@ -69,6 +74,13 @@ public class Name {
 
         public Builder lastName(String lastName) {
             this.lastName = lastName;
+            return this;
+        }
+
+        public Builder copy(Name name) {
+            this.firstName = name.firstName;
+            this.middleName = name.middleName;
+            this.lastName = name.lastName;
             return this;
         }
 

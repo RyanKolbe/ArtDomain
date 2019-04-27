@@ -8,8 +8,8 @@ public class UserFactoryTest {
 
     @Test
     public void createUser() {
-        User user = UserFactory.createUser("Lindi", "lindiv@vectorlog.com",
-                "Artist", "8301010101010");
+        User user = UserFactory.createUser();
         Assert.assertNotNull(user);
+
     }
 }

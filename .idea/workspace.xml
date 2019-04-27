@@ -2,7 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/LocalityFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/AddressFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/AddressFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtistFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtistFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CityFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ContactFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ContactFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/City.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Dimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Dimension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtistFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtistFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CityFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ContactFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ContactFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/AddressFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/AddressFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ArtistFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ArtistFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/CityFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ContactFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ContactFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/UserFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Address$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Address$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artist$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artist$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/City$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/City$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Name$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Name$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Name.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Permission$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Permission$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/AddressFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/AddressFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ArtistFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ArtistFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/CityFactoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ContactFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ContactFactoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/UserFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/UserFactoryTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -12,6 +71,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -19,44 +92,16 @@
     <favorites_list name="ArtDomain" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="782">
-                <caret line="46" selection-start-line="46" selection-end-line="46" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CourierFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/NameFactoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Gradle Kotlin DSL Build Script" />
+        <option value="Singleton" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,31 +116,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/City.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CityFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CityFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/RoleFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/RoleFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PermissionFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/OrderFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/OrderFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CustomerFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CustomerFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Exhibit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ExhibitFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ExhibitFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ContactFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ContactFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artwork.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtworkFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtworkFactoryTest.java" />
@@ -112,16 +133,40 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CourierFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CourierFactoryTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/NameFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artist.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/NameFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CalendarFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CalendarFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Dimension.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/DimensionFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/DimensionFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/C_Factory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/AddressFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/LocalityFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ContactFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ContactFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtistFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artist.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtistFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Dimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java" />
       </list>
     </option>
   </component>
@@ -143,20 +188,98 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,6 +289,8 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554921197437" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -177,8 +302,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ryankolbe.repository" />
       <recent name="com.ryankolbe.factory" />
       <recent name="com.ryankolbe.Factory" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ryankolbe.factory" />
+      <recent name="com.ryankolbe.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -196,91 +326,98 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalendarFactoryTest">
-    <configuration name="CalendarFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArtistRepositoryImplTest.read">
+    <configuration name="ArtistRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.factory.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.factory.CalendarFactoryTest" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourierFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistRepositoryImplTest.createArtist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.factory.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.factory.CourierFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="METHOD_NAME" value="createArtist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NameFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistRepositoryImplTest.getArtistRepository" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.factory.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.factory.NameFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="METHOD_NAME" value="getArtistRepository" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistRepositoryImplTest.getArtists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.factory.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.factory.PaymentFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="METHOD_NAME" value="getArtists" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SculptureFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.factory.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.factory" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.factory.SculptureFactoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="METHOD_NAME" value="read" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CalendarFactoryTest" />
-        <item itemvalue="JUnit.NameFactoryTest" />
-        <item itemvalue="JUnit.CourierFactoryTest" />
-        <item itemvalue="JUnit.PaymentFactoryTest" />
-        <item itemvalue="JUnit.SculptureFactoryTest" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.read" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.createArtist" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.getArtists" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.getArtistRepository" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR,VISIBILITY_SORTER" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -301,434 +438,345 @@
       <workItem from="1555490592860" duration="17801000" />
       <workItem from="1555515722355" duration="8073000" />
       <workItem from="1555747748232" duration="156000" />
+      <workItem from="1555749298467" duration="1229000" />
+      <workItem from="1555918730279" duration="4883000" />
+      <workItem from="1555927883078" duration="32787000" />
+      <workItem from="1556034314915" duration="144000" />
+      <workItem from="1556039710460" duration="126000" />
+      <workItem from="1556119632318" duration="8325000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerFactoryTest - 2019.04.17 at 12h 34m 51s.xml">
-      <configuration name="CustomerFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_getArtists - 2019.04.24 at 17h 57m 27s.xml">
+      <configuration name="ArtistRepositoryImplTest.getArtists" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExhibitFactoryTest - 2019.04.17 at 12h 54m 20s.xml">
-      <configuration name="ExhibitFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_read - 2019.04.24 at 17h 58m 10s.xml">
+      <configuration name="ArtistRepositoryImplTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContactFactoryTest - 2019.04.17 at 13h 11m 28s.xml">
-      <configuration name="ContactFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest - 2019.04.24 at 17h 59m 29s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtworkFactoryTest - 2019.04.17 at 13h 25m 02s.xml">
-      <configuration name="ArtworkFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_createArtist - 2019.04.24 at 18h 04m 08s.xml">
+      <configuration name="ArtistRepositoryImplTest.createArtist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaintingFactoryTest - 2019.04.17 at 13h 37m 45s.xml">
-      <configuration name="PaintingFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_createArtist - 2019.04.24 at 18h 05m 11s.xml">
+      <configuration name="ArtistRepositoryImplTest.createArtist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SculptureFactoryTest - 2019.04.17 at 13h 49m 05s.xml">
-      <configuration name="SculptureFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_read - 2019.04.24 at 18h 27m 43s.xml">
+      <configuration name="ArtistRepositoryImplTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaymentFactoryTest - 2019.04.17 at 14h 13m 23s.xml">
-      <configuration name="PaymentFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_read - 2019.04.24 at 18h 29m 04s.xml">
+      <configuration name="ArtistRepositoryImplTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CourierFactoryTest - 2019.04.17 at 14h 30m 50s.xml">
-      <configuration name="CourierFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_read - 2019.04.24 at 18h 30m 29s.xml">
+      <configuration name="ArtistRepositoryImplTest.read" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NameFactoryTest - 2019.04.17 at 18h 29m 30s.xml">
-      <configuration name="NameFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest - 2019.04.24 at 18h 31m 09s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CalendarFactoryTest - 2019.04.17 at 19h 28m 55s.xml">
-      <configuration name="CalendarFactoryTest" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_read - 2019.04.24 at 18h 34m 26s.xml">
+      <configuration name="ArtistRepositoryImplTest.read" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45167000" />
+    <option name="totallyTimeSpent" value="92661000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49275362" visible="true" weight="0.2549168" />
-      <window_info id="Structure" order="1" sideWeight="0.5072464" side_tool="true" weight="0.2246596" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5668277" visible="true" weight="0.21104388" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2415459" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3188406" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32977098" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Favorites" order="14" weight="0.20933977" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" weight="0.22061191" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.34039333" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.43317232" weight="0.19894099" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49694502" visible="true" weight="0.21331316" />
-      <window_info id="Structure" order="1" sideWeight="0.503055" side_tool="true" weight="0.21331316" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5668277" visible="true" weight="0.18456884" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4057971" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3188406" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32977098" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Favorites" order="14" weight="0.20933977" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" weight="0.22061191" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Database" order="6" weight="0.34039333" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Structure" order="9" sideWeight="0.43317232" visible="true" weight="0.19288956" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/RoleFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/SIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/C_Factory.java" />
+    <entry file="uml://JAVA/com.ryankolbe.model.Name">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.model.Name</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.model.Name</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="37.0" y="14.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/GalleryFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="uml://JAVA/com.ryankolbe.model.Name.Builder">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.model.Name.Builder</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.model.Name.Builder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="48.0" y="14.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+    <entry file="uml://MODULES/mdl-ArtDomain">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-ArtDomain</OriginalElement>
+          <nodes>
+            <node x="" y="">lib-Maven: org.springframework:spring-expression:5.1.5.RELEASE</node>
+            <node x="" y="">lib-Maven: junit:junit:4.11</node>
+            <node x="" y="">lib-Maven: org.springframework:spring-jcl:5.1.5.RELEASE</node>
+            <node x="" y="">lib-Maven: org.springframework:spring-context:5.1.5.RELEASE</node>
+            <node x="" y="">mdl-ArtDomain</node>
+            <node x="" y="">lib-Maven: org.springframework:spring-beans:5.1.5.RELEASE</node>
+            <node x="" y="">lib-Maven: org.hamcrest:hamcrest-core:1.3</node>
+            <node x="" y="">lib-Maven: org.springframework:spring-aop:5.1.5.RELEASE</node>
+            <node x="" y="">lib-Maven: org.springframework:spring-core:5.1.5.RELEASE</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="288.0" y="150.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Libraries</Category>
+            <Category>Test dependencies</Category>
+            <Category>Borderless View</Category>
+            <Category>Show Neighbours of Selected Nodes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PermissionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="uml://SpringLocalModels/module=ArtDomain">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SpringLocalModels</ID>
+          <OriginalElement>module=ArtDomain</OriginalElement>
+          <nodes>
+            <node x="" y="">module=ArtDomain</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="41.0" y="10.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Show library models</Category>
+            <Category>Show filesets as groups</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/OrderFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Ryan Kolbe/IdeaProjects/ArtDomain/src">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/OrderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Ryan Kolbe/IdeaProjects/ArtDomain/src/main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/main</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CustomerFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">com</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">org</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">jdk</node>
+            <node x="" y="">groovyjarjarasm</node>
+            <node x="" y="">java</node>
+            <node x="" y="">groovy</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">groovyjarjarcommonscli</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">groovyjarjarantlr</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="237.0" y="230.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CustomerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="uml://JAVA/com.ryankolbe">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.factory</node>
+            <node x="" y="">com.ryankolbe.model</node>
+            <node x="" y="">com.ryankolbe.util</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="68.0" y="86.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ExhibitFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="uml://JAVA/com.ryankolbe.util">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.util</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.util.Misc</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="37.0" y="14.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ExhibitFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ContactFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ContactFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtworkFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtworkFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PaintingFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PaintingFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/SculptureFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/SculptureFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PaymentFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PaymentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CourierFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#1910#1911#0" expanded="true" />
-            <element signature="e#1955#1956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#3129#3130#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Payment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" selection-start-line="6" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#2830#2831#0" expanded="true" />
-            <element signature="e#2878#2879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/City.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Painting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="562">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="e#1672#1673#0" expanded="true" />
             <element signature="e#1721#1722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="55" selection-start-line="55" selection-end-line="57" selection-end-column="38" />
-          <folding>
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1922#1923#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Gallery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Exhibit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="e#1765#1766#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ArtworkDomain.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1909#1910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/AddressFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -740,170 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CalendarFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CalendarFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#2511#2512#0" expanded="true" />
-            <element signature="e#2556#2557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Sculpture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#2205#2206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Dimension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#1774#1775#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/DimensionFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/DimensionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="e#1930#1931#0" expanded="true" />
-            <element signature="e#1978#1979#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Courier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#3532#3533#0" expanded="true" />
-            <element signature="e#3581#3582#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="782">
-            <caret line="46" selection-start-line="46" selection-end-line="46" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CourierFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/NameFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -911,9 +795,578 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ContactFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ContactFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="79" column="23" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/LocalityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/AddressFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.model.Artist">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.model.Artist</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.model.Artist</node>
+            <node x="" y="">com.ryankolbe.model.Artist.Builder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8" x="44.0" y="161.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.factory.ArtistFactory">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.factory.ArtistFactory</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.factory.ArtistFactory</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="73.0" y="25.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.factory.ArtistFactoryTest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.factory.ArtistFactoryTest</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.factory.ArtistFactoryTest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="83.0" y="14.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.factory.CustomerFactoryTest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.factory.CustomerFactoryTest</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.factory.CustomerFactoryTest</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="90.0" y="14.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.model.Customer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.model.Customer</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.model.Customer</node>
+            <node x="" y="">com.ryankolbe.model.Customer.Builder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="238.0" y="405.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Dimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding>
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="97" column="32" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="32" />
+          <folding>
+            <element signature="e#3532#3533#0" expanded="true" />
+            <element signature="e#3581#3582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="90" column="23" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
+          <folding>
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#2597#2598#0" expanded="true" />
+            <element signature="e#2645#2646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#1338#1339#0" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding>
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/util/Misc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.factory">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.factory</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.factory.AddressFactory</node>
+            <node x="" y="">com.ryankolbe.factory.UserFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.PaintingFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.NameFactory</node>
+            <node x="" y="">com.ryankolbe.factory.DimensionFactory</node>
+            <node x="" y="">com.ryankolbe.factory.SculptureFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.CourierFactory</node>
+            <node x="" y="">com.ryankolbe.factory.ArtworkFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.OrderFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.NameFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.LocalityFactory</node>
+            <node x="" y="">com.ryankolbe.factory.PaymentFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.CustomerFactory</node>
+            <node x="" y="">com.ryankolbe.factory.ContactFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.ArtistFactory</node>
+            <node x="" y="">com.ryankolbe.factory.ContactFactory</node>
+            <node x="" y="">com.ryankolbe.factory.CalendarFactory</node>
+            <node x="" y="">com.ryankolbe.factory.PermissionFactory</node>
+            <node x="" y="">com.ryankolbe.factory.CalendarFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.UserFactory</node>
+            <node x="" y="">com.ryankolbe.factory.AddressFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.PermissionFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.CustomerFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.ArtistFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.LocalityFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.RoleFactory</node>
+            <node x="" y="">com.ryankolbe.factory.ExhibitFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.RoleFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.ArtworkFactory</node>
+            <node x="" y="">com.ryankolbe.factory.PaintingFactory</node>
+            <node x="" y="">com.ryankolbe.factory.PaymentFactory</node>
+            <node x="" y="">com.ryankolbe.factory.OrderFactory</node>
+            <node x="" y="">com.ryankolbe.factory.SculptureFactory</node>
+            <node x="" y="">com.ryankolbe.factory.GalleryFactory</node>
+            <node x="" y="">com.ryankolbe.factory.GalleryFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.CourierFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.DimensionFactoryTest</node>
+            <node x="" y="">com.ryankolbe.factory.ExhibitFactory</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7431551499348109" x="373.0" y="364.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.model">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.model</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ryankolbe.model.Order</node>
+            <node x="" y="">com.ryankolbe.model.Permission</node>
+            <node x="" y="">com.ryankolbe.model.Contact</node>
+            <node x="" y="">com.ryankolbe.model.Name</node>
+            <node x="" y="">com.ryankolbe.model.Customer</node>
+            <node x="" y="">com.ryankolbe.model.Customer.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Permission.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Dimension.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Artwork.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Painting.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Name.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Locality.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Contact.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Role</node>
+            <node x="" y="">com.ryankolbe.model.Calendar.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Dimension</node>
+            <node x="" y="">com.ryankolbe.model.Courier</node>
+            <node x="" y="">com.ryankolbe.model.Address.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Courier.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Artist.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Address</node>
+            <node x="" y="">com.ryankolbe.model.Artwork</node>
+            <node x="" y="">com.ryankolbe.model.Calendar</node>
+            <node x="" y="">com.ryankolbe.model.Sculpture</node>
+            <node x="" y="">com.ryankolbe.model.Painting</node>
+            <node x="" y="">com.ryankolbe.model.User</node>
+            <node x="" y="">com.ryankolbe.model.Sculpture.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Role.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Order.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Payment.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Exhibit.Builder</node>
+            <node x="" y="">com.ryankolbe.model.User.Builder</node>
+            <node x="" y="">com.ryankolbe.model.Artist</node>
+            <node x="" y="">com.ryankolbe.model.Payment</node>
+            <node x="" y="">com.ryankolbe.model.Locality</node>
+            <node x="" y="">com.ryankolbe.model.Gallery</node>
+            <node x="" y="">com.ryankolbe.model.Exhibit</node>
+            <node x="" y="">com.ryankolbe.model.Gallery.Builder</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="668.0" y="1391.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtistFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2624#2625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtistFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#1480#1481#0" expanded="true" />
+            <element signature="e#1515#1516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -928,6 +1381,17 @@
       <state key="JdkListConfigurable.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

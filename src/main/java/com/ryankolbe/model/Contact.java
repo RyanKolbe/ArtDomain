@@ -3,29 +3,35 @@ package com.ryankolbe.model;
 import java.util.Objects;
 
 public class Contact {
-    private String id;
-    private String contactMethod;
-    private String contactDetails;
+    private String contactId;
+    private String contactNumber;
+    private String contactNumberType;
+    private String emailAddress;
 
     private Contact() {
     }
 
     private Contact(Builder builder) {
-        this.id = builder.id;
-        this.contactMethod = builder.contactMethod;
-        this.contactDetails = builder.contactDetails;
+        this.contactId = builder.contactId;
+        this.contactNumber = builder.contactNumber;
+        this.contactNumberType = builder.contactNumberType;
+        this.emailAddress = builder.emailAddress;
     }
 
-    public String getId() {
-        return id;
+    public String getContactId() {
+        return contactId;
     }
 
-    public String getContactMethod() {
-        return contactMethod;
+    public String getContactNumber() {
+        return contactNumber;
     }
 
-    public String getContactDetails() {
-        return contactDetails;
+    public String getContactNumberType() {
+        return contactNumberType;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
     @Override
@@ -33,42 +39,55 @@ public class Contact {
         if (this == o) return true;
         if (!(o instanceof Contact)) return false;
         Contact contact = (Contact) o;
-        return getId().equals(contact.getId()) &&
-                getContactMethod().equals(contact.getContactMethod()) &&
-                getContactDetails().equals(contact.getContactDetails());
+        return getContactId().equals(contact.getContactId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getContactMethod(), getContactDetails());
+        return Objects.hash(getContactId());
     }
 
     @Override
     public String toString() {
         return "Contact{" +
-                "id='" + id + '\'' +
-                ", contactMethod='" + contactMethod + '\'' +
-                ", contactDetails='" + contactDetails + '\'' +
+                "contactId='" + contactId + '\'' +
+                ", contactNumber='" + contactNumber + '\'' +
+                ", contactNumberType='" + contactNumberType + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
                 '}';
     }
 
     public static class Builder {
-        private String id;
-        private String contactMethod;
-        private String contactDetails;
+        private String contactId;
+        private String contactNumber;
+        private String contactNumberType;
+        private String emailAddress;
 
-        public Builder id(String id) {
-            this.id = id;
+        public Builder contactId(String contactId) {
+            this.contactId = contactId;
             return this;
         }
 
-        public Builder contactMethod(String contactMethod) {
-            this.contactMethod = contactMethod;
+        public Builder contactNumber(String contactNumber) {
+            this.contactNumber = contactNumber;
             return this;
         }
 
-        public Builder contactDetails(String contactDetails) {
-            this.contactDetails = contactDetails;
+        public Builder contactNumberType(String contactNumberType) {
+            this.contactNumberType = contactNumberType;
+            return this;
+        }
+
+        public Builder emailAddress(String emailAddress) {
+            this.emailAddress = emailAddress;
+            return this;
+        }
+
+        public Builder copy(Contact contact) {
+            this.contactId = contact.contactId;
+            this.contactNumber = contact.contactNumber;
+            this.contactNumberType = contact.contactNumberType;
+            this.emailAddress = contact.emailAddress;
             return this;
         }
 

@@ -72,6 +72,13 @@ public class Dimension {
             return this;
         }
 
+        public Builder copy(Dimension dimension) {
+            this.height = dimension.height;
+            this.width = dimension.width;
+            this.length = dimension.length;
+            return this;
+        }
+
         public Dimension build() {
             return new Dimension(this);
         }
