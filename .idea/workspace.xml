@@ -5,114 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/LoginFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/IRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LoginFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtistFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtistFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtworkFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtworkFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CalendarFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CalendarFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CourierFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/CustomerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/MemberFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/OrderFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PaintingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtFormFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PaymentFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/SculptureFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Artwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Calendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Courier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Painting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/ArtForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Payment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Sculpture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtistFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtistFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtworkFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtworkFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CalendarFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CalendarFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CourierFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/CustomerFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/MemberFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/DimensionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/DimensionFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/OrderFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PaintingFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtFormFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PaymentFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/RoleFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/RoleFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/SculptureFactoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/UserFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ArtistFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ArtistFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ArtworkFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/ArtworkFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/CalendarFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/CalendarFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/CourierFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/CustomerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/OrderFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/PaintingFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/PaymentFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/SculptureFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/UserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/factory/UserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artwork$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artwork$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Artwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Calendar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Contact.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Courier$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Courier$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Courier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Customer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Customer$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Name.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Order$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Order$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Painting$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Painting$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Painting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Payment$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Payment$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Payment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Sculpture$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Sculpture$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Sculpture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/ArtistRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/ArtistRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/ArtistRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/ArtistRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/AddressFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/AddressFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ArtistFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ArtistFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ArtworkFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/ArtworkFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/CalendarFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/CalendarFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/CourierFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/CustomerFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/DimensionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/DimensionFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/LocalityFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/LocalityFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/OrderFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/PaintingFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/PaymentFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/PermissionFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/PermissionFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/RoleFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/RoleFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/SculptureFactoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/UserFactoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/UserFactoryTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/repository/ArtistRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/repository/ArtistRepositoryImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -547,7 +440,7 @@
       <workItem from="1556351789918" duration="708000" />
       <workItem from="1556370605533" duration="16723000" />
       <workItem from="1556434003913" duration="18676000" />
-      <workItem from="1556554073592" duration="542000" />
+      <workItem from="1556554073592" duration="1968000" />
     </task>
     <servers />
   </component>
@@ -584,7 +477,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129310000" />
+    <option name="totallyTimeSpent" value="130736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
@@ -608,7 +501,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" visible="true" weight="0.22061191" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" visible="true" weight="0.3236715" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.22866344" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
