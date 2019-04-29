@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Role {
+public class Role implements Comparable<Role>{
     private String roleId;
     private String roleTitle;
     private String roleDescription;
@@ -48,6 +48,11 @@ public class Role {
                 ", roleTitle='" + roleTitle + '\'' +
                 ", roleDescription='" + roleDescription + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Role role) {
+        return this.roleTitle.compareToIgnoreCase(role.roleTitle);
     }
 
     public static class Builder {

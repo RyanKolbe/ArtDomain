@@ -10,6 +10,6 @@ public class PermissionFactoryTest {
     public void createPermission() {
         Permission permission = PermissionFactory.createPermission("Admin", "Administrator",
                 "Login Control", "Administrator has full control");
-        Assert.assertNotNull(permission);
+        Assert.assertEquals("Admin", permission.getPermissionRole());
     }
 }

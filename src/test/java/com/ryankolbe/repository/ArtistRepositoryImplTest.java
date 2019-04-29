@@ -2,100 +2,72 @@ package com.ryankolbe.repository;
 
 import com.ryankolbe.factory.*;
 import com.ryankolbe.model.*;
-import com.ryankolbe.util.Misc;
 import org.junit.Assert;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class ArtistRepositoryImplTest {
-    private static Artist artist;
-    private static Name name;
-    private static Address address;
-    private static Locality locality;
-    private static Contact contact;
-    private static List<Artist> artistList;
+
     private static ArtistRepository artistRepository;
-    private static Set<Artist> artistSet; //new addition.
+    private static Artist artist;
+    private static Artist ryan;
+    private static Set<Artist> artists = new HashSet<>();
 
     @BeforeClass
-    public static void setUp() throws Exception {
-        artist = ArtistFactory.createArtist();
-        name = NameFactory.createName("Ryan", "Fabian", "Kolbe");
-        address = AddressFactory.createAddress("10", "Trumpet", "Street");
-        locality = LocalityFactory.createLocality("Steenberg", "Western Cape",
-                "South Africa", "7945");
-        contact = ContactFactory.createContact("0219597000", "Landline",
-                "ryank@gmail.com");
-        artistList = new ArrayList<>();
-        artistSet = new HashSet<>();
-
-        artistList.add(new Artist.Builder()
-                .artistId(Misc.generateId())
-                .name(name)
-                .address(address)
-                .locality(locality)
-                .contact(contact)
-                .build());
+    public static void setUp() {
         artistRepository = ArtistRepositoryImpl.getArtistRepository();
-        artistRepository.update(artistList.get(0));
-        artistRepository.read(artistList.get(0).getArtistId());
-    }
 
-    @Ignore @Test
-    public void getArtistRepository() {
-        System.out.println(artistRepository);
-        Assert.assertNotNull(artistRepository);
-    }
-
-    @Ignore @Test
-    public void createArtist() {
-        name = NameFactory.createName("Deidre", "Rochelle", "Van Vuuren");
-        address = AddressFactory.createAddress("10", "Trumpet", "Street");
-        locality = LocalityFactory.createLocality("Steenberg", "Western Cape",
+        Name name = NameFactory.createName("Deidre", "Rochelle", "Van Vuuren");
+        Address address = AddressFactory.createAddress("10", "Trumpet", "Street");
+        Locality locality = LocalityFactory.createLocality("Steenberg", "Western Cape",
                 "South Africa", "7945");
-        contact = ContactFactory.createContact("0219597000", "Landline",
+        Contact contact = ContactFactory.createContact("0219597000", "Landline",
                 "deidrevanvuuren@gmail.com");
 
-        artist = ArtistFactory.createArtist();
-        Artist artist = artistRepository.createArtist(new Artist.Builder()
-                .artistId(Misc.generateId())
-                .name(name)
-                .address(address)
-                .locality(locality)
-                .contact(contact)
-                .build());
-        Assert.assertEquals(name.getFirstName(), artist.getName().getFirstName());
-        System.out.println(artistRepository.read(artist.getArtistId()));
+        artist = ArtistFactory.createArtist(name, address, locality, contact);
+        artists.add(artistRepository.create(artist));
+    }
+
+    @Test
+    public void createArtist() {
+        Name name = NameFactory.createName("Ryan", "Fabian", "Kolbe");
+        Address address = AddressFactory.createAddress("10", "Trumpet", "Street");
+        Locality locality = LocalityFactory.createLocality("Steenberg", "Western Cape",
+                "South Africa", "7945");
+        Contact contact = ContactFactory.createContact("0219597000", "Landline",
+                "ryank@gmail.com");
+
+        ryan = ArtistFactory.createArtist(name, address, locality, contact);
+        artists.add(artistRepository.create(ryan));
+        Assert.assertEquals(ryan, artistRepository.read(ryan.getArtistId()));
     }
 
     @Test
     public void read() {
-        System.out.println(artist.getName());
-//        Assert.assertEquals("Deidre", artist.getName());
+        Assert.assertEquals(artist, artistRepository.read(artist.getArtistId()));
     }
 
     @Test
     public void update() {
+        Artist deidre = artistRepository.update(artist);
+        Assert.assertEquals(artist,deidre);
     }
 
     @Test
     public void delete() {
-
+        Artist deidre = artistRepository.read(artist.getArtistId());
+        artistRepository.delete(deidre.getArtistId());
+        Assert.assertNotSame(deidre,artistRepository);
     }
 
     @Test
     public void search() {
     }
 
-    @Ignore
     @Test
     public void getArtists() {
-        System.out.println(artistRepository.read(artistList.get(0).getArtistId()));
     }
 }

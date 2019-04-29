@@ -19,9 +19,10 @@ public class ArtistRepositoryImpl implements ArtistRepository {
     }
 
     @Override
-    public Artist createArtist(Artist artist) {
+    public Artist create(Artist artist) {
         this.artists.add(artist);
         return artist;
+
     }
 
     @Override
@@ -36,14 +37,19 @@ public class ArtistRepositoryImpl implements ArtistRepository {
             Artist artistNew = new Artist.Builder()
                     .copy(artistTemp)
                     .build();
-            return artistNew;
+            return create(artistNew);
         }
         return null;
     }
 
     @Override
-    public void delete(Artist artist) {
-        this.artists.remove(artist);
+    public void delete(String artistId) {
+        this.artists.remove(artistId);
+
+    }
+
+    public Set<Artist> getArtists() {
+        return this.artists;
     }
 
     public Artist search(final String artistId) {
@@ -52,9 +58,5 @@ public class ArtistRepositoryImpl implements ArtistRepository {
             return artistSearch;
         }
         return null;
-    }
-
-    public Set<Artist> getArtists() {
-        return this.artists;
     }
 }

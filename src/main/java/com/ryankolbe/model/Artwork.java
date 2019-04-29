@@ -3,29 +3,35 @@ package com.ryankolbe.model;
 import java.util.Objects;
 
 public class Artwork {
-    private String id;
-    private String year;
-    private String date;
+    private String artworkId;
+    private ArtForm artForm;
+    private Dimension dimension;
+    private Calendar calendar;
 
     private Artwork() {
     }
 
     private Artwork(Builder builder) {
-        this.id = builder.id;
-        this.year = builder.year;
-        this.date = builder.date;
+        this.artworkId = builder.artworkId;
+        this.artForm = builder.artForm;
+        this.calendar = builder.calendar;
+        this.dimension = builder.dimension;
     }
 
-    public String getId() {
-        return id;
+    public String getArtworkId() {
+        return artworkId;
     }
 
-    public String getYear() {
-        return year;
+    public ArtForm getArtForm() {
+        return artForm;
     }
 
-    public String getDate() {
-        return date;
+    public Dimension getDimension() {
+        return dimension;
+    }
+
+    public Calendar getCalendar() {
+        return calendar;
     }
 
     @Override
@@ -33,42 +39,55 @@ public class Artwork {
         if (this == o) return true;
         if (!(o instanceof Artwork)) return false;
         Artwork artwork = (Artwork) o;
-        return getId().equals(artwork.getId()) &&
-                getYear().equals(artwork.getYear()) &&
-                getDate().equals(artwork.getDate());
+        return getArtworkId().equals(artwork.getArtworkId());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getYear(), getDate());
+        return Objects.hash(getArtworkId());
     }
 
     @Override
     public String toString() {
         return "Artwork{" +
-                "id='" + id + '\'' +
-                ", year='" + year + '\'' +
-                ", date='" + date + '\'' +
+                "artworkId='" + artworkId + '\'' +
+                ", artForm=" + artForm +
+                ", dimension=" + dimension +
+                ", calendar=" + calendar +
                 '}';
     }
 
     public static class Builder {
-        private String id;
-        private String year;
-        private String date;
+        private String artworkId;
+        private ArtForm artForm;
+        private Dimension dimension;
+        private Calendar calendar;
 
-        public Builder id(String id) {
-            this.id = id;
+        public Builder artworkId(String artworkId) {
+            this.artworkId = artworkId;
             return this;
         }
 
-        public Builder year(String year) {
-            this.year = year;
+        public Builder artForm(ArtForm artForm) {
+            this.artForm = artForm;
             return this;
         }
 
-        public Builder date(String date) {
-            this.date = date;
+        public Builder dimension(Dimension dimension) {
+            this.dimension = dimension;
+            return this;
+        }
+
+        public Builder calendar(Calendar calendar) {
+            this.calendar = calendar;
+            return this;
+        }
+
+        public Builder copy(Artwork artwork) {
+            this.artworkId = artwork.artworkId;
+            this.artForm = artwork.artForm;
+            this.dimension = artwork.dimension;
+            this.calendar = artwork.calendar;
             return this;
         }
 

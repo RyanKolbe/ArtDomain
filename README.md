@@ -12,7 +12,7 @@ I will be creating a program that allows up and coming artists to showcase there
 
    The application will not have the ability to handle actual transactions as this is outside of the scope of my current capabilities.
 
-3. The customer and buyer can also arrange for the product details to be made available for a courier company to pick up. 
+3. The member and buyer can also arrange for the product details to be made available for a courier company to pick up. 
 
 The focus of the application is transfer of information and not actual monetary transactions.
 

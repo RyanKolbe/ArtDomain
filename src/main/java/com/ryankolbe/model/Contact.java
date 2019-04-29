@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Contact {
+public class Contact implements Comparable<Contact> {
     private String contactId;
     private String contactNumber;
     private String contactNumberType;
@@ -55,6 +55,11 @@ public class Contact {
                 ", contactNumberType='" + contactNumberType + '\'' +
                 ", emailAddress='" + emailAddress + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Contact contact) {
+        return this.contactNumber.compareToIgnoreCase(contact.contactNumber);
     }
 
     public static class Builder {

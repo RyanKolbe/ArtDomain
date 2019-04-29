@@ -4,6 +4,9 @@ import java.util.Objects;
 
 public class User implements Comparable<User> {
     private String userId;
+    private Login login;
+    private Role role;
+    private Permission permission;
     private Name name;
     private Contact contact;
 
@@ -12,12 +15,27 @@ public class User implements Comparable<User> {
 
     private User(Builder builder) {
         this.userId = builder.userId;
+        this.login = builder.login;
+        this.role = builder.role;
+        this.permission = builder.permission;
         this.name = builder.name;
         this.contact = builder.contact;
     }
 
     public String getUserId() {
         return userId;
+    }
+
+    public Login getLogin() {
+        return login;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public Permission getPermission() {
+        return permission;
     }
 
     public Name getName() {
@@ -45,6 +63,9 @@ public class User implements Comparable<User> {
     public String toString() {
         return "User{" +
                 "userId='" + userId + '\'' +
+                ", login=" + login +
+                ", role=" + role +
+                ", permission=" + permission +
                 ", name=" + name +
                 ", contact=" + contact +
                 '}';
@@ -52,16 +73,34 @@ public class User implements Comparable<User> {
 
     @Override
     public int compareTo(User user) {
-        return this.name.compareTo(user.name);
+        return this.login.getLoginName().compareToIgnoreCase(user.login.getLoginName());
     }
 
     public static class Builder {
         private String userId;
+        private Login login;
+        private Role role;
+        private Permission permission;
         private Name name;
         private Contact contact;
 
         public Builder userId(String userId) {
             this.userId = userId;
+            return this;
+        }
+
+        public Builder login(Login login) {
+            this.login = login;
+            return this;
+        }
+
+        public Builder role(Role role) {
+            this.role = role;
+            return this;
+        }
+
+        public Builder permission(Permission permission) {
+            this.permission = permission;
             return this;
         }
 
@@ -77,6 +116,9 @@ public class User implements Comparable<User> {
 
         public Builder copy(User user) {
             this.userId = user.userId;
+            this.login = user.login;
+            this.role = user.role;
+            this.permission = user.permission;
             this.name = user.name;
             this.contact = user.contact;
             return this;

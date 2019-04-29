@@ -10,6 +10,6 @@ public class AddressFactoryTest {
     public void createAddress() {
         Address address = AddressFactory.createAddress("10", "Trumpet",
                 "Street");
-        Assert.assertNotNull(address);
+        Assert.assertEquals("Trumpet",address.getStreetName());
     }
 }

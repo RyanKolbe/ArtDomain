@@ -8,7 +8,6 @@ public class ArtistFactoryTest {
 
     @Test
     public void createArtist() {
-        Artist artist = ArtistFactory.createArtist();
         Name name = NameFactory.createName("Ryan", "Fabian", "Kolbe");
         Address address = AddressFactory.createAddress("10", "Trumpet",
                 "Street");
@@ -16,11 +15,12 @@ public class ArtistFactoryTest {
                 "Western Cape", "South Africa", "7945");
         Contact contact = ContactFactory.createContact("0219597000",
                 "Landline", "ryank@gmail.com");
+        Artist artist = ArtistFactory.createArtist(name, address, locality, contact);
 
         Assert.assertNotNull(artist);
-        Assert.assertEquals("Ryan", name.getFirstName());
-        Assert.assertEquals("Trumpet", address.getStreetName());
-        Assert.assertEquals("Steenberg", locality.getRegisteredName());
-        Assert.assertEquals("0219597000", contact.getContactNumber());
+        Assert.assertEquals("Ryan", artist.getName().getFirstName());
+        Assert.assertEquals("Trumpet", artist.getAddress().getStreetName());
+        Assert.assertEquals("Steenberg", artist.getLocality().getRegisteredName());
+        Assert.assertEquals("0219597000", artist.getContact().getContactNumber());
     }
 }

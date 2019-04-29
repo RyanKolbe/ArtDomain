@@ -54,7 +54,7 @@ public class Name implements Comparable<Name> {
 
     @Override
     public int compareTo(Name name) {
-        return this.firstName.compareToIgnoreCase(name.firstName);
+        return this.lastName.compareToIgnoreCase(name.lastName);
     }
 
     public static class Builder {

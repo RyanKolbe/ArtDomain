@@ -9,6 +9,6 @@ public class DimensionFactoryTest {
     @Test
     public void createDimension() {
         Dimension dimension = DimensionFactory.createDimension("1.5", "1.0", "0.5");
-        Assert.assertNotNull(dimension);
+        Assert.assertEquals("1.5", dimension.getHeight());
     }
 }

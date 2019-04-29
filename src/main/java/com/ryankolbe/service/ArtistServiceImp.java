@@ -2,7 +2,6 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.model.Artist;
 import com.ryankolbe.repository.ArtistRepositoryImpl;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,18 +12,18 @@ public class ArtistServiceImp implements ArtistService {
     private ArtistRepositoryImpl artistRepository;
     private Set<Artist> artistSet;
 
-    private ArtistServiceImp(){
+    private ArtistServiceImp() {
         this.artistSet = new HashSet<>();
     }
 
-    public static ArtistService getArtistService(){
+    public static ArtistService getArtistService() {
         if (artistService == null) artistService = new ArtistServiceImp();
         return artistService;
     }
 
     @Override
-    public Artist createArtist(Artist artist) {
-        return this.artistRepository.createArtist(artist);
+    public Artist create(Artist artist) {
+        return this.artistRepository.create(artist);
     }
 
     @Override
@@ -38,9 +37,7 @@ public class ArtistServiceImp implements ArtistService {
     }
 
     @Override
-    public void delete(
-            Artist artist) {
-        return null;
-
+    public void delete(String artistId) {
+        this.artistRepository.delete(artistId);
     }
 }

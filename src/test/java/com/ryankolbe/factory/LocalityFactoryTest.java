@@ -10,6 +10,6 @@ public class LocalityFactoryTest {
     public void createAddress() {
         Locality locality = LocalityFactory.createLocality("Steenberg", "Western Cape",
                 "South Africa", "7945");
-        Assert.assertNotNull(locality);
+        Assert.assertEquals("Steenberg",locality.getRegisteredName());
     }
 }

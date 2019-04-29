@@ -9,6 +9,6 @@ public class RoleFactoryTest {
     @Test
     public void createRole() {
         Role role = RoleFactory.createRole("Artist", "Painter");
-        Assert.assertNotNull(role);
+        Assert.assertEquals("Artist", role.getRoleTitle());
     }
 }
