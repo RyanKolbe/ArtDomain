@@ -78,10 +78,4 @@ public class ArtistRepositoryImplTest {
         artistRepository.delete(artist.getArtistId());
         Assert.assertEquals(2, artistRepository.getAll().size());
     }
-
-    @Test
-    public void getArtists() {
-        Set<Artist> testSet = artistRepository.getAll();
-        Assert.assertEquals(artistRepository.getAll().size(), testSet.size());
-    }
 }

@@ -55,7 +55,7 @@ public class ArtistRepositoryImpl implements ArtistRepository {
 
     public Artist search(final String artistId) {
         for (Artist artistSearch : this.artists) {
-            if (artistSearch.getArtistId().equals(artistId)) ;
+            if (artistSearch.getArtistId().equals(artistId))
             return artistSearch;
         }
         return null;
