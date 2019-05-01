@@ -2,7 +2,7 @@ package com.ryankolbe.repository;
 
 import com.ryankolbe.factory.*;
 import com.ryankolbe.model.Artist;
-import com.ryankolbe.model.Name;
+import com.ryankolbe.util.Misc;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -68,22 +68,23 @@ public class ArtistRepositoryImplTest {
 
     @Test
     public void update() {
-        String newFirstName = "Elizabeth";
-        Artist artist = new Name.Builder().copy(artists).firstName(newFirstName).build();
-        artistRepository.update(artist);
-
+        String newArtistId = Misc.generateId();
+        Artist newArtist = new Artist.Builder().copy(artist).artistId(newArtistId).build();
+        Assert.assertEquals(newArtistId, newArtist.getArtistId());
+        System.out.println("Generated new artist ID: " + newArtistId);
+        System.out.println("Artist ID read from instantiated object: " + newArtist.getArtistId());
     }
 
     @Test
     public void delete() {
         artistRepository.delete(artist.getArtistId());
-        Assert.assertEquals(1,artistRepository.getAll().size());
+        Assert.assertEquals(1, artistRepository.getAll().size());
     }
 
     @Test
     public void getArtists() {
         Set<Artist> testSet = artistRepository.getAll();
         System.out.println(testSet.size());
-        Assert.assertEquals(artistRepository.getAll().size(),testSet.size());
+        Assert.assertEquals(artistRepository.getAll().size(), testSet.size());
     }
 }
