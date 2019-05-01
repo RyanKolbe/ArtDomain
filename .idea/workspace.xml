@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AddressRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/AddressRepositoryImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/UserRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/LocalityRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/RoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/RoleRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/CalendarRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/ArtistRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/ArtistRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/CalendarRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/implementation/ArtistRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/implementation/ArtistRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/Locality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LocalityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityRepositoryFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Locality.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Locality.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/Locality.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/LocalityFactoryTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,12 +48,35 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/UserRepositoryImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-128">
+              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+              <folding>
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#1751#1752#0" expanded="true" />
+                <element signature="e#1828#1829#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,11 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Member.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/MemberFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/RoleFactoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/UserFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LoginFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/AddressFactoryTest.java" />
@@ -133,8 +150,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/AddressRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AddressRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/UserRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/UserRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/UserRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/RoleRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/RoleRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LocalityRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/LocalityRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java" />
       </list>
     </option>
   </component>
@@ -156,7 +178,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -359,8 +381,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryImplTest">
-    <configuration name="ArtistRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LocalityRepositoryImplTest">
+    <configuration name="LocalityRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -369,13 +391,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.ArtistRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.LocalityRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalityRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -384,29 +406,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.UserRepositoryImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArtDomain" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.UserRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.LocalityRepositoryImplTest" />
       <option name="METHOD_NAME" value="create" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalityRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -415,14 +422,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.UserRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.LocalityRepositoryImplTest" />
       <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LocalityRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -431,20 +438,35 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.UserRepositoryImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.LocalityRepositoryImplTest" />
       <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoleRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtDomain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.RoleRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryImplTest" />
-        <item itemvalue="JUnit.ArtistRepositoryImplTest" />
-        <item itemvalue="JUnit.UserRepositoryImplTest.update" />
-        <item itemvalue="JUnit.UserRepositoryImplTest.read" />
-        <item itemvalue="JUnit.UserRepositoryImplTest.create" />
+        <item itemvalue="JUnit.LocalityRepositoryImplTest" />
+        <item itemvalue="JUnit.LocalityRepositoryImplTest.update" />
+        <item itemvalue="JUnit.LocalityRepositoryImplTest.read" />
+        <item itemvalue="JUnit.LocalityRepositoryImplTest.create" />
+        <item itemvalue="JUnit.RoleRepositoryImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -482,57 +504,57 @@
       <workItem from="1556554073592" duration="2575000" />
       <workItem from="1556559750128" duration="348000" />
       <workItem from="1556560784936" duration="685000" />
-      <workItem from="1556695145268" duration="20636000" />
+      <workItem from="1556695145268" duration="24100000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AddressRepositoryImplTest - 2019.05.01 at 14h 13m 40s.xml">
-      <configuration name="AddressRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="RoleRepositoryImplTest - 2019.05.01 at 15h 46m 55s.xml">
+      <configuration name="RoleRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressRepositoryImplTest - 2019.05.01 at 14h 14m 17s.xml">
-      <configuration name="AddressRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="RoleRepositoryImplTest - 2019.05.01 at 15h 47m 43s.xml">
+      <configuration name="RoleRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressRepositoryImplTest - 2019.05.01 at 14h 16m 57s.xml">
-      <configuration name="AddressRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="RoleRepositoryImplTest - 2019.05.01 at 15h 48m 03s.xml">
+      <configuration name="RoleRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressRepositoryImplTest_getAll - 2019.05.01 at 14h 50m 31s.xml">
-      <configuration name="AddressRepositoryImplTest.getAll" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest_create - 2019.05.01 at 16h 03m 53s.xml">
+      <configuration name="LocalityRepositoryImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddressRepositoryImplTest - 2019.05.01 at 14h 52m 37s.xml">
-      <configuration name="AddressRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 06m 25s.xml">
+      <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryImplTest_create - 2019.05.01 at 15h 08m 38s.xml">
-      <configuration name="UserRepositoryImplTest.create" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 07m 16s.xml">
+      <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryImplTest_create - 2019.05.01 at 15h 09m 42s.xml">
-      <configuration name="UserRepositoryImplTest.create" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest_create - 2019.05.01 at 16h 08m 28s.xml">
+      <configuration name="LocalityRepositoryImplTest.create" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryImplTest_read - 2019.05.01 at 15h 11m 36s.xml">
-      <configuration name="UserRepositoryImplTest.read" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 08m 59s.xml">
+      <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserRepositoryImplTest_update - 2019.05.01 at 15h 13m 22s.xml">
-      <configuration name="UserRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 12m 24s.xml">
+      <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 15h 16m 55s.xml">
-      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
+    <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 15m 37s.xml">
+      <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153012000" />
+    <option name="totallyTimeSpent" value="156476000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-7" y="0" width="697" height="745" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5668277" visible="true" weight="0.24508321" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5668277" weight="0.43799058" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24798712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24183007" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -540,11 +562,11 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3236715" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" weight="0.3236715" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" weight="0.32843137" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.22866344" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -598,47 +620,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/LoginFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/MemberFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/MemberFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/NameFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/NameFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -750,17 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -788,17 +758,6 @@
           <folding>
             <element signature="e#1338#1339#0" expanded="true" />
             <element signature="e#1392#1393#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -916,23 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/Locality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LoginRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1116,10 +1058,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/UserRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="1088">
+          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/RoleRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/RoleRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LoginRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+          <folding>
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#1751#1752#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LocalityRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/LocalityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/LocalityRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

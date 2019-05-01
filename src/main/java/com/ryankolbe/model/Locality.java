@@ -55,7 +55,7 @@ public class Locality implements Comparable<Locality> {
 
     @Override
     public String toString() {
-        return "Locality{" +
+        return "LocalityRepository{" +
                 "localizationId='" + localizationId + '\'' +
                 ", registeredName='" + registeredName + '\'' +
                 ", province='" + province + '\'' +

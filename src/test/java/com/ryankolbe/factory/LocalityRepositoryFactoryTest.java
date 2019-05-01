@@ -4,7 +4,7 @@ import com.ryankolbe.model.Locality;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class LocalityFactoryTest {
+public class LocalityRepositoryFactoryTest {
 
     @Test
     public void createAddress() {
