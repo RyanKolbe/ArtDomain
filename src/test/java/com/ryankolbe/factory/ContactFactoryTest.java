@@ -10,6 +10,6 @@ public class ContactFactoryTest {
     public void createContact() {
         Contact contact = ContactFactory.createContact("0219597000", "Landline",
                 "lindiv@vectorlog.com");
-        Assert.assertNotNull(contact);
+        Assert.assertEquals("0219597000",contact.getContactNumber());
     }
 }

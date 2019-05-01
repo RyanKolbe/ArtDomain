@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Permission {
+public class Permission implements Comparable<Permission> {
     private String permissionId;
     private String permissionRole;
     private String permissionTitle;
@@ -62,6 +62,11 @@ public class Permission {
                 ", permissionModule='" + permissionModule + '\'' +
                 ", permissionDescription='" + permissionDescription + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Permission permission) {
+        return this.permissionId.compareToIgnoreCase(permission.permissionId);
     }
 
     public static class Builder {

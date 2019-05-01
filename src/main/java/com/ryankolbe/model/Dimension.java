@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Dimension {
+public class Dimension implements Comparable<Dimension> {
     private String height;
     private String width;
     private String length;
@@ -50,6 +50,11 @@ public class Dimension {
                 ", width='" + width + '\'' +
                 ", length='" + length + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Dimension dimension) {
+        return this.height.compareToIgnoreCase(dimension.height);
     }
 
     public static class Builder {

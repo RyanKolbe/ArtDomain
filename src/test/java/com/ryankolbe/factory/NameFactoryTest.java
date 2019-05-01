@@ -9,6 +9,6 @@ public class NameFactoryTest {
     @Test
     public void createName() {
         Name name = NameFactory.createName("Ryan", "Fabian", "Kolbe");
-        Assert.assertNotNull(name);
+        Assert.assertEquals("Ryan",name.getFirstName());
     }
 }

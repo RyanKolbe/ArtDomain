@@ -5,7 +5,7 @@ import java.time.LocalTime;
 import java.time.Year;
 import java.util.Objects;
 
-public class Calendar {
+public class Calendar implements Comparable<Calendar> {
     private LocalDate date;
     private LocalTime time;
     private Year year;
@@ -38,6 +38,11 @@ public class Calendar {
                 ", time=" + time +
                 ", year=" + year +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Calendar calendar) {
+        return this.date.compareTo(calendar.date);
     }
 
     public static class Builder {

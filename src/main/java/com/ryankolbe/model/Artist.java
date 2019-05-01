@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Artist {
+public class Artist implements Comparable<Artist> {
     private String artistId;
     private Name name;
     private Address address;
@@ -64,6 +64,11 @@ public class Artist {
                 '}';
     }
 
+    @Override
+    public int compareTo(Artist artist) {
+        return this.getArtistId().compareToIgnoreCase(artist.artistId);
+    }
+
     public static class Builder {
         private String artistId;
         private Name name;
@@ -85,7 +90,8 @@ public class Artist {
             this.address = address;
             return this;
         }
-        public Builder locality(Locality locality){
+
+        public Builder locality(Locality locality) {
             this.locality = locality;
             return this;
         }

@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class Artwork {
+public class Artwork implements Comparable<Artwork> {
     private String artworkId;
     private ArtForm artForm;
     private Dimension dimension;
@@ -55,6 +55,11 @@ public class Artwork {
                 ", dimension=" + dimension +
                 ", calendar=" + calendar +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Artwork artwork) {
+        return this.artworkId.compareToIgnoreCase(artwork.artworkId);
     }
 
     public static class Builder {

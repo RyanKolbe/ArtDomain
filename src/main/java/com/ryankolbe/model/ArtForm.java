@@ -2,7 +2,7 @@ package com.ryankolbe.model;
 
 import java.util.Objects;
 
-public class ArtForm {
+public class ArtForm implements Comparable<ArtForm> {
     private String artFormId;
     private String artFormType;
     private String artFormStyle;
@@ -48,6 +48,11 @@ public class ArtForm {
                 ", artFormType='" + artFormType + '\'' +
                 ", artFormStyle='" + artFormStyle + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(ArtForm artForm) {
+        return this.artFormType.compareToIgnoreCase(artForm.artFormType);
     }
 
     public static class Builder {

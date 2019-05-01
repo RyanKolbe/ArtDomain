@@ -44,8 +44,8 @@ public class ArtistRepositoryImpl implements ArtistRepository {
 
     @Override
     public void delete(String artistId) {
-        this.artists.remove(artistId);
-
+        Artist artist = search(artistId);
+        if (artist != null) this.artists.remove(artist);
     }
 
     public Set<Artist> getArtists() {
@@ -58,5 +58,10 @@ public class ArtistRepositoryImpl implements ArtistRepository {
             return artistSearch;
         }
         return null;
+    }
+
+    @Override
+    public Set<Artist> getAll() {
+        return this.artists;
     }
 }

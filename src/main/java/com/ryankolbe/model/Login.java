@@ -1,7 +1,5 @@
 package com.ryankolbe.model;
 
-import sun.security.util.Password;
-
 import java.util.Objects;
 
 public class Login implements Comparable<Login> {
