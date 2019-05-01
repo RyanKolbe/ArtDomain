@@ -4,19 +4,7 @@
     <option name="SPLITTER_PROPORTION" value="0.4936809" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/LocalityRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/RoleRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/RoleRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Locality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/Locality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LocalityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/LocalityRepositoryFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Locality.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/model/Locality.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/Locality.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/factory/LocalityFactoryTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,14 +35,314 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state relative-caret-position="935">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/com.ryankolbe.model">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.ryankolbe.model</OriginalElement>
+              <nodes>
+                <node x="428.00000000000006" y="44.0">com.ryankolbe.model.Role</node>
+                <node x="1522.1443452380952" y="0.0">com.ryankolbe.model.Dimension</node>
+                <node x="593.25" y="998.0">com.ryankolbe.model.Member</node>
+                <node x="188.0000000000001" y="0.0">com.ryankolbe.model.Permission</node>
+                <node x="873.1443452380952" y="22.0">com.ryankolbe.model.Contact</node>
+                <node x="1109.1443452380952" y="44.0">com.ryankolbe.model.Name</node>
+                <node x="821.6443452380952" y="505.0">com.ryankolbe.model.Address</node>
+                <node x="1522.6443452380952" y="353.0">com.ryankolbe.model.Artwork</node>
+                <node x="1730.1443452380952" y="22.0">com.ryankolbe.model.Calendar</node>
+                <node x="1327.1443452380952" y="0.0">com.ryankolbe.model.ArtForm</node>
+                <node x="405.6443452380952" y="461.0">com.ryankolbe.model.User</node>
+                <node x="930.25" y="976.0">com.ryankolbe.model.Artist</node>
+                <node x="0.0" y="44.0">com.ryankolbe.model.Login</node>
+                <node x="612.6443452380952" y="483.0">com.ryankolbe.model.Locality</node>
+                <node x="0.0" y="1402.0">com.ryankolbe.model.Gallery</node>
+                <node x="259.0" y="1402.0">com.ryankolbe.model.Exhibit</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Locality">
+                  <point x="-72.625" y="-190.5" />
+                  <point x="940.625" y="936.0" />
+                  <point x="730.7693452380952" y="936.0" />
+                  <point x="23.625" y="190.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Contact">
+                  <point x="10.375" y="-190.5" />
+                  <point x="1023.625" y="956.0" />
+                  <point x="1029.4660714285715" y="956.0" />
+                  <point x="1029.4660714285715" y="421.0" />
+                  <point x="1008.1443452380952" y="421.0" />
+                  <point x="27.0" y="168.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Member" target="com.ryankolbe.model.Locality">
+                  <point x="14.666666666666629" y="-168.5" />
+                  <point x="695.9166666666666" y="956.0" />
+                  <point x="683.5193452380952" y="956.0" />
+                  <point x="-23.625" y="190.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Artwork" target="com.ryankolbe.model.Dimension">
+                  <point x="15.583333333333258" y="-168.5" />
+                  <point x="1631.7276785714284" y="313.0" />
+                  <point x="1663.1443452380952" y="313.0" />
+                  <point x="47.0" y="146.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Member" target="com.ryankolbe.model.User">
+                  <point x="-44.0" y="-168.5" />
+                  <point x="637.25" y="946.0" />
+                  <point x="545.8943452380952" y="946.0" />
+                  <point x="46.75" y="212.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Role">
+                  <point x="-9.349999999999909" y="-212.5" />
+                  <point x="489.7943452380953" y="401.0" />
+                  <point x="474.25000000000006" y="401.0" />
+                  <point x="-46.25" y="146.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Login">
+                  <point x="-65.44999999999993" y="-212.5" />
+                  <point x="433.69434523809525" y="431.0" />
+                  <point x="126.0" y="431.0" />
+                  <point x="42.0" y="146.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Name">
+                  <point x="84.14999999999998" y="-212.5" />
+                  <point x="583.2943452380952" y="441.0" />
+                  <point x="1174.0193452380952" y="441.0" />
+                  <point x="-21.625" y="146.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Address">
+                  <point x="-10.375" y="-190.5" />
+                  <point x="1002.875" y="906.0" />
+                  <point x="975.6443452380952" y="906.0" />
+                  <point x="66.0" y="168.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Name">
+                  <point x="72.625" y="-190.5" />
+                  <point x="1085.875" y="956.0" />
+                  <point x="1244.25" y="956.0" />
+                  <point x="1244.25" y="441.0" />
+                  <point x="1260.5193452380952" y="441.0" />
+                  <point x="64.875" y="146.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Artwork" target="com.ryankolbe.model.ArtForm">
+                  <point x="-77.91666666666674" y="-168.5" />
+                  <point x="1538.2276785714284" y="333.0" />
+                  <point x="1370.8943452380952" y="333.0" />
+                  <point x="-43.75" y="146.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Artwork" target="com.ryankolbe.model.Calendar">
+                  <point x="46.75" y="-168.5" />
+                  <point x="1662.8943452380952" y="323.0" />
+                  <point x="1774.1443452380952" y="323.0" />
+                  <point x="-44.0" y="124.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Permission">
+                  <point x="-46.75" y="-212.5" />
+                  <point x="452.3943452380952" y="421.0" />
+                  <point x="243.0000000000001" y="421.0" />
+                  <point x="-55.0" y="190.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.Member" target="com.ryankolbe.model.Address">
+                  <point x="73.33333333333337" y="-168.5" />
+                  <point x="754.5833333333334" y="956.0" />
+                  <point x="887.6443452380952" y="956.0" />
+                  <point x="-22.0" y="168.5" />
+                </edge>
+                <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Contact">
+                  <point x="28.049999999999955" y="-212.5" />
+                  <point x="527.1943452380951" y="411.0" />
+                  <point x="900.1443452380952" y="411.0" />
+                  <point x="-81.0" y="168.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9017199017199017" x="263.158038147139" y="246.158038147139" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/com.ryankolbe.repository">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.ryankolbe.repository</OriginalElement>
+              <nodes>
+                <node x="473.9999999999999" y="215.0">com.ryankolbe.repository.AddressRepository</node>
+                <node x="640.9999999999999" y="215.0">com.ryankolbe.repository.UserRepository</node>
+                <node x="1984.0" y="215.0">com.ryankolbe.repository.GalleryRepository</node>
+                <node x="1483.0" y="215.0">com.ryankolbe.repository.LoginRepository</node>
+                <node x="1316.0" y="215.0">com.ryankolbe.repository.ContactRepository</node>
+                <node x="2151.0" y="215.0">com.ryankolbe.repository.NameRepository</node>
+                <node x="1803.0" y="215.0">com.ryankolbe.repository.DimensionRepository</node>
+                <node x="1636.0" y="215.0">com.ryankolbe.repository.ArtWorkRepository</node>
+                <node x="0.0" y="215.0">com.ryankolbe.repository.RoleRepository</node>
+                <node x="305.9999999999999" y="215.0">com.ryankolbe.repository.MemberRepository</node>
+                <node x="2306.0" y="215.0">com.ryankolbe.repository.ArtFormRepository</node>
+                <node x="465.3676470588234" y="364.0">com.ryankolbe.repository.implementation</node>
+                <node x="1166.0" y="0.0">com.ryankolbe.repository.IRepository</node>
+                <node x="1142.0" y="215.0">com.ryankolbe.repository.LocalityRepository</node>
+                <node x="786.9999999999999" y="215.0">com.ryankolbe.repository.PermissionRepository</node>
+                <node x="974.9999999999999" y="215.0">com.ryankolbe.repository.ExhibitRepository</node>
+                <node x="146.0" y="215.0">com.ryankolbe.repository.ArtistRepository</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.ryankolbe.repository.LocalityRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="0.0" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.implementation">
+                  <point x="0.0" y="13.5" />
+                  <point x="552.8676470588234" y="411.0" />
+                  <point x="445.3676470588234" y="411.0" />
+                  <point x="445.3676470588234" y="377.5" />
+                  <point x="-87.5" y="-0.0" />
+                </edge>
+                <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.RoleRepository">
+                  <point x="-58.33333333333326" y="-13.5" />
+                  <point x="494.53431372549016" y="324.0" />
+                  <point x="105.0" y="324.0" />
+                  <point x="42.0" y="24.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.ExhibitRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="1048.5" y="195.0" />
+                  <point x="1211.9333333333334" y="195.0" />
+                  <point x="-7.066666666666606" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.DimensionRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="1883.5" y="165.0" />
+                  <point x="1247.2666666666664" y="165.0" />
+                  <point x="28.26666666666665" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.AddressRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="547.4999999999999" y="165.0" />
+                  <point x="1190.7333333333331" y="165.0" />
+                  <point x="-28.26666666666665" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.ArtFormRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="2379.5" y="135.0" />
+                  <point x="1268.4666666666667" y="135.0" />
+                  <point x="49.4666666666667" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.ContactRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="1389.5" y="195.0" />
+                  <point x="1226.0666666666666" y="195.0" />
+                  <point x="7.066666666666606" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.LoginRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="1549.5" y="185.0" />
+                  <point x="1233.1333333333332" y="185.0" />
+                  <point x="14.13333333333344" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.GalleryRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="2057.5" y="155.0" />
+                  <point x="1254.333333333333" y="155.0" />
+                  <point x="35.33333333333326" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.ArtistRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="216.0" y="145.0" />
+                  <point x="1176.6" y="145.0" />
+                  <point x="-42.40000000000009" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.LocalityRepository">
+                  <point x="58.33333333333326" y="-13.5" />
+                  <point x="611.2009803921567" y="324.0" />
+                  <point x="1167.6666666666665" y="324.0" />
+                  <point x="-51.33333333333326" y="24.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.ArtWorkRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="1709.5" y="175.0" />
+                  <point x="1240.1999999999998" y="175.0" />
+                  <point x="21.200000000000045" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.MemberRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="379.9999999999999" y="155.0" />
+                  <point x="1183.6666666666665" y="155.0" />
+                  <point x="-35.33333333333326" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.UserRepository">
+                  <point x="35.0" y="-13.5" />
+                  <point x="587.8676470588234" y="304.0" />
+                  <point x="703.9999999999999" y="304.0" />
+                  <point x="0.0" y="24.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.AddressRepository">
+                  <point x="-11.666666666666742" y="-13.5" />
+                  <point x="541.2009803921567" y="284.0" />
+                  <point x="498.4999999999999" y="284.0" />
+                  <point x="-49.0" y="24.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.UserRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="703.9999999999999" y="175.0" />
+                  <point x="1197.7999999999997" y="175.0" />
+                  <point x="-21.200000000000045" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.ArtistRepository">
+                  <point x="-23.333333333333258" y="-13.5" />
+                  <point x="529.5343137254902" y="294.0" />
+                  <point x="262.6666666666665" y="294.0" />
+                  <point x="46.666666666666515" y="24.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.PermissionRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="870.9999999999999" y="185.0" />
+                  <point x="1204.8666666666663" y="185.0" />
+                  <point x="-14.13333333333344" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.NameRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="2218.5" y="145.0" />
+                  <point x="1261.4" y="145.0" />
+                  <point x="42.40000000000009" y="57.5" />
+                </edge>
+                <edge source="com.ryankolbe.repository.RoleRepository" target="com.ryankolbe.repository.IRepository">
+                  <point x="0.0" y="-24.5" />
+                  <point x="63.0" y="135.0" />
+                  <point x="1169.5333333333333" y="135.0" />
+                  <point x="-49.4666666666667" y="57.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.42786479802143446" x="1203.0" y="120.5" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -178,7 +466,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -504,20 +792,11 @@
       <workItem from="1556554073592" duration="2575000" />
       <workItem from="1556559750128" duration="348000" />
       <workItem from="1556560784936" duration="685000" />
-      <workItem from="1556695145268" duration="24100000" />
+      <workItem from="1556695145268" duration="24539000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RoleRepositoryImplTest - 2019.05.01 at 15h 46m 55s.xml">
-      <configuration name="RoleRepositoryImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoleRepositoryImplTest - 2019.05.01 at 15h 47m 43s.xml">
-      <configuration name="RoleRepositoryImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RoleRepositoryImplTest - 2019.05.01 at 15h 48m 03s.xml">
-      <configuration name="RoleRepositoryImplTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LocalityRepositoryImplTest_create - 2019.05.01 at 16h 03m 53s.xml">
       <configuration name="LocalityRepositoryImplTest.create" configurationId="JUnit" />
     </history-entry>
@@ -539,22 +818,31 @@
     <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 15m 37s.xml">
       <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LocalityRepositoryImplTest_read - 2019.05.01 at 16h 17m 35s.xml">
+      <configuration name="LocalityRepositoryImplTest.read" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalityRepositoryImplTest_update - 2019.05.01 at 16h 19m 35s.xml">
+      <configuration name="LocalityRepositoryImplTest.update" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LocalityRepositoryImplTest - 2019.05.01 at 16h 20m 25s.xml">
+      <configuration name="LocalityRepositoryImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156476000" />
+    <option name="totallyTimeSpent" value="156915000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="745" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5668277" weight="0.43799058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5668277" visible="true" weight="0.21482602" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24183007" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23832528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -566,7 +854,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.510467" weight="0.3268921" />
       <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.22866344" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
@@ -620,13 +908,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/PermissionFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/PermissionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -773,31 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
           <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.ryankolbe.repository">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.ryankolbe.repository</OriginalElement>
-          <nodes>
-            <node x="" y="">com.ryankolbe.repository.ArtistRepositoryImpl</node>
-            <node x="" y="">com.ryankolbe.repository.IRepository</node>
-            <node x="" y="">com.ryankolbe.repository.ArtistRepository</node>
-            <node x="" y="">com.ryankolbe.repository.ArtistRepositoryImplTest</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="107.0" y="376.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1169,11 +1425,307 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="935">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.model">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.model</OriginalElement>
+          <nodes>
+            <node x="428.00000000000006" y="44.0">com.ryankolbe.model.Role</node>
+            <node x="1522.1443452380952" y="0.0">com.ryankolbe.model.Dimension</node>
+            <node x="593.25" y="998.0">com.ryankolbe.model.Member</node>
+            <node x="188.0000000000001" y="0.0">com.ryankolbe.model.Permission</node>
+            <node x="873.1443452380952" y="22.0">com.ryankolbe.model.Contact</node>
+            <node x="1109.1443452380952" y="44.0">com.ryankolbe.model.Name</node>
+            <node x="821.6443452380952" y="505.0">com.ryankolbe.model.Address</node>
+            <node x="1522.6443452380952" y="353.0">com.ryankolbe.model.Artwork</node>
+            <node x="1730.1443452380952" y="22.0">com.ryankolbe.model.Calendar</node>
+            <node x="1327.1443452380952" y="0.0">com.ryankolbe.model.ArtForm</node>
+            <node x="405.6443452380952" y="461.0">com.ryankolbe.model.User</node>
+            <node x="930.25" y="976.0">com.ryankolbe.model.Artist</node>
+            <node x="0.0" y="44.0">com.ryankolbe.model.Login</node>
+            <node x="612.6443452380952" y="483.0">com.ryankolbe.model.Locality</node>
+            <node x="0.0" y="1402.0">com.ryankolbe.model.Gallery</node>
+            <node x="259.0" y="1402.0">com.ryankolbe.model.Exhibit</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Locality">
+              <point x="-72.625" y="-190.5" />
+              <point x="940.625" y="936.0" />
+              <point x="730.7693452380952" y="936.0" />
+              <point x="23.625" y="190.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Contact">
+              <point x="10.375" y="-190.5" />
+              <point x="1023.625" y="956.0" />
+              <point x="1029.4660714285715" y="956.0" />
+              <point x="1029.4660714285715" y="421.0" />
+              <point x="1008.1443452380952" y="421.0" />
+              <point x="27.0" y="168.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Member" target="com.ryankolbe.model.Locality">
+              <point x="14.666666666666629" y="-168.5" />
+              <point x="695.9166666666666" y="956.0" />
+              <point x="683.5193452380952" y="956.0" />
+              <point x="-23.625" y="190.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Artwork" target="com.ryankolbe.model.Dimension">
+              <point x="15.583333333333258" y="-168.5" />
+              <point x="1631.7276785714284" y="313.0" />
+              <point x="1663.1443452380952" y="313.0" />
+              <point x="47.0" y="146.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Member" target="com.ryankolbe.model.User">
+              <point x="-44.0" y="-168.5" />
+              <point x="637.25" y="946.0" />
+              <point x="545.8943452380952" y="946.0" />
+              <point x="46.75" y="212.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Role">
+              <point x="-9.349999999999909" y="-212.5" />
+              <point x="489.7943452380953" y="401.0" />
+              <point x="474.25000000000006" y="401.0" />
+              <point x="-46.25" y="146.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Login">
+              <point x="-65.44999999999993" y="-212.5" />
+              <point x="433.69434523809525" y="431.0" />
+              <point x="126.0" y="431.0" />
+              <point x="42.0" y="146.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Name">
+              <point x="84.14999999999998" y="-212.5" />
+              <point x="583.2943452380952" y="441.0" />
+              <point x="1174.0193452380952" y="441.0" />
+              <point x="-21.625" y="146.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Address">
+              <point x="-10.375" y="-190.5" />
+              <point x="1002.875" y="906.0" />
+              <point x="975.6443452380952" y="906.0" />
+              <point x="66.0" y="168.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Artist" target="com.ryankolbe.model.Name">
+              <point x="72.625" y="-190.5" />
+              <point x="1085.875" y="956.0" />
+              <point x="1244.25" y="956.0" />
+              <point x="1244.25" y="441.0" />
+              <point x="1260.5193452380952" y="441.0" />
+              <point x="64.875" y="146.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Artwork" target="com.ryankolbe.model.ArtForm">
+              <point x="-77.91666666666674" y="-168.5" />
+              <point x="1538.2276785714284" y="333.0" />
+              <point x="1370.8943452380952" y="333.0" />
+              <point x="-43.75" y="146.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Artwork" target="com.ryankolbe.model.Calendar">
+              <point x="46.75" y="-168.5" />
+              <point x="1662.8943452380952" y="323.0" />
+              <point x="1774.1443452380952" y="323.0" />
+              <point x="-44.0" y="124.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Permission">
+              <point x="-46.75" y="-212.5" />
+              <point x="452.3943452380952" y="421.0" />
+              <point x="243.0000000000001" y="421.0" />
+              <point x="-55.0" y="190.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.Member" target="com.ryankolbe.model.Address">
+              <point x="73.33333333333337" y="-168.5" />
+              <point x="754.5833333333334" y="956.0" />
+              <point x="887.6443452380952" y="956.0" />
+              <point x="-22.0" y="168.5" />
+            </edge>
+            <edge source="com.ryankolbe.model.User" target="com.ryankolbe.model.Contact">
+              <point x="28.049999999999955" y="-212.5" />
+              <point x="527.1943452380951" y="411.0" />
+              <point x="900.1443452380952" y="411.0" />
+              <point x="-81.0" y="168.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9017199017199017" x="263.158038147139" y="246.158038147139" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ryankolbe.repository">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ryankolbe.repository</OriginalElement>
+          <nodes>
+            <node x="473.9999999999999" y="215.0">com.ryankolbe.repository.AddressRepository</node>
+            <node x="640.9999999999999" y="215.0">com.ryankolbe.repository.UserRepository</node>
+            <node x="1984.0" y="215.0">com.ryankolbe.repository.GalleryRepository</node>
+            <node x="1483.0" y="215.0">com.ryankolbe.repository.LoginRepository</node>
+            <node x="1316.0" y="215.0">com.ryankolbe.repository.ContactRepository</node>
+            <node x="2151.0" y="215.0">com.ryankolbe.repository.NameRepository</node>
+            <node x="1803.0" y="215.0">com.ryankolbe.repository.DimensionRepository</node>
+            <node x="1636.0" y="215.0">com.ryankolbe.repository.ArtWorkRepository</node>
+            <node x="0.0" y="215.0">com.ryankolbe.repository.RoleRepository</node>
+            <node x="305.9999999999999" y="215.0">com.ryankolbe.repository.MemberRepository</node>
+            <node x="2306.0" y="215.0">com.ryankolbe.repository.ArtFormRepository</node>
+            <node x="465.3676470588234" y="364.0">com.ryankolbe.repository.implementation</node>
+            <node x="1166.0" y="0.0">com.ryankolbe.repository.IRepository</node>
+            <node x="1142.0" y="215.0">com.ryankolbe.repository.LocalityRepository</node>
+            <node x="786.9999999999999" y="215.0">com.ryankolbe.repository.PermissionRepository</node>
+            <node x="974.9999999999999" y="215.0">com.ryankolbe.repository.ExhibitRepository</node>
+            <node x="146.0" y="215.0">com.ryankolbe.repository.ArtistRepository</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ryankolbe.repository.LocalityRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="0.0" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.implementation">
+              <point x="0.0" y="13.5" />
+              <point x="552.8676470588234" y="411.0" />
+              <point x="445.3676470588234" y="411.0" />
+              <point x="445.3676470588234" y="377.5" />
+              <point x="-87.5" y="-0.0" />
+            </edge>
+            <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.RoleRepository">
+              <point x="-58.33333333333326" y="-13.5" />
+              <point x="494.53431372549016" y="324.0" />
+              <point x="105.0" y="324.0" />
+              <point x="42.0" y="24.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.ExhibitRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="1048.5" y="195.0" />
+              <point x="1211.9333333333334" y="195.0" />
+              <point x="-7.066666666666606" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.DimensionRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="1883.5" y="165.0" />
+              <point x="1247.2666666666664" y="165.0" />
+              <point x="28.26666666666665" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.AddressRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="547.4999999999999" y="165.0" />
+              <point x="1190.7333333333331" y="165.0" />
+              <point x="-28.26666666666665" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.ArtFormRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="2379.5" y="135.0" />
+              <point x="1268.4666666666667" y="135.0" />
+              <point x="49.4666666666667" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.ContactRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="1389.5" y="195.0" />
+              <point x="1226.0666666666666" y="195.0" />
+              <point x="7.066666666666606" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.LoginRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="1549.5" y="185.0" />
+              <point x="1233.1333333333332" y="185.0" />
+              <point x="14.13333333333344" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.GalleryRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="2057.5" y="155.0" />
+              <point x="1254.333333333333" y="155.0" />
+              <point x="35.33333333333326" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.ArtistRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="216.0" y="145.0" />
+              <point x="1176.6" y="145.0" />
+              <point x="-42.40000000000009" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.LocalityRepository">
+              <point x="58.33333333333326" y="-13.5" />
+              <point x="611.2009803921567" y="324.0" />
+              <point x="1167.6666666666665" y="324.0" />
+              <point x="-51.33333333333326" y="24.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.ArtWorkRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="1709.5" y="175.0" />
+              <point x="1240.1999999999998" y="175.0" />
+              <point x="21.200000000000045" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.MemberRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="379.9999999999999" y="155.0" />
+              <point x="1183.6666666666665" y="155.0" />
+              <point x="-35.33333333333326" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.UserRepository">
+              <point x="35.0" y="-13.5" />
+              <point x="587.8676470588234" y="304.0" />
+              <point x="703.9999999999999" y="304.0" />
+              <point x="0.0" y="24.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.AddressRepository">
+              <point x="-11.666666666666742" y="-13.5" />
+              <point x="541.2009803921567" y="284.0" />
+              <point x="498.4999999999999" y="284.0" />
+              <point x="-49.0" y="24.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.UserRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="703.9999999999999" y="175.0" />
+              <point x="1197.7999999999997" y="175.0" />
+              <point x="-21.200000000000045" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.implementation" target="com.ryankolbe.repository.ArtistRepository">
+              <point x="-23.333333333333258" y="-13.5" />
+              <point x="529.5343137254902" y="294.0" />
+              <point x="262.6666666666665" y="294.0" />
+              <point x="46.666666666666515" y="24.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.PermissionRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="870.9999999999999" y="185.0" />
+              <point x="1204.8666666666663" y="185.0" />
+              <point x="-14.13333333333344" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.NameRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="2218.5" y="145.0" />
+              <point x="1261.4" y="145.0" />
+              <point x="42.40000000000009" y="57.5" />
+            </edge>
+            <edge source="com.ryankolbe.repository.RoleRepository" target="com.ryankolbe.repository.IRepository">
+              <point x="0.0" y="-24.5" />
+              <point x="63.0" y="135.0" />
+              <point x="1169.5333333333333" y="135.0" />
+              <point x="-49.4666666666667" y="57.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.42786479802143446" x="1203.0" y="120.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

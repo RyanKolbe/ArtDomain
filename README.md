@@ -22,25 +22,28 @@ The focus of the application is transfer of information and not actual monetary 
 
 ------
 
-1. Address
-2. Artist
-3. Artwork
-4. City
-5. Contact
-6. Courier
-7. Customer
-8. Exhibit
-9. Gallery
-10. Order
-11. Painting
-12. Permission
-13. Role
-14. Sculpture
+01. Address
+02. ArtForm
+03. Artist
+03. Artwork
+04. Calendar
+05. Contact
+06  Dimension
+07. Exhibit
+08. Gallery
+09. Locality
+10. Login
+11. Member
+12. Name
+13. Permission
+14. Role
 15. User
 16. Misc
 
 ------
 
 #### <u>Please see UML Class Diagram below:</u>
-![GitHub Logo](ArtworkDomain.jpg)
+![GitHub Logo](UML Model Package.png)
+
+![GitHub Logo](UML Repository Package.png)
 
