@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/AddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtFormRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtWorkRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/CalendarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ContactRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/DimensionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ExhibitRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/GalleryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/Locality.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/LoginRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/NameRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/PermissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/ArtistRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/ArtistServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/ArtistRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/ArtistServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/ArtistServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/repository/ArtistRepositoryImplTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +42,17 @@
     <favorites_list name="ArtDomain" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,7 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/factory/ArtworkFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/factory/ArtworkFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Role.java" />
@@ -109,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/model/Permission.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/AddressRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtFormRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtWorkRepository.java" />
@@ -125,6 +125,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/PermissionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/RoleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java" />
       </list>
     </option>
   </component>
@@ -233,6 +235,68 @@
               <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -266,6 +330,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ryankolbe.repository.implementation" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ryankolbe.factory" />
       <recent name="com.ryankolbe.model" />
@@ -283,18 +350,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArtistRepositoryImplTest.update">
+  <component name="RunManager" selected="JUnit.ArtistRepositoryImplTest">
     <configuration name="ArtistRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.repository.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.ArtistRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArtistRepositoryImplTest.createArtist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtDomain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.ArtistRepositoryImplTest" />
+      <option name="METHOD_NAME" value="createArtist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -303,45 +386,29 @@
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.repository.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.ArtistRepositoryImplTest" />
       <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArtistRepositoryImplTest.getArtists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtistRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.repository.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
-      <option name="METHOD_NAME" value="getArtists" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArtistRepositoryImplTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArtDomain" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ryankolbe.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
-      <option name="METHOD_NAME" value="search" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.ArtistRepositoryImplTest" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -351,12 +418,12 @@
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryankolbe.repository.*" />
+          <option name="PATTERN" value="com.ryankolbe.repository.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.ArtistRepositoryImplTest" />
+      <option name="PACKAGE_NAME" value="com.ryankolbe.repository.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.repository.implementation.ArtistRepositoryImplTest" />
       <option name="METHOD_NAME" value="update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -365,11 +432,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ArtistRepositoryImplTest.update" />
-        <item itemvalue="JUnit.ArtistRepositoryImplTest.getArtists" />
         <item itemvalue="JUnit.ArtistRepositoryImplTest" />
-        <item itemvalue="JUnit.ArtistRepositoryImplTest.search" />
         <item itemvalue="JUnit.ArtistRepositoryImplTest.delete" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.createArtist" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.read" />
+        <item itemvalue="JUnit.ArtistRepositoryImplTest.update" />
       </list>
     </recent_temporary>
   </component>
@@ -407,56 +474,57 @@
       <workItem from="1556554073592" duration="2575000" />
       <workItem from="1556559750128" duration="348000" />
       <workItem from="1556560784936" duration="685000" />
-      <workItem from="1556695145268" duration="10261000" />
+      <workItem from="1556695145268" duration="13708000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArtistRepositoryImplTest_search - 2019.05.01 at 11h 18m 16s.xml">
-      <configuration name="ArtistRepositoryImplTest.search" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_search - 2019.05.01 at 11h 18m 21s.xml">
-      <configuration name="ArtistRepositoryImplTest.search" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 11h 18m 35s.xml">
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 08m 31s.xml">
       <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_getArtists - 2019.05.01 at 11h 32m 40s.xml">
-      <configuration name="ArtistRepositoryImplTest.getArtists" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_createArtist - 2019.05.01 at 13h 09m 25s.xml">
+      <configuration name="ArtistRepositoryImplTest.createArtist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_getArtists - 2019.05.01 at 11h 32m 55s.xml">
-      <configuration name="ArtistRepositoryImplTest.getArtists" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 09m 35s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_getArtists - 2019.05.01 at 11h 34m 10s.xml">
-      <configuration name="ArtistRepositoryImplTest.getArtists" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_createArtist - 2019.05.01 at 13h 11m 57s.xml">
+      <configuration name="ArtistRepositoryImplTest.createArtist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_getArtists - 2019.05.01 at 11h 34m 36s.xml">
-      <configuration name="ArtistRepositoryImplTest.getArtists" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 12m 08s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_update - 2019.05.01 at 11h 52m 20s.xml">
-      <configuration name="ArtistRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 15m 50s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_update - 2019.05.01 at 11h 53m 00s.xml">
-      <configuration name="ArtistRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest_delete - 2019.05.01 at 13h 16m 14s.xml">
+      <configuration name="ArtistRepositoryImplTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArtistRepositoryImplTest_update - 2019.05.01 at 11h 54m 17s.xml">
-      <configuration name="ArtistRepositoryImplTest.update" configurationId="JUnit" />
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 16m 25s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 17m 29s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArtistRepositoryImplTest - 2019.05.01 at 13h 20m 21s.xml">
+      <configuration name="ArtistRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142637000" />
+    <option name="totallyTimeSpent" value="146084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5668277" visible="true" weight="0.2322239" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5668277" visible="true" weight="0.2322239" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23993559" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44605476" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -804,14 +872,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/ArtistRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/ArtistRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/ArtistRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
@@ -1022,6 +1083,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>

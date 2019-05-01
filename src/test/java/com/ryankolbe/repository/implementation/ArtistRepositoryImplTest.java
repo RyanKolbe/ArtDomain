@@ -1,15 +1,19 @@
-package com.ryankolbe.repository;
+package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.factory.*;
 import com.ryankolbe.model.Artist;
+import com.ryankolbe.repository.ArtistRepository;
 import com.ryankolbe.util.Misc;
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ArtistRepositoryImplTest {
 
     private static ArtistRepository artistRepository = ArtistRepositoryImpl.getArtistRepository();
@@ -42,8 +46,6 @@ public class ArtistRepositoryImplTest {
 
     @Test
     public void createArtist() {
-        System.out.println(artistRepository.getAll());
-
         artist = ArtistFactory.createArtist(NameFactory.createName("Cassidy", "",
                 "Van Vuuren"),
                 AddressFactory.createAddress("10", "Trumpet", "Street"),
@@ -54,14 +56,12 @@ public class ArtistRepositoryImplTest {
 
         artists.add(artistRepository.create(artist));
 
-        artistRepository.create(artist);
-
-        Assert.assertEquals(3, artistRepository.getAll().size());
+        Assert.assertEquals(artists.size(), artistRepository.getAll().size());
     }
 
     @Test
     public void read() {
-        String artistId = artists.iterator().next().getArtistId();
+        String artistId = String.valueOf(artistRepository.getAll().stream().findFirst().get().getArtistId());
         String artistIdCheck = artistRepository.read(artistId).getArtistId();
         Assert.assertEquals(artistId, artistIdCheck);
     }
@@ -71,20 +71,17 @@ public class ArtistRepositoryImplTest {
         String newArtistId = Misc.generateId();
         Artist newArtist = new Artist.Builder().copy(artist).artistId(newArtistId).build();
         Assert.assertEquals(newArtistId, newArtist.getArtistId());
-        System.out.println("Generated new artist ID: " + newArtistId);
-        System.out.println("Artist ID read from instantiated object: " + newArtist.getArtistId());
     }
 
     @Test
     public void delete() {
         artistRepository.delete(artist.getArtistId());
-        Assert.assertEquals(1, artistRepository.getAll().size());
+        Assert.assertEquals(2, artistRepository.getAll().size());
     }
 
     @Test
     public void getArtists() {
         Set<Artist> testSet = artistRepository.getAll();
-        System.out.println(testSet.size());
         Assert.assertEquals(artistRepository.getAll().size(), testSet.size());
     }
 }

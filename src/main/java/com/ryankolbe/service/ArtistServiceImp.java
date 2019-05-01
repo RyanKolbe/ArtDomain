@@ -1,7 +1,7 @@
 package com.ryankolbe.service;
 
 import com.ryankolbe.model.Artist;
-import com.ryankolbe.repository.ArtistRepositoryImpl;
+import com.ryankolbe.repository.implementation.ArtistRepositoryImpl;
 
 import java.util.HashSet;
 import java.util.Set;
