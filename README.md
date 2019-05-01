@@ -43,7 +43,7 @@ The focus of the application is transfer of information and not actual monetary 
 ------
 
 #### <u>Please see UML Class Diagram below:</u>
-![GitHub Logo](UML Model Package.png)
+![GitHub Logo](UML Model Package.jpg)
 
-![GitHub Logo](UML Repository Package.png)
+![GitHub Logo](UML Repository Package.jpg)
 
