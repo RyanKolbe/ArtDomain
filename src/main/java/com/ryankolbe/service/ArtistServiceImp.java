@@ -1,19 +1,18 @@
 package com.ryankolbe.service;
 
 import com.ryankolbe.model.Artist;
-import com.ryankolbe.repository.implementation.ArtistRepositoryImpl;
+import com.ryankolbe.repository.ArtistRepository;
+import com.ryankolbe.repository.ArtistRepositoryImpl;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class ArtistServiceImp implements ArtistService {
 
     private static ArtistService artistService = null;
-    private ArtistRepositoryImpl artistRepository;
-    private Set<Artist> artistSet;
+    private ArtistRepository artistRepository;
 
     private ArtistServiceImp() {
-        this.artistSet = new HashSet<>();
+        this.artistRepository = ArtistRepositoryImpl.getArtistRepository();
     }
 
     public static ArtistService getArtistService() {
@@ -39,5 +38,10 @@ public class ArtistServiceImp implements ArtistService {
     @Override
     public void delete(String artistId) {
         this.artistRepository.delete(artistId);
+    }
+
+    @Override
+    public Set<Artist> getAll() {
+        return this.artistRepository.getAll();
     }
 }

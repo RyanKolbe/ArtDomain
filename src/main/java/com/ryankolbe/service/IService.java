@@ -1,7 +1,6 @@
-package com.ryankolbe.repository;
+package com.ryankolbe.service;
 
-public interface IRepository<T, ID> {
-
+public interface IService<T, ID> {
     T create(T t);
 
     T read(ID id);
