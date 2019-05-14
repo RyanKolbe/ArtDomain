@@ -58,10 +58,20 @@ public class ContactRepositoryImpTest {
 
     @Test
     public void delete() {
+
+        Contact deleteContact = ContactFactory.createContact("0219597000", "Landline",
+                "deidrev@gmail.com");
+        contacts.add(contactRepository.create(deleteContact));
+        contactRepository.delete(deleteContact.getContactId());
+        contacts.remove(deleteContact);
+        Assert.assertEquals(contacts.size(), contactRepository.getAll().size());
     }
 
     @Test
     public void getAll() {
+        Set<Contact> contacts = contactRepository.getAll();
+        Assert.assertEquals(contacts, contactRepository.getAll());
+
     }
 
     @Test

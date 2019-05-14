@@ -12,6 +12,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -36,7 +37,7 @@ public class RoleRepositoryImplTest {
 
     @Test
     public void read() {
-        String roleId = roleRepository.getAll().stream().findFirst().get().getRoleId();
+        String roleId = Objects.requireNonNull(roleRepository.getAll().stream().findFirst().orElse(null)).getRoleId();
         String roleIdCheck = roleRepository.read(roleId).getRoleId();
         Assert.assertEquals(roleId, roleIdCheck);
     }
@@ -51,6 +52,7 @@ public class RoleRepositoryImplTest {
     @Test
     public void delete() {
         roleRepository.delete(role.getRoleId());
-        Assert.assertEquals(1, roleRepository.getAll().size());
+        roles.remove(role);
+        Assert.assertEquals(roles.size(), roleRepository.getAll().size());
     }
 }

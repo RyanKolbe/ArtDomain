@@ -2,8 +2,6 @@ package com.ryankolbe.repository;
 
 import com.ryankolbe.factory.*;
 import com.ryankolbe.model.User;
-import com.ryankolbe.repository.UserRepository;
-import com.ryankolbe.repository.UserRepositoryImpl;
 import com.ryankolbe.util.Misc;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -12,6 +10,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -45,12 +44,14 @@ public class UserRepositoryImplTest {
                 ContactFactory.createContact("0219597000", "Landline",
                         "deidrev@gmail.com"));
 
+        users.add(userRepository.create(user));
+
         Assert.assertEquals(users.size(), userRepository.getAll().size());
     }
 
     @Test
     public void read() {
-        String userId = userRepository.getAll().stream().findFirst().get().getUserId();
+        String userId = Objects.requireNonNull(userRepository.getAll().stream().findFirst().orElse(null)).getUserId();
         String userIdCheck = userRepository.read(userId).getUserId();
         Assert.assertEquals(userId, userIdCheck);
     }
@@ -65,6 +66,7 @@ public class UserRepositoryImplTest {
     @Test
     public void delete() {
         userRepository.delete(user.getUserId());
-        Assert.assertEquals(1, userRepository.getAll().size());
+        users.remove(user);
+        Assert.assertEquals(users.size(), userRepository.getAll().size());
     }
 }

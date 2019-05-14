@@ -28,7 +28,7 @@ public class LocalityRepositoryImplTest {
 
     @Test
     public void create() {
-        locality = LocalityFactory.createLocality("Steenber", "Western Cape",
+        locality = LocalityFactory.createLocality("Steenberg", "Western Cape",
                 "South Africa", "7945");
         localities.add(localityRepository.create(locality));
         Assert.assertEquals(localities.size(), localityRepository.getAll().size());
@@ -52,6 +52,7 @@ public class LocalityRepositoryImplTest {
     @Test
     public void delete() {
         localityRepository.delete(locality.getLocalizationId());
-        Assert.assertEquals(1, localityRepository.getAll().size());
+        localities.remove(locality);
+        Assert.assertEquals(localities.size(), localityRepository.getAll().size());
     }
 }

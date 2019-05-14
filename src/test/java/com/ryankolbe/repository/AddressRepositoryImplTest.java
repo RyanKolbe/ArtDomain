@@ -54,8 +54,9 @@ public class AddressRepositoryImplTest {
         address = AddressFactory.createAddress("21", "Melody", "Close");
         addresses.add(addressRepository.create(address));
         addressRepository.delete(address.getAddressId());
+        addresses.remove(address);
 
-        Assert.assertEquals(2, addressRepository.getAll().size());
+        Assert.assertEquals(addresses.size(), addressRepository.getAll().size());
     }
 
     @Test
