@@ -12,7 +12,7 @@ public class Gallery {
     private Gallery() {
     }
 
-    private Gallery(Builder builder) {
+    public Gallery(Builder builder) {
         this.galleryId = builder.galleryId;
         this.galleryName = builder.galleryName;
         this.galleryStreetNumber = builder.galleryStreetNumber;

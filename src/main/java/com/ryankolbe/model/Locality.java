@@ -9,7 +9,7 @@ public class Locality implements Comparable<Locality> {
     private String country;
     private String postalCode;
 
-    public Locality() {
+    private Locality() {
     }
 
     public Locality(Builder builder) {

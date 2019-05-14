@@ -50,8 +50,9 @@ public class ArtFormRepositoryImpTest {
     public void delete() {
         artForm = ArtFormFactory.createArtForm("Pottery", "Ceramic");
         artForms.add(artFormRepository.create(artForm));
+        artForms.remove(artForm);
         artFormRepository.delete(artForm.getArtFormId());
 
-        Assert.assertEquals(2, artFormRepository.getAll().size());
+        Assert.assertEquals(artForms.size(), artFormRepository.getAll().size());
     }
 }
