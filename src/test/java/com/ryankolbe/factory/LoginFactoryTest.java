@@ -8,7 +8,7 @@ public class LoginFactoryTest {
 
     @Test
     public void createLogin() {
-        Login login = LoginFactory.createLogin("Ryan", "Fabian");
+        Login login = LoginFactory.createLogin("0001", "Ryan", "Fabian");
         Assert.assertEquals("Ryan", login.getLoginName());
     }
 }

@@ -8,8 +8,7 @@ public class GalleryFactoryTest {
 
     @Test
     public void createGallery() {
-        Gallery gallery = new GalleryFactory().createGallery("Hope Springs", "10",
-                "Trumpet Street", "7945");
+        Gallery gallery = GalleryFactory.createGallery("00001", "Hope Springs", "100");
         Assert.assertEquals("Hope Springs", gallery.getGalleryName());
     }
 }

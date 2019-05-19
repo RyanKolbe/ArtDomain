@@ -8,8 +8,8 @@ public class AddressFactoryTest {
 
     @Test
     public void createAddress() {
-        Address address = AddressFactory.createAddress("10", "Trumpet",
+        Address address = AddressFactory.createAddress("0001", "10", "Trumpet",
                 "Street");
-        Assert.assertEquals("Trumpet",address.getStreetName());
+        Assert.assertEquals("Trumpet", address.getStreetName());
     }
 }
