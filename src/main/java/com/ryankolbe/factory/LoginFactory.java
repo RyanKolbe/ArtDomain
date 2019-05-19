@@ -1,13 +1,12 @@
 package com.ryankolbe.factory;
 
 import com.ryankolbe.domain.Login;
-import com.ryankolbe.util.Misc;
 
 public class LoginFactory {
 
-    public static Login createLogin(String loginName, String password) {
+    public static Login createLogin(String loginId, String loginName, String password) {
         return new Login.Builder()
-                .loginId(Misc.generateId())
+                .loginId(loginId)
                 .loginName(loginName)
                 .password(password)
                 .build();

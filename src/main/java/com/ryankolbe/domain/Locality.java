@@ -12,7 +12,7 @@ public class Locality implements Comparable<Locality> {
     private Locality() {
     }
 
-    public Locality(Builder builder) {
+    private Locality(Builder builder) {
         this.localizationId = builder.localizationId;
         this.registeredName = builder.registeredName;
         this.province = builder.province;

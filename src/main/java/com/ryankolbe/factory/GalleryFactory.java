@@ -1,17 +1,13 @@
 package com.ryankolbe.factory;
 
 import com.ryankolbe.domain.Gallery;
-import com.ryankolbe.util.Misc;
 
 public class GalleryFactory {
-    public static Gallery createGallery(String galleryName, String galleryStreetNumber, String galleryStreetName,
-                                        String galleryPostalCode) {
+    public static Gallery createGallery(String galleryId, String galleryName, String gallerySize) {
         return new Gallery.Builder()
-                .galleryId(Misc.generateId())
+                .galleryId(galleryId)
                 .galleryName(galleryName)
-                .galleryAddress(galleryStreetNumber)
-                .galleryStreetName(galleryStreetName)
-                .galleryPostalCode(galleryPostalCode)
+                .gallerySize(gallerySize)
                 .build();
     }
 }

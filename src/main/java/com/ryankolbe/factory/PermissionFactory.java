@@ -1,18 +1,14 @@
 package com.ryankolbe.factory;
 
 import com.ryankolbe.domain.Permission;
-import com.ryankolbe.util.Misc;
 
 public class PermissionFactory {
 
-    public static Permission createPermission(String permissionRole, String permissionTitle,
-                                              String permissionModule, String permissionDescription) {
+    public static Permission createPermission(String permissionId, String permissionRole, String permissionTitle) {
         return new Permission.Builder()
-                .id(Misc.generateId())
+                .permissionId(permissionId)
                 .permissionRole(permissionRole)
                 .permissionTitle(permissionTitle)
-                .permissionModule(permissionModule)
-                .permissionDescription(permissionDescription)
                 .build();
     }
 }
