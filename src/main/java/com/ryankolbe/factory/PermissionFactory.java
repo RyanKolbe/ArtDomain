@@ -1,6 +1,6 @@
 package com.ryankolbe.factory;
 
-import com.ryankolbe.model.Permission;
+import com.ryankolbe.domain.Permission;
 import com.ryankolbe.util.Misc;
 
 public class PermissionFactory {

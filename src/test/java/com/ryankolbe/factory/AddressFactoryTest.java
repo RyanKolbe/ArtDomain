@@ -1,6 +1,6 @@
 package com.ryankolbe.factory;
 
-import com.ryankolbe.model.Address;
+import com.ryankolbe.domain.Address;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package com.ryankolbe.repository;
 
-import com.ryankolbe.model.Login;
+import com.ryankolbe.domain.Login;
 
 import java.util.HashSet;
 import java.util.Set;

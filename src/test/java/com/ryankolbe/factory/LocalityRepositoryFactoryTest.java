@@ -1,6 +1,6 @@
 package com.ryankolbe.factory;
 
-import com.ryankolbe.model.Locality;
+import com.ryankolbe.domain.Locality;
 import org.junit.Assert;
 import org.junit.Test;
 

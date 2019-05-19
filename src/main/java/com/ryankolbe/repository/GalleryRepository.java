@@ -1,6 +1,6 @@
 package com.ryankolbe.repository;
 
-import com.ryankolbe.model.Gallery;
+import com.ryankolbe.domain.Gallery;
 
 import java.util.Set;
 

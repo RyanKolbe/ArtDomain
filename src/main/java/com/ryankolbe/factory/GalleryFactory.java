@@ -1,6 +1,6 @@
 package com.ryankolbe.factory;
 
-import com.ryankolbe.model.Gallery;
+import com.ryankolbe.domain.Gallery;
 import com.ryankolbe.util.Misc;
 
 public class GalleryFactory {

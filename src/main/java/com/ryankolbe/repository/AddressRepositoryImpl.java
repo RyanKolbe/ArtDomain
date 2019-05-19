@@ -1,10 +1,12 @@
 package com.ryankolbe.repository;
 
-import com.ryankolbe.model.Address;
+import com.ryankolbe.domain.Address;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Repository("AddressRepository")
 public class AddressRepositoryImpl implements AddressRepository {
     private static AddressRepository addressRepository = null;
     private Set<Address> addresses;

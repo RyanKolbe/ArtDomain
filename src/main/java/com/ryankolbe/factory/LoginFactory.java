@@ -1,6 +1,6 @@
 package com.ryankolbe.factory;
 
-import com.ryankolbe.model.Login;
+import com.ryankolbe.domain.Login;
 import com.ryankolbe.util.Misc;
 
 public class LoginFactory {

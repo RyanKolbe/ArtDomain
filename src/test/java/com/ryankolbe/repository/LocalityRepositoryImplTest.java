@@ -1,7 +1,7 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.factory.LocalityFactory;
-import com.ryankolbe.model.Locality;
+import com.ryankolbe.domain.Locality;
 import com.ryankolbe.util.Misc;
 import org.junit.Assert;
 import org.junit.BeforeClass;

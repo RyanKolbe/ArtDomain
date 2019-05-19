@@ -1,22 +1,26 @@
 package com.ryankolbe.service;
 
 import com.ryankolbe.factory.AddressFactory;
-import com.ryankolbe.model.Address;
+import com.ryankolbe.domain.Address;
 import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class AddressServiceImpTest {
-    private static AddressService addressService;
-    private static Address address;
+    private Address address;
+    @Qualifier("AddressServiceImp")
+    private AddressService addressService;
 
-    @BeforeClass
-    public static void setUp() {
+    @Before
+    public void setUp() {
         addressService = AddressServiceImp.getAddressService();
-        address = AddressFactory.createAddress("10", "Trumpet",
+        address = AddressFactory.createAddress("0005","10", "Trumpet",
                 "Street");
         addressService.create(address);
     }
@@ -29,7 +33,7 @@ public class AddressServiceImpTest {
     @Test
     public void create() {
         Address newAddress = addressService.create(AddressFactory.createAddress(
-                "15", "Marble", "Close"));
+                "0004","15", "Marble", "Close"));
         Assert.assertNotNull(newAddress);
         Assert.assertSame(newAddress, addressService.read(newAddress.getAddressId()));
     }
@@ -37,7 +41,7 @@ public class AddressServiceImpTest {
     @Test
     public void read() {
         Address readTestAddress = addressService.create(AddressFactory.createAddress(
-                "25", "Tulip", "Crescent"));
+                "0006","25", "Tulip", "Crescent"));
         Assert.assertSame(readTestAddress, addressService.read(readTestAddress.getAddressId()));
     }
 

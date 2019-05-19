@@ -1,6 +1,6 @@
 ## <u>**ArtDomain**</u>
 
-The program is an online portal for artists to showcase their work, arrange exhibitions, arrange purchasing and sales of artwork, etc.
+The program is an online portal for artists to showcase their work, arrange exhibitions, arrange purchasing and sales of sculpture, etc.
 
 
 

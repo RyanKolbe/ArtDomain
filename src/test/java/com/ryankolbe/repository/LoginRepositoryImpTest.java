@@ -1,7 +1,7 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.factory.LoginFactory;
-import com.ryankolbe.model.Login;
+import com.ryankolbe.domain.Login;
 import com.ryankolbe.util.Misc;
 import org.junit.Assert;
 import org.junit.BeforeClass;

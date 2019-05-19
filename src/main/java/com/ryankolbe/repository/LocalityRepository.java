@@ -1,6 +1,6 @@
 package com.ryankolbe.repository;
 
-import com.ryankolbe.model.Locality;
+import com.ryankolbe.domain.Locality;
 
 import java.util.Set;
 

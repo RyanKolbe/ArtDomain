@@ -1,8 +1,11 @@
 package com.ryankolbe.repository;
 
+import com.ryankolbe.domain.Address;
 import com.ryankolbe.factory.AddressFactory;
-import com.ryankolbe.model.Address;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.FixMethodOrder;
+import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
 import java.util.HashSet;
@@ -17,7 +20,7 @@ public class AddressRepositoryImplTest {
 
     @BeforeClass
     public static void setUp() {
-        address = AddressFactory.createAddress("10", "Trumpet", "Street");
+        address = AddressFactory.createAddress("0001","10", "Trumpet", "Street");
         addresses.add(addressRepository.create(address));
     }
 
@@ -28,7 +31,7 @@ public class AddressRepositoryImplTest {
 
     @Test
     public void create() {
-        address = AddressFactory.createAddress("15", "Niger", "Road");
+        address = AddressFactory.createAddress("0002","15", "Niger", "Road");
         addresses.add(addressRepository.create(address));
 
         Assert.assertEquals("Niger", address.getStreetName());
@@ -36,7 +39,7 @@ public class AddressRepositoryImplTest {
 
     @Test
     public void read() {
-        address = AddressFactory.createAddress("15", "Niger", "Road");
+        address = AddressFactory.createAddress("0002","15", "Niger", "Road");
         addresses.add(addressRepository.create(address));
 
         Assert.assertEquals("Niger", addressRepository.read(address.getAddressId()).getStreetName());
@@ -51,7 +54,7 @@ public class AddressRepositoryImplTest {
 
     @Test
     public void delete() {
-        address = AddressFactory.createAddress("21", "Melody", "Close");
+        address = AddressFactory.createAddress("0003","21", "Melody", "Close");
         addresses.add(addressRepository.create(address));
         addressRepository.delete(address.getAddressId());
         addresses.remove(address);
@@ -62,6 +65,6 @@ public class AddressRepositoryImplTest {
     @Test
     public void getAll() {
         Set<Address> addresses = addressRepository.getAll();
-        Assert.assertEquals(addresses.size(),addressRepository.getAll().size());
+        Assert.assertEquals(addresses.size(), addressRepository.getAll().size());
     }
 }

@@ -1,11 +1,8 @@
 package com.ryankolbe.factory;
 
-import com.ryankolbe.model.Gallery;
-import com.ryankolbe.util.Misc;
+import com.ryankolbe.domain.Gallery;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class GalleryFactoryTest {
 
