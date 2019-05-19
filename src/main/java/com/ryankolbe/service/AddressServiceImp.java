@@ -2,7 +2,7 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.repository.AddressRepository;
-import com.ryankolbe.repository.AddressRepositoryImpl;
+import com.ryankolbe.repository.implementation.AddressRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

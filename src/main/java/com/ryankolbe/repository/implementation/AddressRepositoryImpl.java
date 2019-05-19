@@ -1,6 +1,7 @@
-package com.ryankolbe.repository;
+package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Address;
+import com.ryankolbe.repository.AddressRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashSet;

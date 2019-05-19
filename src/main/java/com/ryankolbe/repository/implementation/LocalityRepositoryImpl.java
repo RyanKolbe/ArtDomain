@@ -1,6 +1,7 @@
-package com.ryankolbe.repository;
+package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Locality;
+import com.ryankolbe.repository.LocalityRepository;
 
 import java.util.HashSet;
 import java.util.Set;

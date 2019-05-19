@@ -2,6 +2,7 @@ package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.factory.AddressFactory;
+import com.ryankolbe.repository.implementation.AddressRepositoryImpl;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
