@@ -6,16 +6,16 @@ import com.ryankolbe.repository.LoginRepository;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LoginRepositoryImp implements LoginRepository {
-    private static LoginRepository loginRepository = null;
+public class LoginRepositoryImpl implements LoginRepository {
+    private static LoginRepositoryImpl loginRepository = null;
     private Set<Login> logins;
 
-    private LoginRepositoryImp() {
+    private LoginRepositoryImpl() {
         this.logins = new HashSet<>();
     }
 
-    public static LoginRepository getLoginRepository() {
-        if (loginRepository == null) loginRepository = new LoginRepositoryImp();
+    public static LoginRepositoryImpl getLoginRepository() {
+        if (loginRepository == null) loginRepository = new LoginRepositoryImpl();
         return loginRepository;
     }
 

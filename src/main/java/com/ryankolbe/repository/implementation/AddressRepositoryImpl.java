@@ -9,14 +9,15 @@ import java.util.Set;
 
 @Repository("AddressRepository")
 public class AddressRepositoryImpl implements AddressRepository {
-    private static AddressRepository addressRepository = null;
+    private static AddressRepositoryImpl addressRepository = null;
     private Set<Address> addresses;
+
 
     private AddressRepositoryImpl() {
         this.addresses = new HashSet<>();
     }
 
-    public static AddressRepository getAddressRepository() {
+    public static AddressRepositoryImpl getAddressRepository() {
         if (addressRepository == null) addressRepository = new AddressRepositoryImpl();
         return addressRepository;
     }
@@ -36,18 +37,17 @@ public class AddressRepositoryImpl implements AddressRepository {
     public Address update(Address address) {
         Address addressTemp = search(address.getAddressId());
         if (addressTemp != null) {
-            Address addressNew = new Address.Builder()
+            return create(new Address.Builder()
                     .copy(addressTemp)
-                    .build();
-            return create(addressNew);
+                    .build());
         }
         return null;
     }
 
     @Override
     public void delete(String addressId) {
-        Address address = search(addressId);
-        if (address != null) this.addresses.remove(address);
+        Address addressDelete = search(addressId);
+        if (addressDelete != null) this.addresses.remove(addressDelete);
     }
 
     private Address search(final String addressId) {

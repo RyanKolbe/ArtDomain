@@ -9,18 +9,18 @@ import java.util.Set;
 
 @Repository("AccountRepository")
 public class AccountRepositoryImpl implements AccountRepository {
-    private static AccountRepository accountRepository = null;
+    private static AccountRepositoryImpl accountRepository = null;
     private Set<Account> accounts;
+
 
     private AccountRepositoryImpl() {
         this.accounts = new HashSet<>();
     }
 
-    public static AccountRepository getAccountRepository() {
+    public static AccountRepositoryImpl getAccountRepository() {
         if (accountRepository == null) accountRepository = new AccountRepositoryImpl();
         return accountRepository;
     }
-
 
     @Override
     public Account create(Account account) {
@@ -29,26 +29,25 @@ public class AccountRepositoryImpl implements AccountRepository {
     }
 
     @Override
-    public Account read(String s) {
-        return search(s);
+    public Account read(String accountId) {
+        return search(accountId);
     }
 
     @Override
     public Account update(Account account) {
         Account accountTemp = search(account.getAccountId());
         if (accountTemp != null) {
-            Account accountNew = new Account.Builder()
+            return create(new Account.Builder()
                     .copy(accountTemp)
-                    .build();
-            return create(accountNew);
+                    .build());
         }
         return null;
     }
 
     @Override
-    public void delete(String s) {
-        Account accountDelete = search(s);
-        if (accountDelete != null) accounts.remove(accountDelete);
+    public void delete(String accountId) {
+        Account accountDelete = search(accountId);
+        if (accountDelete != null) this.accounts.remove(accountDelete);
     }
 
     private Account search(final String accountId) {

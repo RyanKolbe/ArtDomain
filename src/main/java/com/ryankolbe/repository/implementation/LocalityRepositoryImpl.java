@@ -2,19 +2,22 @@ package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Locality;
 import com.ryankolbe.repository.LocalityRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Repository("LocalityRepository")
 public class LocalityRepositoryImpl implements LocalityRepository {
-    private static LocalityRepository localityRepository = null;
+    private static LocalityRepositoryImpl localityRepository = null;
     private Set<Locality> localities;
+
 
     private LocalityRepositoryImpl() {
         this.localities = new HashSet<>();
     }
 
-    public static LocalityRepository getLocalityRepository() {
+    public static LocalityRepositoryImpl getLocalityRepository() {
         if (localityRepository == null) localityRepository = new LocalityRepositoryImpl();
         return localityRepository;
     }
@@ -34,21 +37,20 @@ public class LocalityRepositoryImpl implements LocalityRepository {
     public Locality update(Locality locality) {
         Locality localityTemp = search(locality.getLocalizationId());
         if (localityTemp != null) {
-            Locality localityNew = new Locality.Builder()
+            return create(new Locality.Builder()
                     .copy(localityTemp)
-                    .build();
-            return create(localityNew);
+                    .build());
         }
         return null;
     }
 
     @Override
     public void delete(String localityId) {
-        Locality locality = search(localityId);
-        if (localityId != null) this.localities.remove(locality);
+        Locality localityDelete = search(localityId);
+        if (localityDelete != null) this.localities.remove(localityDelete);
     }
 
-    public Locality search(final String localityId) {
+    private Locality search(final String localityId) {
         for (Locality localitySearch : this.localities) {
             if (localitySearch.getLocalizationId().equals(localityId))
                 return localitySearch;

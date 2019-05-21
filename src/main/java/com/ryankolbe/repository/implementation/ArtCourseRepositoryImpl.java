@@ -8,19 +8,19 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Repository("ArtCourseRepository")
-public class ArtCourseRepositoryImp implements ArtCourseRepository {
-    private static ArtCourseRepository artCourseRepository = null;
+public class ArtCourseRepositoryImpl implements ArtCourseRepository {
+    private static ArtCourseRepositoryImpl artCourseRepository = null;
     private Set<ArtCourse> artCourses;
 
-    private ArtCourseRepositoryImp() {
+
+    private ArtCourseRepositoryImpl() {
         this.artCourses = new HashSet<>();
     }
 
-    public static ArtCourseRepository getArtCourseRepository() {
-        if (artCourseRepository == null) artCourseRepository = new ArtCourseRepositoryImp();
+    public static ArtCourseRepositoryImpl getArtCourseRepository() {
+        if (artCourseRepository == null) artCourseRepository = new ArtCourseRepositoryImpl();
         return artCourseRepository;
     }
-
 
     @Override
     public ArtCourse create(ArtCourse artCourse) {
@@ -37,10 +37,9 @@ public class ArtCourseRepositoryImp implements ArtCourseRepository {
     public ArtCourse update(ArtCourse artCourse) {
         ArtCourse artCourseTemp = search(artCourse.getArtCourseId());
         if (artCourseTemp != null) {
-            ArtCourse artCourseNew = new ArtCourse.Builder()
+            return create(new ArtCourse.Builder()
                     .copy(artCourseTemp)
-                    .build();
-            return artCourseNew;
+                    .build());
         }
         return null;
     }
@@ -51,16 +50,16 @@ public class ArtCourseRepositoryImp implements ArtCourseRepository {
         if (artCourseDelete != null) this.artCourses.remove(artCourseDelete);
     }
 
-    @Override
-    public Set<ArtCourse> getAll() {
-        return null;
-    }
-
     private ArtCourse search(final String artCourseId) {
         for (ArtCourse artCourseSearch : this.artCourses) {
             if (artCourseSearch.getArtCourseId().equals(artCourseId))
                 return artCourseSearch;
         }
         return null;
+    }
+
+    @Override
+    public Set<ArtCourse> getAll() {
+        return this.artCourses;
     }
 }

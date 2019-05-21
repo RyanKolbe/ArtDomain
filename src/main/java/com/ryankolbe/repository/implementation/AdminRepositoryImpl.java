@@ -2,12 +2,14 @@ package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Admin;
 import com.ryankolbe.repository.AdminRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashSet;
 import java.util.Set;
 
+@Repository("AdminRepository")
 public class AdminRepositoryImpl implements AdminRepository {
-    private static AdminRepository adminRepository = null;
+    private static AdminRepositoryImpl adminRepository = null;
     private Set<Admin> admins;
 
 
@@ -15,7 +17,7 @@ public class AdminRepositoryImpl implements AdminRepository {
         this.admins = new HashSet<>();
     }
 
-    public static AdminRepository getAdminRepository() {
+    public static AdminRepositoryImpl getAdminRepository() {
         if (adminRepository == null) adminRepository = new AdminRepositoryImpl();
         return adminRepository;
     }
@@ -34,11 +36,10 @@ public class AdminRepositoryImpl implements AdminRepository {
     @Override
     public Admin update(Admin admin) {
         Admin adminTemp = search(admin.getAdminId());
-        if (adminTemp == null) {
-            Admin adminNew = new Admin.Builder()
+        if (adminTemp != null) {
+            return create(new Admin.Builder()
                     .copy(adminTemp)
-                    .build();
-            return create(adminNew);
+                    .build());
         }
         return null;
     }
