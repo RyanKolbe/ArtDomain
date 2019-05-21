@@ -2,6 +2,7 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.factory.AddressFactory;
 import com.ryankolbe.domain.Address;
+import com.ryankolbe.service.implementation.AddressServiceImp;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

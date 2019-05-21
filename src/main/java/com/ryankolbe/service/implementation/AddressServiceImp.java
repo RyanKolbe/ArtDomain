@@ -1,8 +1,9 @@
-package com.ryankolbe.service;
+package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.repository.AddressRepository;
 import com.ryankolbe.repository.implementation.AddressRepositoryImpl;
+import com.ryankolbe.service.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
