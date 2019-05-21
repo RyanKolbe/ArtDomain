@@ -12,7 +12,6 @@ public class AccountRepositoryImpl implements AccountRepository {
     private static AccountRepositoryImpl accountRepository = null;
     private Set<Account> accounts;
 
-
     private AccountRepositoryImpl() {
         this.accounts = new HashSet<>();
     }

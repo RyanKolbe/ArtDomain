@@ -1,27 +1,28 @@
-package com.ryankolbe.service;
+package com.ryankolbe.service.implementation;
 
-import com.ryankolbe.factory.AddressFactory;
 import com.ryankolbe.domain.Address;
-import com.ryankolbe.service.implementation.AddressServiceImp;
+import com.ryankolbe.factory.AddressFactory;
+import com.ryankolbe.service.AddressService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class AddressServiceImpTest {
+public class AddressServiceImplTest {
     private Address address;
-    @Qualifier("AddressServiceImp")
+    @Autowired
+    @Qualifier("AddressServiceImpl")
     private AddressService addressService;
 
     @Before
     public void setUp() {
-        addressService = AddressServiceImp.getAddressService();
-        address = AddressFactory.createAddress("0005","10", "Trumpet",
+        address = AddressFactory.createAddress("0005", "10", "Trumpet",
                 "Street");
         addressService.create(address);
     }
@@ -34,7 +35,7 @@ public class AddressServiceImpTest {
     @Test
     public void create() {
         Address newAddress = addressService.create(AddressFactory.createAddress(
-                "0004","15", "Marble", "Close"));
+                "0004", "15", "Marble", "Close"));
         Assert.assertNotNull(newAddress);
         Assert.assertSame(newAddress, addressService.read(newAddress.getAddressId()));
     }
@@ -42,7 +43,7 @@ public class AddressServiceImpTest {
     @Test
     public void read() {
         Address readTestAddress = addressService.create(AddressFactory.createAddress(
-                "0006","25", "Tulip", "Crescent"));
+                "0006", "25", "Tulip", "Crescent"));
         Assert.assertSame(readTestAddress, addressService.read(readTestAddress.getAddressId()));
     }
 

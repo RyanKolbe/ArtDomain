@@ -12,7 +12,6 @@ public class AdminRepositoryImpl implements AdminRepository {
     private static AdminRepositoryImpl adminRepository = null;
     private Set<Admin> admins;
 
-
     private AdminRepositoryImpl() {
         this.admins = new HashSet<>();
     }

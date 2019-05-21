@@ -12,7 +12,7 @@ import java.util.Set;
 public class AddressController {
     private final AddressService addressService;
 
-    public AddressController(@Qualifier("AddressServiceImp") AddressService addressService) {
+    public AddressController(@Qualifier("AddressServiceImpl") AddressService addressService) {
         this.addressService = addressService;
     }
 

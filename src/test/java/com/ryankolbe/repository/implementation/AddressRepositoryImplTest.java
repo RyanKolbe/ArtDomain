@@ -1,7 +1,8 @@
-package com.ryankolbe.repository;
+package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.factory.AddressFactory;
+import com.ryankolbe.repository.AddressRepository;
 import com.ryankolbe.repository.implementation.AddressRepositoryImpl;
 import org.junit.Assert;
 import org.junit.BeforeClass;

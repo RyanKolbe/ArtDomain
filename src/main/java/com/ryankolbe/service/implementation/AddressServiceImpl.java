@@ -2,29 +2,18 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.repository.AddressRepository;
-import com.ryankolbe.repository.implementation.AddressRepositoryImpl;
 import com.ryankolbe.service.AddressService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Service("AddressServiceImp")
-public class AddressServiceImp implements AddressService {
+@Service("AddressServiceImpl")
+public class AddressServiceImpl implements AddressService {
 
-    @Autowired
-    @Qualifier("AddressServiceImp")
-    private static AddressServiceImp addressService;
-    private AddressRepository addressRepository;
+    private final AddressRepository addressRepository;
 
-    private AddressServiceImp() {
-        this.addressRepository = AddressRepositoryImpl.getAddressRepository();
-    }
-
-    public static AddressService getAddressService(){
-        if (addressService == null) addressService = new AddressServiceImp();
-        return addressService;
+    public AddressServiceImpl(AddressRepository addressRepository) {
+        this.addressRepository = addressRepository;
     }
 
     @Override
