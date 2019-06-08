@@ -34,9 +34,8 @@ public class LoginRepositoryImpl implements LoginRepository {
     public Login update(Login login) {
         Login loginTemp = search(login.getLoginId());
         if (loginTemp != null) {
-            return new Login.Builder()
-                    .copy(loginTemp)
-                    .build();
+            logins.remove(loginTemp);
+            return create(login);
         }
         return null;
     }

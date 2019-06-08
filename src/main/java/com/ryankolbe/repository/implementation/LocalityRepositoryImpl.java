@@ -37,9 +37,8 @@ public class LocalityRepositoryImpl implements LocalityRepository {
     public Locality update(Locality locality) {
         Locality localityTemp = search(locality.getLocalizationId());
         if (localityTemp != null) {
-            return create(new Locality.Builder()
-                    .copy(localityTemp)
-                    .build());
+            localities.remove(localityTemp);
+            return create(locality);
         }
         return null;
     }

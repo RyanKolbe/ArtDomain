@@ -37,9 +37,8 @@ public class ExhibitionRepositoryImpl implements ExhibitionRepository {
     public Exhibition update(Exhibition exhibition) {
         Exhibition exhibitionTemp = search(exhibition.getExhibitionId());
         if (exhibitionTemp != null) {
-            return create(new Exhibition.Builder()
-                    .copy(exhibitionTemp)
-                    .build());
+            exhibitions.remove(exhibitionTemp);
+            return create(exhibition);
         }
         return null;
     }

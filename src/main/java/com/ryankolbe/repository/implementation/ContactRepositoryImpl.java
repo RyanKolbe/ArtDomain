@@ -37,9 +37,8 @@ public class ContactRepositoryImpl implements ContactRepository {
     public Contact update(Contact contact) {
         Contact contactTemp = search(contact.getContactId());
         if (contactTemp != null) {
-            return create(new Contact.Builder()
-                    .copy(contactTemp)
-                    .build());
+            contacts.remove(contactTemp);
+            return create(contact);
         }
         return null;
     }

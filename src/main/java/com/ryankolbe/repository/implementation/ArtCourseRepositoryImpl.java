@@ -37,9 +37,8 @@ public class ArtCourseRepositoryImpl implements ArtCourseRepository {
     public ArtCourse update(ArtCourse artCourse) {
         ArtCourse artCourseTemp = search(artCourse.getArtCourseId());
         if (artCourseTemp != null) {
-            return create(new ArtCourse.Builder()
-                    .copy(artCourseTemp)
-                    .build());
+            artCourses.remove(artCourseTemp);
+            return create(artCourse);
         }
         return null;
     }

@@ -37,9 +37,8 @@ public class JobRoleRepositoryImpl implements JobRoleRepository {
     public JobRole update(JobRole jobRole) {
         JobRole jobRoleTemp = search(jobRole.getJobRoleId());
         if (jobRoleTemp != null) {
-            return create(new JobRole.Builder()
-                    .copy(jobRoleTemp)
-                    .build());
+            jobRoles.remove(jobRoleTemp);
+            return create(jobRole);
         }
         return null;
     }

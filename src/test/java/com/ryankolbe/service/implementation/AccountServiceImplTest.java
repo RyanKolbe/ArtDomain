@@ -16,7 +16,7 @@ public class AccountServiceImplTest {
     private Account account;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
     }
 
     @Test

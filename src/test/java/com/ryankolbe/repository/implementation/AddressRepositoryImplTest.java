@@ -3,7 +3,6 @@ package com.ryankolbe.repository.implementation;
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.factory.AddressFactory;
 import com.ryankolbe.repository.AddressRepository;
-import com.ryankolbe.repository.implementation.AddressRepositoryImpl;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
@@ -22,7 +21,7 @@ public class AddressRepositoryImplTest {
 
     @BeforeClass
     public static void setUp() {
-        address = AddressFactory.createAddress("0001","10", "Trumpet", "Street");
+        address = AddressFactory.createAddress("0001", "10", "Trumpet", "Street");
         addresses.add(addressRepository.create(address));
     }
 
@@ -33,17 +32,15 @@ public class AddressRepositoryImplTest {
 
     @Test
     public void create() {
-        address = AddressFactory.createAddress("0002","15", "Niger", "Road");
+        address = AddressFactory.createAddress("0002", "15", "Niger", "Road");
         addresses.add(addressRepository.create(address));
-
         Assert.assertEquals("Niger", address.getStreetName());
     }
 
     @Test
     public void read() {
-        address = AddressFactory.createAddress("0002","15", "Niger", "Road");
+        address = AddressFactory.createAddress("0002", "15", "Niger", "Road");
         addresses.add(addressRepository.create(address));
-
         Assert.assertEquals("Niger", addressRepository.read(address.getAddressId()).getStreetName());
     }
 
@@ -51,16 +48,16 @@ public class AddressRepositoryImplTest {
     public void update() {
         String newStreetName = "Berkley";
         Address newAddress = new Address.Builder().copy(address).streetName(newStreetName).build();
-        Assert.assertEquals(newStreetName, newAddress.getStreetName());
+        addressRepository.update(newAddress);
+        Assert.assertEquals(newAddress.getStreetName(), addressRepository.read(newAddress.getAddressId()).getStreetName());
     }
 
     @Test
     public void delete() {
-        address = AddressFactory.createAddress("0003","21", "Melody", "Close");
+        address = AddressFactory.createAddress("0003", "21", "Melody", "Close");
         addresses.add(addressRepository.create(address));
         addressRepository.delete(address.getAddressId());
         addresses.remove(address);
-
         Assert.assertEquals(addresses.size(), addressRepository.getAll().size());
     }
 

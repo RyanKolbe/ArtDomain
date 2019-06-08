@@ -37,9 +37,8 @@ public class AddressRepositoryImpl implements AddressRepository {
     public Address update(Address address) {
         Address addressTemp = search(address.getAddressId());
         if (addressTemp != null) {
-            return create(new Address.Builder()
-                    .copy(addressTemp)
-                    .build());
+            addresses.remove(addressTemp);
+            return create(address);
         }
         return null;
     }

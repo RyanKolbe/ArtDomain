@@ -37,9 +37,8 @@ public class OrderRepositoryImpl implements OrderRepository {
     public Order update(Order order) {
         Order orderTemp = search(order.getOrderId());
         if (orderTemp != null) {
-            return create(new Order.Builder()
-                    .copy(orderTemp)
-                    .build());
+            orders.remove(orderTemp);
+            return create(order);
         }
         return null;
     }

@@ -37,9 +37,8 @@ public class PermissionRepositoryImpl implements PermissionRepository {
     public Permission update(Permission permission) {
         Permission permissionTemp = search(permission.getPermissionId());
         if (permissionTemp != null) {
-            return create(new Permission.Builder()
-                    .copy(permissionTemp)
-                    .build());
+            permissions.remove(permissionTemp);
+            return create(permission);
         }
         return null;
     }

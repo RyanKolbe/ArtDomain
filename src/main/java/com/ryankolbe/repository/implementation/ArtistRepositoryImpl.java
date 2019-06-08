@@ -37,9 +37,8 @@ public class ArtistRepositoryImpl implements ArtistRepository {
     public Artist update(Artist artist) {
         Artist artistTemp = search(artist.getArtistId());
         if (artistTemp != null) {
-            return create(new Artist.Builder()
-                    .copy(artistTemp)
-                    .build());
+            artists.remove(artistTemp);
+            return create(artist);
         }
         return null;
     }

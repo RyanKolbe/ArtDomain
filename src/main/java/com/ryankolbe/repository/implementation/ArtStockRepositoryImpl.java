@@ -37,9 +37,8 @@ public class ArtStockRepositoryImpl implements ArtStockRepository {
     public ArtStock update(ArtStock artStock) {
         ArtStock artStockTemp = search(artStock.getArtStockId());
         if (artStockTemp != null) {
-            return create(new ArtStock.Builder()
-                    .copy(artStockTemp)
-                    .build());
+            artStocks.remove(artStockTemp);
+            return create(artStock);
         }
         return null;
     }

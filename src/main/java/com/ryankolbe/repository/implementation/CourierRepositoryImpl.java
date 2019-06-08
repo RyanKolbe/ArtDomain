@@ -37,9 +37,8 @@ public class CourierRepositoryImpl implements CourierRepository {
     public Courier update(Courier courier) {
         Courier courierTemp = search(courier.getCourierId());
         if (courierTemp != null) {
-            return create(new Courier.Builder()
-                    .copy(courierTemp)
-                    .build());
+            couriers.remove(courierTemp);
+            return create(courier);
         }
         return null;
     }

@@ -36,9 +36,8 @@ public class AccountRepositoryImpl implements AccountRepository {
     public Account update(Account account) {
         Account accountTemp = search(account.getAccountId());
         if (accountTemp != null) {
-            return create(new Account.Builder()
-                    .copy(accountTemp)
-                    .build());
+            accounts.remove(accountTemp);
+            return create(account);
         }
         return null;
     }

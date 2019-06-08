@@ -36,10 +36,10 @@ public class ReturnsRepositoryImpl implements ReturnsRepository {
     @Override
     public Returns update(Returns returns) {
         Returns returnTemp = search(returns.getReturnId());
+        this.returns.remove(returnTemp);
         if (returnTemp != null) {
-            return create(new Returns.Builder()
-                    .copy(returnTemp)
-                    .build());
+            this.returns.remove(returnTemp);
+            return create(returns);
         }
         return null;
     }

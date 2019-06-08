@@ -36,9 +36,8 @@ public class AdminRepositoryImpl implements AdminRepository {
     public Admin update(Admin admin) {
         Admin adminTemp = search(admin.getAdminId());
         if (adminTemp != null) {
-            return create(new Admin.Builder()
-                    .copy(adminTemp)
-                    .build());
+            admins.remove(adminTemp);
+            return create(admin);
         }
         return null;
     }

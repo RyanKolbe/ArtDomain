@@ -37,9 +37,8 @@ public class ServicesRepositoryImpl implements ServicesRepository {
     public Services update(Services services) {
         Services servicesTemp = search(services.getServiceId());
         if (servicesTemp != null) {
-            return create(new Services.Builder()
-                    .copy(servicesTemp)
-                    .build());
+            this.services.remove(servicesTemp);
+            return create(services);
         }
         return null;
     }

@@ -37,9 +37,8 @@ public class MemberRepositoryImpl implements MemberRepository {
     public Member update(Member member) {
         Member memberTemp = search(member.getMemberId());
         if (memberTemp != null) {
-            return create(new Member.Builder()
-                    .copy(memberTemp)
-                    .build());
+            members.remove(memberTemp);
+            return create(member);
         }
         return null;
     }

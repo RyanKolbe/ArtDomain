@@ -37,9 +37,8 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     public Customer update(Customer customer) {
         Customer customerTemp = search(customer.getCustomerId());
         if (customerTemp != null) {
-            return create(new Customer.Builder()
-                    .copy(customerTemp)
-                    .build());
+            customers.remove(customerTemp);
+            return create(customer);
         }
         return null;
     }

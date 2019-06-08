@@ -37,9 +37,8 @@ public class AssetRepositoryImpl implements AssetRepository {
     public Asset update(Asset asset) {
         Asset assetTemp = search(asset.getAssetId());
         if (assetTemp != null) {
-            return create(new Asset.Builder()
-                    .copy(assetTemp)
-                    .build());
+            assets.remove(assetTemp);
+            return create(asset);
         }
         return null;
     }

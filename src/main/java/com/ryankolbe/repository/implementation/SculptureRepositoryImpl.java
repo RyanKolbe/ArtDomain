@@ -37,9 +37,8 @@ public class SculptureRepositoryImpl implements SculptureRepository {
     public Sculpture update(Sculpture sculpture) {
         Sculpture sculptureTemp = search(sculpture.getSculptureId());
         if (sculptureTemp != null) {
-            return create(new Sculpture.Builder()
-                    .copy(sculptureTemp)
-                    .build());
+            sculptures.remove(sculptureTemp);
+            return create(sculpture);
         }
         return null;
     }

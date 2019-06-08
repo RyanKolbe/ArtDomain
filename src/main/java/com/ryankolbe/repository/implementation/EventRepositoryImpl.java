@@ -37,9 +37,8 @@ public class EventRepositoryImpl implements EventRepository {
     public Event update(Event event) {
         Event eventTemp = search(event.getEventId());
         if (eventTemp != null) {
-            return create(new Event.Builder()
-                    .copy(eventTemp)
-                    .build());
+            events.remove(eventTemp);
+            return create(event);
         }
         return null;
     }

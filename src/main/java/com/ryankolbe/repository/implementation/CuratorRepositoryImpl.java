@@ -37,9 +37,8 @@ public class CuratorRepositoryImpl implements CuratorRepository {
     public Curator update(Curator curator) {
         Curator curatorTemp = search(curator.getCuratorId());
         if (curatorTemp != null) {
-            return create(new Curator.Builder()
-                    .copy(curatorTemp)
-                    .build());
+            curators.remove(curatorTemp);
+            return create(curator);
         }
         return null;
     }

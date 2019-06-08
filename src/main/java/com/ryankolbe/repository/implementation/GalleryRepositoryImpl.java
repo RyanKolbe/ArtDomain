@@ -37,9 +37,8 @@ public class GalleryRepositoryImpl implements GalleryRepository {
     public Gallery update(Gallery gallery) {
         Gallery galleryTemp = search(gallery.getGalleryId());
         if (galleryTemp != null) {
-            return create(new Gallery.Builder()
-                    .copy(galleryTemp)
-                    .build());
+            galleries.remove(galleryTemp);
+            return create(gallery);
         }
         return null;
     }

@@ -37,9 +37,8 @@ public class PackagingRepositoryImpl implements PackagingRepository {
     public Packaging update(Packaging packaging) {
         Packaging packagingTemp = search(packaging.getPackagingId());
         if (packagingTemp != null) {
-            return create(new Packaging.Builder()
-                    .copy(packagingTemp)
-                    .build());
+            packagings.remove(packagingTemp);
+            return create(packaging);
         }
         return null;
     }

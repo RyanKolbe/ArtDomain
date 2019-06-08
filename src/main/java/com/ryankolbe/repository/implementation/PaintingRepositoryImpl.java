@@ -37,9 +37,8 @@ public class PaintingRepositoryImpl implements PaintingRepository {
     public Painting update(Painting painting) {
         Painting paintingTemp = search(painting.getPaintingId());
         if (paintingTemp != null) {
-            return create(new Painting.Builder()
-                    .copy(paintingTemp)
-                    .build());
+            paintings.remove(paintingTemp);
+            return create(painting);
         }
         return null;
     }
