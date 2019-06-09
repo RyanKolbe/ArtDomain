@@ -17,11 +17,6 @@ public class ExhibitionServiceImpl implements ExhibitionService {
     }
 
     @Override
-    public Set<Exhibition> getAll() {
-        return this.exhibitionRepository.getAll();
-    }
-
-    @Override
     public Exhibition create(Exhibition exhibition) {
         return this.exhibitionRepository.create(exhibition);
     }
@@ -39,5 +34,10 @@ public class ExhibitionServiceImpl implements ExhibitionService {
     @Override
     public void delete(String exhibitionId) {
         this.exhibitionRepository.delete(exhibitionId);
+    }
+
+    @Override
+    public Set<Exhibition> getAll() {
+        return this.exhibitionRepository.getAll();
     }
 }

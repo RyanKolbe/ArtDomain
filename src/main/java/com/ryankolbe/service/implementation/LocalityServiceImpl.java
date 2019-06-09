@@ -17,11 +17,6 @@ public class LocalityServiceImpl implements LocalityService {
     }
 
     @Override
-    public Set<Locality> getAll() {
-        return this.localityRepository.getAll();
-    }
-
-    @Override
     public Locality create(Locality locality) {
         return this.localityRepository.create(locality);
     }
@@ -39,5 +34,10 @@ public class LocalityServiceImpl implements LocalityService {
     @Override
     public void delete(String localityId) {
         this.localityRepository.delete(localityId);
+    }
+
+    @Override
+    public Set<Locality> getAll() {
+        return this.localityRepository.getAll();
     }
 }

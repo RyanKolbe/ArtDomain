@@ -17,11 +17,6 @@ public class GalleryServiceImpl implements GalleryService {
     }
 
     @Override
-    public Set<Gallery> getAll() {
-        return this.galleryRepository.getAll();
-    }
-
-    @Override
     public Gallery create(Gallery gallery) {
         return this.galleryRepository.create(gallery);
     }
@@ -39,5 +34,10 @@ public class GalleryServiceImpl implements GalleryService {
     @Override
     public void delete(String galleryId) {
         this.galleryRepository.delete(galleryId);
+    }
+
+    @Override
+    public Set<Gallery> getAll() {
+        return this.galleryRepository.getAll();
     }
 }

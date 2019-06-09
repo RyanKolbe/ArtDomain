@@ -12,54 +12,62 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class AddressServiceImplTest {
-    private Address address;
     @Autowired
     @Qualifier("AddressServiceImpl")
     private AddressService addressService;
+    private Address address;
+    private Set<Address> addresses = new HashSet<>();
 
     @Before
     public void setUp() {
-        address = AddressFactory.createAddress("0005", "10", "Trumpet",
-                "Street");
-        addressService.create(address);
-    }
-
-    @Test
-    public void getAddressService() {
-        Assert.assertNotNull(addressService);
+        address = addressService.create(AddressFactory.createAddress("0005", "10", "Trumpet",
+                "Street"));
+        addresses.add(address);
     }
 
     @Test
     public void create() {
-        Address newAddress = addressService.create(AddressFactory.createAddress(
+        Address createAddress = addressService.create(AddressFactory.createAddress(
                 "0004", "15", "Marble", "Close"));
-        Assert.assertNotNull(newAddress);
-        Assert.assertSame(newAddress, addressService.read(newAddress.getAddressId()));
+        addresses.add(createAddress);
+        Assert.assertEquals(createAddress, addressService.read(createAddress.getAddressId()));
     }
 
     @Test
     public void read() {
         Address readTestAddress = addressService.create(AddressFactory.createAddress(
                 "0006", "25", "Tulip", "Crescent"));
-        Assert.assertSame(readTestAddress, addressService.read(readTestAddress.getAddressId()));
+        Assert.assertEquals(readTestAddress, addressService.read(readTestAddress.getAddressId()));
     }
 
     @Test
     public void update() {
         String newStreetName = "Ralph";
-        Address addressTemp = new Address.Builder().copy(address).streetName(newStreetName).build();
-        Assert.assertSame(newStreetName, addressTemp.getStreetName());
+        Address updateAddress = addressService.update(new Address.Builder().copy(address).streetName(newStreetName).build());
+        addresses.add(updateAddress);
+        Assert.assertEquals(updateAddress, addressService.read(updateAddress.getAddressId()));
     }
 
     @Test
     public void delete() {
-        Address deleteAddress = addressService.getAll().stream().findFirst().orElse(null);
-        int size = addressService.getAll().size();
-        assert deleteAddress != null;
+        addresses.addAll(addressService.getAll());
+        Address deleteAddress = addressService.create(AddressFactory.createAddress("2456", "24",
+                "Rubric", "Drive"));
+        addresses.add(deleteAddress);
+        addresses.remove(deleteAddress);
         addressService.delete(deleteAddress.getAddressId());
-        Assert.assertEquals(size - 1, addressService.getAll().size());
+        Assert.assertEquals(addresses.size(), addressService.getAll().size());
+    }
+
+    @Test
+    public void getAll() {
+        Set<Address> addressSet = addressService.getAll();
+        Assert.assertEquals(addressSet.size(), addressService.getAll().size());
     }
 }

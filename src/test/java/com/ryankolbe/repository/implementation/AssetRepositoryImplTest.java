@@ -34,7 +34,8 @@ public class AssetRepositoryImplTest {
     public void create() {
         Asset createAsset = AssetFactory.createAsset("0024", "7855", "Latitude E5400",
                 2000.00);
-        Assert.assertEquals(asset.getAssetNumber(), assetRepository.read(createAsset.getAssetId()).getAssetNumber());
+        assets.add(assetRepository.create(createAsset));
+        Assert.assertEquals(createAsset.getAssetNumber(), assetRepository.read(createAsset.getAssetId()).getAssetNumber());
     }
 
     @Test

@@ -17,11 +17,6 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public Set<Admin> getAll() {
-        return this.adminRepository.getAll();
-    }
-
-    @Override
     public Admin create(Admin admin) {
         return this.adminRepository.create(admin);
     }
@@ -39,5 +34,10 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public void delete(String adminId) {
         this.adminRepository.delete(adminId);
+    }
+
+    @Override
+    public Set<Admin> getAll() {
+        return this.adminRepository.getAll();
     }
 }

@@ -17,11 +17,6 @@ public class ArtCourseServiceImpl implements ArtCourseService {
     }
 
     @Override
-    public Set<ArtCourse> getAll() {
-        return this.artCourseRepository.getAll();
-    }
-
-    @Override
     public ArtCourse create(ArtCourse artCourse) {
         return this.artCourseRepository.create(artCourse);
     }
@@ -39,5 +34,10 @@ public class ArtCourseServiceImpl implements ArtCourseService {
     @Override
     public void delete(String artCourseId) {
         this.artCourseRepository.delete(artCourseId);
+    }
+
+    @Override
+    public Set<ArtCourse> getAll() {
+        return this.artCourseRepository.getAll();
     }
 }

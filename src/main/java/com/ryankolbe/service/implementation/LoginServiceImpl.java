@@ -17,11 +17,6 @@ public class LoginServiceImpl implements LoginService {
     }
 
     @Override
-    public Set<Login> getAll() {
-        return this.loginRepository.getAll();
-    }
-
-    @Override
     public Login create(Login login) {
         return this.loginRepository.create(login);
     }
@@ -39,5 +34,10 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public void delete(String loginId) {
         this.loginRepository.delete(loginId);
+    }
+
+    @Override
+    public Set<Login> getAll() {
+        return this.loginRepository.getAll();
     }
 }

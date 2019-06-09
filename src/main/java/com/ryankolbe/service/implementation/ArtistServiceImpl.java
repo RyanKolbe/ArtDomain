@@ -17,11 +17,6 @@ public class ArtistServiceImpl implements ArtistService {
     }
 
     @Override
-    public Set<Artist> getAll() {
-        return this.artistRepository.getAll();
-    }
-
-    @Override
     public Artist create(Artist artist) {
         return this.artistRepository.create(artist);
     }
@@ -39,5 +34,10 @@ public class ArtistServiceImpl implements ArtistService {
     @Override
     public void delete(String artistId) {
         this.artistRepository.delete(artistId);
+    }
+
+    @Override
+    public Set<Artist> getAll() {
+        return this.artistRepository.getAll();
     }
 }

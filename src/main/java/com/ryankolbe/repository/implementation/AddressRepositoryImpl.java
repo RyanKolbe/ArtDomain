@@ -12,7 +12,6 @@ public class AddressRepositoryImpl implements AddressRepository {
     private static AddressRepositoryImpl addressRepository = null;
     private Set<Address> addresses;
 
-
     private AddressRepositoryImpl() {
         this.addresses = new HashSet<>();
     }

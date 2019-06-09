@@ -17,11 +17,6 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public Set<Member> getAll() {
-        return this.memberRepository.getAll();
-    }
-
-    @Override
     public Member create(Member member) {
         return this.memberRepository.create(member);
     }
@@ -39,5 +34,10 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public void delete(String memberId) {
         this.memberRepository.delete(memberId);
+    }
+
+    @Override
+    public Set<Member> getAll() {
+        return this.memberRepository.getAll();
     }
 }

@@ -17,11 +17,6 @@ public class JobRoleServiceImpl implements JobRoleService {
     }
 
     @Override
-    public Set<JobRole> getAll() {
-        return this.jobRoleRepository.getAll();
-    }
-
-    @Override
     public JobRole create(JobRole jobRole) {
         return this.jobRoleRepository.create(jobRole);
     }
@@ -39,5 +34,10 @@ public class JobRoleServiceImpl implements JobRoleService {
     @Override
     public void delete(String jobRoleId) {
         this.jobRoleRepository.delete(jobRoleId);
+    }
+
+    @Override
+    public Set<JobRole> getAll() {
+        return this.jobRoleRepository.getAll();
     }
 }
