@@ -48,16 +48,19 @@ public class AddressRepositoryImplTest {
     public void update() {
         String newStreetName = "Berkley";
         Address newAddress = new Address.Builder().copy(address).streetName(newStreetName).build();
-        addressRepository.update(newAddress);
-        Assert.assertEquals(newAddress.getStreetName(), addressRepository.read(newAddress.getAddressId()).getStreetName());
+        addresses.add(addressRepository.update(newAddress));
+        Assert.assertEquals(newAddress.getStreetName(), addressRepository.read(newAddress.
+                getAddressId()).getStreetName());
+        System.out.println(newAddress);
     }
 
     @Test
     public void delete() {
-        address = AddressFactory.createAddress("0003", "21", "Melody", "Close");
-        addresses.add(addressRepository.create(address));
+        Address deleteAddress = AddressFactory.createAddress("0003", "21",
+                "Melody", "Close");
+        addresses.add(addressRepository.create(deleteAddress));
         addressRepository.delete(address.getAddressId());
-        addresses.remove(address);
+        addresses.remove(deleteAddress);
         Assert.assertEquals(addresses.size(), addressRepository.getAll().size());
     }
 

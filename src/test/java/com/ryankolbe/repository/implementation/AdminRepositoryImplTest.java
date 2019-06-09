@@ -33,7 +33,6 @@ public class AdminRepositoryImplTest {
     public void create() {
         Admin newAdmin = AdminFactory.createAdmin("0002", "WXYZ","Pass.987");
         admins.add(adminRepository.create(newAdmin));
-
         Assert.assertEquals(newAdmin.getAdminId(), adminRepository.read(newAdmin.getAdminId()).getAdminId());
     }
 
@@ -47,15 +46,22 @@ public class AdminRepositoryImplTest {
     public void update() {
         String newAdminLogin = "EFGH";
         Admin updateAdmin = new Admin.Builder().copy(admin).adminLogin(newAdminLogin).build();
-        System.out.println(updateAdmin);
-        Assert.assertEquals(newAdminLogin, updateAdmin.getAdminLogin());
+        admins.add(adminRepository.update(updateAdmin));
+        Assert.assertEquals(newAdminLogin, adminRepository.read(updateAdmin.getAdminId()).getAdminLogin());
     }
 
     @Test
     public void delete() {
+        Admin deleteAdmin = AdminFactory.createAdmin("0003", "Dude", "Pass546");
+        admins.add(adminRepository.create(deleteAdmin));
+        adminRepository.delete(deleteAdmin.getAdminId());
+        admins.remove(deleteAdmin);
+        Assert.assertEquals(admins.size(), adminRepository.getAll().size());
     }
 
     @Test
     public void getAll() {
+        Set<Admin> adminSet = adminRepository.getAll();
+        Assert.assertEquals(adminSet, adminRepository.getAll());
     }
 }

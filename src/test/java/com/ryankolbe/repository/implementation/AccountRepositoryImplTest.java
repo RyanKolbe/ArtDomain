@@ -35,30 +35,33 @@ public class AccountRepositoryImplTest {
         Account newAccount = AccountFactory.createAccount("0001", "2345",
                 "Credit Card", "Credit Account");
         accounts.add(accountRepository.create(newAccount));
-        Assert.assertEquals(newAccount.getAccountId(), accountRepository.read(newAccount.getAccountId()).getAccountId());
+        Assert.assertEquals(newAccount.getAccountId(), accountRepository.read(newAccount.getAccountId()).
+                getAccountId());
     }
 
     @Test
     public void read() {
         Account readAccount = accountRepository.getAll().iterator().next();
         accounts.add(readAccount);
-        Assert.assertEquals(readAccount.getAccountId(), accountRepository.read(readAccount.getAccountId()).getAccountId());
+        Assert.assertEquals(readAccount.getAccountId(), accountRepository.read(readAccount.getAccountId()).
+                getAccountId());
     }
 
     @Test
     public void update() {
         String newAccountCategory = "Overdraft";
-        Account updateAccount = new Account.Builder().copy(account).accountCategory(newAccountCategory).build();
-        accountRepository.update(account);
-        System.out.println(updateAccount);
-        Assert.assertEquals(newAccountCategory, updateAccount.getAccountCategory());
+        Account updateAccount = new Account.Builder().copy(account).
+                accountCategory(newAccountCategory).build();
+        accounts.add(accountRepository.update(updateAccount));
+        Assert.assertEquals(newAccountCategory, accountRepository.read(updateAccount.getAccountId()).
+                getAccountCategory());
     }
 
     @Test
     public void delete() {
-        Account deleteAccount = accountRepository.create(AccountFactory.createAccount("4321", "5421",
-                "Platinum Card", "Cheque Account"));
-        accounts.add(deleteAccount);
+        Account deleteAccount = AccountFactory.createAccount("4321",
+                "5421", "Platinum Card", "Cheque Account");
+        accounts.add(accountRepository.create(deleteAccount));
         accounts.remove(deleteAccount);
         accountRepository.getAll().remove(deleteAccount);
         Assert.assertEquals(accounts.size(), accountRepository.getAll().size());
