@@ -5,48 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AdminServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ArtCourseServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ArtStockServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ArtistServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AssetServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ContactServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/CourierServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/CuratorServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/CustomerServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/EventServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ExhibitionServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/GalleryServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/JobRoleServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/LocalityServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/LoginServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/MemberServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/OrderServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PackagingServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PaintingServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PermissionServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ReturnsServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/SculptureServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ServicesServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AddressRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AddressRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ArtCourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ArtCourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ArtistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ArtistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ExhibitionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ExhibitionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/GalleryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/GalleryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/JobRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/JobRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/LocalityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/LocalityServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/AssetRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/AssetRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AccountServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AccountServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AddressServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AddressServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/implementation/AddressRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/repository/implementation/AddressRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ArtCourseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ArtCourseServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ArtistServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ArtistServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ExhibitionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ExhibitionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/GalleryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/GalleryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/JobRoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/JobRoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/LocalityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/LocalityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/repository/implementation/AssetRepositoryImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/repository/implementation/AssetRepositoryImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/service/implementation/AccountServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/service/implementation/AccountServiceImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/service/implementation/AddressServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/service/implementation/AddressServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PaintingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PaintingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ReturnsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ReturnsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/SculptureServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/SculptureServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ServicesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ServicesServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/PaintingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/PaintingServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/PermissionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/PermissionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ReturnsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/ReturnsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/SculptureServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/service/implementation/SculptureServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,10 +70,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/MemberServiceImplTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ServicesServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="359">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,19 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/AccountRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtCourseRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtistRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ArtStockRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ContactRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/CourierRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/CuratorRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/CustomerRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/EventRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ExhibitionRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/GalleryRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/JobRoleRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LocalityRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/LoginRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/MemberRepositoryImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/OrderRepositoryImplTest.java" />
@@ -179,6 +143,19 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/LoginServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/MemberServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/OrderServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PackagingServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PaintingServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PaintingServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PermissionServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ReturnsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ReturnsServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/SculptureServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/SculptureServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ServicesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ServicesServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -213,8 +190,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,16 +293,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ArtDomain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ArtDomain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ryankolbe" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -399,16 +366,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ArtDomain">
-    <configuration name="All in ArtDomain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArtDomain" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobRoleServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ServicesServiceImplTest">
+    <configuration name="PermissionServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -417,13 +376,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.JobRoleServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.PermissionServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalityServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReturnsServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -432,13 +391,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.LocalityServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.ReturnsServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SculptureServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -447,13 +406,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.LoginServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.SculptureServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SculptureServiceImplTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -462,7 +421,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.service.implementation" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.MemberServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.SculptureServiceImplTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServicesServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtDomain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryankolbe.service.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryankolbe.service.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.service.implementation.ServicesServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -470,11 +445,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ArtDomain" />
-        <item itemvalue="JUnit.MemberServiceImplTest" />
-        <item itemvalue="JUnit.LoginServiceImplTest" />
-        <item itemvalue="JUnit.LocalityServiceImplTest" />
-        <item itemvalue="JUnit.JobRoleServiceImplTest" />
+        <item itemvalue="JUnit.ServicesServiceImplTest" />
+        <item itemvalue="JUnit.SculptureServiceImplTest" />
+        <item itemvalue="JUnit.SculptureServiceImplTest.delete" />
+        <item itemvalue="JUnit.ReturnsServiceImplTest" />
+        <item itemvalue="JUnit.PermissionServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -534,44 +509,45 @@
       <workItem from="1558451833839" duration="1727000" />
       <workItem from="1558467548146" duration="13955000" />
       <workItem from="1558552569200" duration="3541000" />
-      <workItem from="1559989327024" duration="53367000" />
+      <workItem from="1559989327024" duration="53677000" />
+      <workItem from="1560180501996" duration="8964000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CourierServiceImplTest - 2019.06.09 at 21h 08m 32s.xml">
-      <configuration name="CourierServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CuratorServiceImplTest - 2019.06.09 at 21h 21m 46s.xml">
-      <configuration name="CuratorServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomerServiceImplTest - 2019.06.09 at 21h 33m 55s.xml">
-      <configuration name="CustomerServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="EventServiceImplTest - 2019.06.09 at 21h 47m 25s.xml">
-      <configuration name="EventServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExhibitionServiceImplTest - 2019.06.09 at 22h 01m 45s.xml">
-      <configuration name="ExhibitionServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ArtDomain - 2019.06.09 at 22h 02m 16s.xml">
-      <configuration name="All in ArtDomain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GalleryServiceImplTest - 2019.06.09 at 22h 14m 25s.xml">
-      <configuration name="GalleryServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JobRoleServiceImplTest - 2019.06.09 at 22h 26m 22s.xml">
-      <configuration name="JobRoleServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LocalityServiceImplTest - 2019.06.09 at 23h 03m 30s.xml">
-      <configuration name="LocalityServiceImplTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginServiceImplTest - 2019.06.09 at 23h 17m 27s.xml">
       <configuration name="LoginServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MemberServiceImplTest - 2019.06.09 at 23h 29m 32s.xml">
+      <configuration name="MemberServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_ArtDomain - 2019.06.09 at 23h 31m 32s.xml">
+      <configuration name="All in ArtDomain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderServiceImplTest - 2019.06.10 at 17h 44m 50s.xml">
+      <configuration name="OrderServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PackagingServiceImplTest - 2019.06.10 at 18h 20m 01s.xml">
+      <configuration name="PackagingServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PermissionServiceImplTest - 2019.06.10 at 18h 46m 57s.xml">
+      <configuration name="PermissionServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReturnsServiceImplTest - 2019.06.10 at 21h 47m 11s.xml">
+      <configuration name="ReturnsServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SculptureServiceImplTest - 2019.06.10 at 22h 07m 40s.xml">
+      <configuration name="SculptureServiceImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SculptureServiceImplTest_delete - 2019.06.10 at 22h 09m 47s.xml">
+      <configuration name="SculptureServiceImplTest.delete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SculptureServiceImplTest - 2019.06.10 at 22h 10m 04s.xml">
+      <configuration name="SculptureServiceImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337315000" />
+    <option name="totallyTimeSpent" value="346589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,15 +562,15 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.52979064" visible="true" weight="0.15279879" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.52818036" visible="true" weight="0.19969743" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Web" order="5" sideWeight="0.47020933" side_tool="true" weight="0.2549168" />
+      <window_info id="Web" order="5" sideWeight="0.47181964" side_tool="true" weight="0.19969743" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27858293" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28985506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -676,160 +652,6 @@
     <SUITE FILE_PATH="coverage/ArtDomain$All_in_ArtDomain.ic" NAME="All in ArtDomain Coverage Results" MODIFIED="1560088786086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/PaintingRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/PaintingRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/PermissionRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/PermissionRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/ReturnsRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ReturnsRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/SculptureRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/SculptureRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1012#1013#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/ServicesRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/ServicesRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/domain/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AdminRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/repository/implementation/AssetRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AccountRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/implementation/AddressRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1392,10 +1214,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/MemberServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PackagingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PackagingServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PaintingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/OrderServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-247">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PaintingServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/PermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ReturnsServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/SculptureServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ReturnsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/PermissionServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/SculptureServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/service/implementation/ServicesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ServicesServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

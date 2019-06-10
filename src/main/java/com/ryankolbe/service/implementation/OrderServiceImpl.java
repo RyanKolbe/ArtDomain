@@ -17,11 +17,6 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public Set<Order> getAll() {
-        return this.orderRepository.getAll();
-    }
-
-    @Override
     public Order create(Order order) {
         return this.orderRepository.create(order);
     }
@@ -39,5 +34,10 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void delete(String orderId) {
         this.orderRepository.delete(orderId);
+    }
+
+    @Override
+    public Set<Order> getAll() {
+        return this.orderRepository.getAll();
     }
 }

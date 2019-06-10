@@ -17,11 +17,6 @@ public class SculptureServiceImpl implements SculptureService {
     }
 
     @Override
-    public Set<Sculpture> getAll() {
-        return this.sculptureRepository.getAll();
-    }
-
-    @Override
     public Sculpture create(Sculpture sculpture) {
         return this.sculptureRepository.create(sculpture);
     }
@@ -39,5 +34,10 @@ public class SculptureServiceImpl implements SculptureService {
     @Override
     public void delete(String sculptureId) {
         this.sculptureRepository.delete(sculptureId);
+    }
+
+    @Override
+    public Set<Sculpture> getAll() {
+        return this.sculptureRepository.getAll();
     }
 }

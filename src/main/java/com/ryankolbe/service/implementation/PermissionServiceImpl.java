@@ -15,12 +15,6 @@ public class PermissionServiceImpl implements PermissionService {
     private PermissionServiceImpl() {
         this.permissionRepository = PermissionRepositoryImpl.getPermissionRepository();
     }
-
-    @Override
-    public Set<Permission> getAll() {
-        return this.permissionRepository.getAll();
-    }
-
     @Override
     public Permission create(Permission permission) {
         return this.permissionRepository.create(permission);
@@ -40,4 +34,10 @@ public class PermissionServiceImpl implements PermissionService {
     public void delete(String permissionId) {
         this.permissionRepository.delete(permissionId);
     }
+
+    @Override
+    public Set<Permission> getAll() {
+        return this.permissionRepository.getAll();
+    }
+
 }

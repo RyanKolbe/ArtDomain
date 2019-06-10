@@ -15,12 +15,6 @@ public class ReturnsServiceImpl implements ReturnsService {
     private ReturnsServiceImpl() {
         this.returnsRepository = ReturnsRepositoryImpl.getReturnsRepository();
     }
-
-    @Override
-    public Set<Returns> getAll() {
-        return this.returnsRepository.getAll();
-    }
-
     @Override
     public Returns create(Returns returns) {
         return this.returnsRepository.create(returns);
@@ -39,5 +33,10 @@ public class ReturnsServiceImpl implements ReturnsService {
     @Override
     public void delete(String returnsId) {
         this.returnsRepository.delete(returnsId);
+    }
+
+    @Override
+    public Set<Returns> getAll() {
+        return this.returnsRepository.getAll();
     }
 }

@@ -17,11 +17,6 @@ public class ServicesServiceImpl implements ServicesService {
     }
 
     @Override
-    public Set<Services> getAll() {
-        return this.servicesRepository.getAll();
-    }
-
-    @Override
     public Services create(Services services) {
         return this.servicesRepository.create(services);
     }
@@ -39,5 +34,10 @@ public class ServicesServiceImpl implements ServicesService {
     @Override
     public void delete(String servicesId) {
         this.servicesRepository.delete(servicesId);
+    }
+
+    @Override
+    public Set<Services> getAll() {
+        return this.servicesRepository.getAll();
     }
 }

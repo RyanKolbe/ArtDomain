@@ -17,11 +17,6 @@ public class PaintingServiceImpl implements PaintingService {
     }
 
     @Override
-    public Set<Painting> getAll() {
-        return this.paintingRepository.getAll();
-    }
-
-    @Override
     public Painting create(Painting painting) {
         return this.paintingRepository.create(painting);
     }
@@ -39,5 +34,10 @@ public class PaintingServiceImpl implements PaintingService {
     @Override
     public void delete(String paintingId) {
         this.paintingRepository.delete(paintingId);
+    }
+
+    @Override
+    public Set<Painting> getAll() {
+        return this.paintingRepository.getAll();
     }
 }
