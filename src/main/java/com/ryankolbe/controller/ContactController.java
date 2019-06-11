@@ -18,13 +18,13 @@ public class ContactController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Contact create(Contact contact) {
+    public Contact create(@RequestBody Contact contact) {
         return contactService.create(contact);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Contact update(Contact contact) {
+    public Contact update(@RequestBody Contact contact) {
         return contactService.update(contact);
     }
 

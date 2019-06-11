@@ -18,13 +18,13 @@ public class ArtCourseController {
 
     @PostMapping("/create")
     @ResponseBody
-    public ArtCourse create(ArtCourse artCourse) {
+    public ArtCourse create(@RequestBody ArtCourse artCourse) {
         return artCourseService.create(artCourse);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public ArtCourse update(ArtCourse artCourse) {
+    public ArtCourse update(@RequestBody ArtCourse artCourse) {
         return artCourseService.update(artCourse);
     }
 

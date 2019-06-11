@@ -18,13 +18,13 @@ public class ArtStockController {
 
     @PostMapping("/create")
     @ResponseBody
-    public ArtStock create(ArtStock artStock) {
+    public ArtStock create(@RequestBody ArtStock artStock) {
         return artStockService.create(artStock);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public ArtStock update(ArtStock artStock) {
+    public ArtStock update(@RequestBody ArtStock artStock) {
         return artStockService.update(artStock);
     }
 

@@ -18,13 +18,13 @@ public class JobRoleController {
 
     @PostMapping("/create")
     @ResponseBody
-    public JobRole create(JobRole jobRole) {
+    public JobRole create(@RequestBody JobRole jobRole) {
         return jobRoleService.create(jobRole);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public JobRole update(JobRole jobRole) {
+    public JobRole update(@RequestBody JobRole jobRole) {
         return jobRoleService.update(jobRole);
     }
 

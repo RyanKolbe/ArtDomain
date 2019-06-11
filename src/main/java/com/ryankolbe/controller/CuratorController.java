@@ -18,13 +18,13 @@ public class CuratorController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Curator create(Curator curator) {
+    public Curator create(@RequestBody Curator curator) {
         return curatorService.create(curator);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Curator update(Curator curator) {
+    public Curator update(@RequestBody Curator curator) {
         return curatorService.update(curator);
     }
 

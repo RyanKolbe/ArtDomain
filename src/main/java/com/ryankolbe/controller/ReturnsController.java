@@ -18,13 +18,13 @@ public class ReturnsController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Returns create(Returns returns) {
+    public Returns create(@RequestBody Returns returns) {
         return returnsService.create(returns);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Returns update(Returns returns) {
+    public Returns update(@RequestBody Returns returns) {
         return returnsService.update(returns);
     }
 

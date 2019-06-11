@@ -18,13 +18,13 @@ public class GalleryController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Gallery create(Gallery gallery) {
+    public Gallery create(@RequestBody Gallery gallery) {
         return galleryService.create(gallery);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Gallery update(Gallery gallery) {
+    public Gallery update(@RequestBody Gallery gallery) {
         return galleryService.update(gallery);
     }
 

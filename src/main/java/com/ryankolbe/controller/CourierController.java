@@ -18,13 +18,13 @@ public class CourierController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Courier create(Courier courier) {
+    public Courier create(@RequestBody Courier courier) {
         return courierService.create(courier);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Courier update(Courier courier) {
+    public Courier update(@RequestBody Courier courier) {
         return courierService.update(courier);
     }
 

@@ -18,13 +18,13 @@ public class PermissionController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Permission create(Permission permission) {
+    public Permission create(@RequestBody Permission permission) {
         return permissionService.create(permission);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Permission update(Permission permission) {
+    public Permission update(@RequestBody Permission permission) {
         return permissionService.update(permission);
     }
 

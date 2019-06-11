@@ -18,13 +18,13 @@ public class AccountController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Account create(Account account) {
+    public Account create(@RequestBody Account account) {
         return accountService.create(account);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Account update(Account account) {
+    public Account update(@RequestBody Account account) {
         return accountService.update(account);
     }
 

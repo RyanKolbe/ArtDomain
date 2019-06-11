@@ -18,13 +18,13 @@ public class EventController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Event create(Event event) {
+    public Event create(@RequestBody Event event) {
         return eventService.create(event);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Event update(Event event) {
+    public Event update(@RequestBody Event event) {
         return eventService.update(event);
     }
 

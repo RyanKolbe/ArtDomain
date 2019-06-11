@@ -18,13 +18,13 @@ public class PaintingController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Painting create(Painting painting) {
+    public Painting create(@RequestBody Painting painting) {
         return paintingService.create(painting);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Painting update(Painting painting) {
+    public Painting update(@RequestBody Painting painting) {
         return paintingService.update(painting);
     }
 

@@ -18,13 +18,13 @@ public class AdminController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Admin create(Admin admin) {
+    public Admin create(@RequestBody Admin admin) {
         return adminService.create(admin);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Admin update(Admin admin) {
+    public Admin update(@RequestBody Admin admin) {
         return adminService.update(admin);
     }
 

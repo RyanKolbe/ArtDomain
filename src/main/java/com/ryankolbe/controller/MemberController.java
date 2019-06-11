@@ -18,13 +18,13 @@ public class MemberController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Member create(Member member) {
+    public Member create(@RequestBody Member member) {
         return memberService.create(member);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Member update(Member member) {
+    public Member update(@RequestBody Member member) {
         return memberService.update(member);
     }
 

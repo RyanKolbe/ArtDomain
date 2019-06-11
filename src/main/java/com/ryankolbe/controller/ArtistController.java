@@ -18,13 +18,13 @@ public class ArtistController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Artist create(Artist artist) {
+    public Artist create(@RequestBody Artist artist) {
         return artistService.create(artist);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Artist update(Artist artist) {
+    public Artist update(@RequestBody Artist artist) {
         return artistService.update(artist);
     }
 

@@ -18,13 +18,13 @@ public class LoginController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Login create(Login login) {
+    public Login create(@RequestBody Login login) {
         return loginService.create(login);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Login update(Login login) {
+    public Login update(@RequestBody Login login) {
         return loginService.update(login);
     }
 

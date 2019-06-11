@@ -18,13 +18,13 @@ public class ExhibitionController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Exhibition create(Exhibition exhibition) {
+    public Exhibition create(@RequestBody Exhibition exhibition) {
         return exhibitionService.create(exhibition);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Exhibition update(Exhibition exhibition) {
+    public Exhibition update(@RequestBody Exhibition exhibition) {
         return exhibitionService.update(exhibition);
     }
 

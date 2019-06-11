@@ -18,13 +18,13 @@ public class CustomerController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Customer create(Customer customer) {
+    public Customer create(@RequestBody Customer customer) {
         return customerService.create(customer);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Customer update(Customer customer) {
+    public Customer update(@RequestBody Customer customer) {
         return customerService.update(customer);
     }
 

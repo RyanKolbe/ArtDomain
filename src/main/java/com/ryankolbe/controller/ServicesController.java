@@ -18,13 +18,13 @@ public class ServicesController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Services create(Services services) {
+    public Services create(@RequestBody Services services) {
         return servicesService.create(services);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Services update(Services services) {
+    public Services update(@RequestBody Services services) {
         return servicesService.update(services);
     }
 

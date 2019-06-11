@@ -18,13 +18,13 @@ public class LocalityController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Locality create(Locality locality) {
+    public Locality create(@RequestBody Locality locality) {
         return localityService.create(locality);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Locality update(Locality locality) {
+    public Locality update(@RequestBody Locality locality) {
         return localityService.update(locality);
     }
 

@@ -18,13 +18,13 @@ public class PackagingController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Packaging create(Packaging packaging) {
+    public Packaging create(@RequestBody Packaging packaging) {
         return packagingService.create(packaging);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Packaging update(Packaging packaging) {
+    public Packaging update(@RequestBody Packaging packaging) {
         return packagingService.update(packaging);
     }
 

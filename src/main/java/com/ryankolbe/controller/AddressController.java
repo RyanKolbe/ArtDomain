@@ -18,13 +18,13 @@ public class AddressController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Address create(Address address) {
+    public Address create(@RequestBody Address address) {
         return addressService.create(address);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Address update(Address address) {
+    public Address update(@RequestBody Address address) {
         return addressService.update(address);
     }
 

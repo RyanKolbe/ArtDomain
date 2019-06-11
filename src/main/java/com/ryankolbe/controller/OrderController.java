@@ -18,13 +18,13 @@ public class OrderController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Order create(Order order) {
+    public Order create(@RequestBody Order order) {
         return orderService.create(order);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Order update(Order order) {
+    public Order update(@RequestBody Order order) {
         return orderService.update(order);
     }
 

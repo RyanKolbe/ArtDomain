@@ -18,13 +18,13 @@ public class SculptureController {
 
     @PostMapping("/create")
     @ResponseBody
-    public Sculpture create(Sculpture sculpture) {
+    public Sculpture create(@RequestBody Sculpture sculpture) {
         return sculptureService.create(sculpture);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Sculpture update(Sculpture sculpture) {
+    public Sculpture update(@RequestBody Sculpture sculpture) {
         return sculptureService.update(sculpture);
     }
 
