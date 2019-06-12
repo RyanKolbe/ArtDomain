@@ -4,15 +4,16 @@ import com.ryankolbe.domain.Account;
 import com.ryankolbe.service.AccountService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.Set;
 
 @RestController
-@RequestMapping("/account")
+@RequestMapping(value = "/account")
 public class AccountController {
     private final AccountService accountService;
 
-    public AccountController(@Qualifier("AccountServiceImpl") AccountService accountService) {
+    public AccountController(@Qualifier("AccountServiceImpl") AccountService accountService, RestTemplate restTemplate) {
         this.accountService = accountService;
     }
 
