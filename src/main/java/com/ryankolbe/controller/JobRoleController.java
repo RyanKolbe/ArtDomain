@@ -22,7 +22,7 @@ public class JobRoleController {
         return jobRoleService.create(jobRole);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public JobRole update(@RequestBody JobRole jobRole) {
         return jobRoleService.update(jobRole);
@@ -34,7 +34,7 @@ public class JobRoleController {
         return jobRoleService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         jobRoleService.delete(id);

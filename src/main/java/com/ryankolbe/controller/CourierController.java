@@ -22,7 +22,7 @@ public class CourierController {
         return courierService.create(courier);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Courier update(@RequestBody Courier courier) {
         return courierService.update(courier);
@@ -34,7 +34,7 @@ public class CourierController {
         return courierService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         courierService.delete(id);

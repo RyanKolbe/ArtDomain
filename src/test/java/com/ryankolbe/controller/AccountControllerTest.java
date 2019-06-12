@@ -13,6 +13,9 @@ import org.springframework.http.*;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @RunWith(SpringRunner.class)
 public class AccountControllerTest {
@@ -25,8 +28,9 @@ public class AccountControllerTest {
         Account account = AccountFactory.createAccount("0001",
                 "1234", "Ryan", "Yolo");
         uRL = "http://localhost:8080/account";
-        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create", account,
-                Account.class);
+        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create",
+                account, Account.class);
+        System.out.println(postResponse.toString());
     }
 
     @Test
@@ -36,40 +40,37 @@ public class AccountControllerTest {
         ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create", account,
                 Account.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
+        System.out.println(postResponse.toString());
     }
 
     @Test
     public void update() {
-        int id = 1;
-        Account account = testRestTemplate.getForObject(uRL + "/read/" + id, Account.class);
-        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create", account,
-                Account.class);
-        System.out.println(postResponse);
-        testRestTemplate.put(uRL + "/account/" + id, account);
-        int newId = 3;
-        Account updatedStudent = testRestTemplate.getForObject(uRL + "/update/" + newId, Account.class);
-        Assert.assertNotNull(updatedStudent);
-        System.out.println(updatedStudent);
+        Map<String, String> parameters = new HashMap<>();
+        parameters.put("id", "0002");
+        Account account = AccountFactory.createAccount("0003",
+                "4658", "Rea", "Credit");
+        testRestTemplate.put(uRL + "/update/", parameters, account);
     }
 
     @Test
     public void read() {
-
         Account account = testRestTemplate.getForObject(uRL + "/read/0001",
                 Account.class);
-        System.out.println(account.getAccountName());
         Assert.assertNotNull(account);
-
     }
 
     @Test
     public void delete() {
-        int id = 2;
-        Account account = testRestTemplate.getForObject(uRL + "/students/" + id, Account.class);
-        Assert.assertNotNull(account);
-        testRestTemplate.delete(uRL + "/students/" + id);
+        Account account = AccountFactory.createAccount("0002",
+                "2465", "Deidre", "Credit");
+        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create",
+                account, Account.class);
+        Map<String, String> parameters = new HashMap<>();
+        parameters.put("id", "0002");
+        testRestTemplate.delete(uRL + "/delete/" + parameters, Account.class);
         try {
-            account = testRestTemplate.getForObject(uRL + "/students/" + id, Account.class);
+            Account deleteAccount = testRestTemplate.getForObject(uRL + "/read/0002", Account.class);
+            System.out.println(deleteAccount);
         } catch (final HttpClientErrorException e) {
             Assert.assertEquals(e.getStatusCode(), HttpStatus.NOT_FOUND);
         }
@@ -82,5 +83,6 @@ public class AccountControllerTest {
         HttpEntity<String> response = testRestTemplate.exchange(
                 uRL + "/getAll/all", HttpMethod.GET,
                 stringHttpEntity, String.class);
+        Assert.assertNotNull(response.getBody());
     }
 }

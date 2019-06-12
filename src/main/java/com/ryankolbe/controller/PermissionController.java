@@ -22,7 +22,7 @@ public class PermissionController {
         return permissionService.create(permission);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Permission update(@RequestBody Permission permission) {
         return permissionService.update(permission);
@@ -34,7 +34,7 @@ public class PermissionController {
         return permissionService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         permissionService.delete(id);

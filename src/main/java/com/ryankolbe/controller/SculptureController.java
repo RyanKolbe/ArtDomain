@@ -22,7 +22,7 @@ public class SculptureController {
         return sculptureService.create(sculpture);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Sculpture update(@RequestBody Sculpture sculpture) {
         return sculptureService.update(sculpture);
@@ -34,7 +34,7 @@ public class SculptureController {
         return sculptureService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         sculptureService.delete(id);

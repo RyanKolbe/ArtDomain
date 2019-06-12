@@ -22,7 +22,7 @@ public class MemberController {
         return memberService.create(member);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Member update(@RequestBody Member member) {
         return memberService.update(member);
@@ -34,7 +34,7 @@ public class MemberController {
         return memberService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         memberService.delete(id);

@@ -22,7 +22,7 @@ public class OrderController {
         return orderService.create(order);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Order update(@RequestBody Order order) {
         return orderService.update(order);
@@ -34,7 +34,7 @@ public class OrderController {
         return orderService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         orderService.delete(id);

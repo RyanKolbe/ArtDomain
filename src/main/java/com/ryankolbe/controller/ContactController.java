@@ -22,7 +22,7 @@ public class ContactController {
         return contactService.create(contact);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Contact update(@RequestBody Contact contact) {
         return contactService.update(contact);
@@ -34,7 +34,7 @@ public class ContactController {
         return contactService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         contactService.delete(id);

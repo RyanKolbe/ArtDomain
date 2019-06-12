@@ -23,7 +23,7 @@ public class AccountController {
         return accountService.create(account);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Account update(@RequestBody Account account) {
         return accountService.update(account);
@@ -35,7 +35,7 @@ public class AccountController {
         return accountService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         accountService.delete(id);

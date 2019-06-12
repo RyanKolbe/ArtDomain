@@ -22,7 +22,7 @@ public class GalleryController {
         return galleryService.create(gallery);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Gallery update(@RequestBody Gallery gallery) {
         return galleryService.update(gallery);
@@ -34,7 +34,7 @@ public class GalleryController {
         return galleryService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         galleryService.delete(id);

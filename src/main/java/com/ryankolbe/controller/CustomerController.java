@@ -22,7 +22,7 @@ public class CustomerController {
         return customerService.create(customer);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Customer update(@RequestBody Customer customer) {
         return customerService.update(customer);
@@ -34,7 +34,7 @@ public class CustomerController {
         return customerService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         customerService.delete(id);

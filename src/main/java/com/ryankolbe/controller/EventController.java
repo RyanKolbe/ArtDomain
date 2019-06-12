@@ -22,7 +22,7 @@ public class EventController {
         return eventService.create(event);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Event update(@RequestBody Event event) {
         return eventService.update(event);
@@ -34,7 +34,7 @@ public class EventController {
         return eventService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         eventService.delete(id);

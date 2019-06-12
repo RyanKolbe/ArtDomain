@@ -22,7 +22,7 @@ public class ExhibitionController {
         return exhibitionService.create(exhibition);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Exhibition update(@RequestBody Exhibition exhibition) {
         return exhibitionService.update(exhibition);
@@ -34,7 +34,7 @@ public class ExhibitionController {
         return exhibitionService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         exhibitionService.delete(id);

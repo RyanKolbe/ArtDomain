@@ -22,7 +22,7 @@ public class LoginController {
         return loginService.create(login);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Login update(@RequestBody Login login) {
         return loginService.update(login);
@@ -34,7 +34,7 @@ public class LoginController {
         return loginService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         loginService.delete(id);

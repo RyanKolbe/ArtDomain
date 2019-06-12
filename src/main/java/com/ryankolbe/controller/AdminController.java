@@ -22,7 +22,7 @@ public class AdminController {
         return adminService.create(admin);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Admin update(@RequestBody Admin admin) {
         return adminService.update(admin);
@@ -34,7 +34,7 @@ public class AdminController {
         return adminService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         adminService.delete(id);

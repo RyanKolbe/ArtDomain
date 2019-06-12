@@ -22,7 +22,7 @@ public class LocalityController {
         return localityService.create(locality);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Locality update(@RequestBody Locality locality) {
         return localityService.update(locality);
@@ -34,7 +34,7 @@ public class LocalityController {
         return localityService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         localityService.delete(id);

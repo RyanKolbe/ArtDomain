@@ -22,7 +22,7 @@ public class CuratorController {
         return curatorService.create(curator);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Curator update(@RequestBody Curator curator) {
         return curatorService.update(curator);
@@ -34,7 +34,7 @@ public class CuratorController {
         return curatorService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         curatorService.delete(id);

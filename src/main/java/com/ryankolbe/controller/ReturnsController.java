@@ -22,7 +22,7 @@ public class ReturnsController {
         return returnsService.create(returns);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Returns update(@RequestBody Returns returns) {
         return returnsService.update(returns);
@@ -34,7 +34,7 @@ public class ReturnsController {
         return returnsService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         returnsService.delete(id);

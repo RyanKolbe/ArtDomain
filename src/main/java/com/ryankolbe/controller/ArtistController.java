@@ -22,7 +22,7 @@ public class ArtistController {
         return artistService.create(artist);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Artist update(@RequestBody Artist artist) {
         return artistService.update(artist);
@@ -34,7 +34,7 @@ public class ArtistController {
         return artistService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         artistService.delete(id);

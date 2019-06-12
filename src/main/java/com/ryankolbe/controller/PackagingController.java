@@ -22,7 +22,7 @@ public class PackagingController {
         return packagingService.create(packaging);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Packaging update(@RequestBody Packaging packaging) {
         return packagingService.update(packaging);
@@ -34,7 +34,7 @@ public class PackagingController {
         return packagingService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         packagingService.delete(id);

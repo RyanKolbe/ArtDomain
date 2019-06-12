@@ -22,7 +22,7 @@ public class ArtStockController {
         return artStockService.create(artStock);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public ArtStock update(@RequestBody ArtStock artStock) {
         return artStockService.update(artStock);
@@ -34,7 +34,7 @@ public class ArtStockController {
         return artStockService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         artStockService.delete(id);

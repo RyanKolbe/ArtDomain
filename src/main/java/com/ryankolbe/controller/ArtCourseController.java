@@ -22,7 +22,7 @@ public class ArtCourseController {
         return artCourseService.create(artCourse);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public ArtCourse update(@RequestBody ArtCourse artCourse) {
         return artCourseService.update(artCourse);
@@ -34,7 +34,7 @@ public class ArtCourseController {
         return artCourseService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         artCourseService.delete(id);

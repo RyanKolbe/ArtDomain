@@ -22,7 +22,7 @@ public class PaintingController {
         return paintingService.create(painting);
     }
 
-    @PostMapping("/update")
+    @PutMapping("/update")
     @ResponseBody
     public Painting update(@RequestBody Painting painting) {
         return paintingService.update(painting);
@@ -34,7 +34,7 @@ public class PaintingController {
         return paintingService.read(id);
     }
 
-    @GetMapping("/delete/{id}")
+    @DeleteMapping("/delete/{id}")
     @ResponseBody
     public void delete(@PathVariable String id) {
         paintingService.delete(id);
