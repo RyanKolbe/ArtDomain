@@ -28,8 +28,8 @@ public class PackagingControllerTest {
         Packaging packaging = PackagingFactory.createPackaging("0001",
                 "123", "154", "253");
         uRL = "http://localhost:8080/packaging";
-        ResponseEntity<Packaging> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                packaging, Packaging.class);
+        ResponseEntity<Packaging> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", packaging, Packaging.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class PackagingControllerTest {
     public void create() {
         Packaging packaging = PackagingFactory.createPackaging("0002",
                 "465", "563", "145");
-        ResponseEntity<Packaging> postResponse = testRestTemplate.postForEntity(uRL + "/create", packaging,
-                Packaging.class);
+        ResponseEntity<Packaging> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", packaging, Packaging.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class PackagingControllerTest {
     public void delete() {
         Packaging packaging = PackagingFactory.createPackaging("0002",
                 "246", "652", "234");
-        ResponseEntity<Packaging> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                packaging, Packaging.class);
+        ResponseEntity<Packaging> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", packaging, Packaging.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Packaging.class);

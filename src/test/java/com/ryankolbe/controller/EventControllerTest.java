@@ -30,8 +30,8 @@ public class EventControllerTest {
         Event event = EventFactory.createEvent("0001",
                 "Art Of Pain", LocalDate.parse("2018-10-01"), LocalTime.parse("10:00:00"));
         uRL = "http://localhost:8080/event";
-        ResponseEntity<Event> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                event, Event.class);
+        ResponseEntity<Event> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", event, Event.class);
         System.out.println(postResponse.toString());
     }
 
@@ -39,8 +39,8 @@ public class EventControllerTest {
     public void create() {
         Event event = EventFactory.createEvent("0002",
                 "Human Nature Visualized", LocalDate.parse("2018-10-01"), LocalTime.parse("10:00:00"));
-        ResponseEntity<Event> postResponse = testRestTemplate.postForEntity(uRL + "/create", event,
-                Event.class);
+        ResponseEntity<Event> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", event, Event.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -65,8 +65,8 @@ public class EventControllerTest {
     public void delete() {
         Event event = EventFactory.createEvent("0002",
                 "True Meanings Through Paint", LocalDate.parse("2018-10-01"), LocalTime.parse("10:00:00"));
-        ResponseEntity<Event> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                event, Event.class);
+        ResponseEntity<Event> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", event, Event.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Event.class);

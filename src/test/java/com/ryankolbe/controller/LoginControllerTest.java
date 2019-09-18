@@ -28,8 +28,8 @@ public class LoginControllerTest {
         Login login = LoginFactory.createLogin("0001",
                 "Ryan", "1234");
         uRL = "http://localhost:8080/login";
-        ResponseEntity<Login> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                login, Login.class);
+        ResponseEntity<Login> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", login, Login.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class LoginControllerTest {
     public void create() {
         Login login = LoginFactory.createLogin("0002",
                 "Deidre", "2465");
-        ResponseEntity<Login> postResponse = testRestTemplate.postForEntity(uRL + "/create", login,
-                Login.class);
+        ResponseEntity<Login> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", login, Login.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class LoginControllerTest {
     public void delete() {
         Login login = LoginFactory.createLogin("0002",
                 "Deidre", "2465");
-        ResponseEntity<Login> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                login, Login.class);
+        ResponseEntity<Login> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", login, Login.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Login.class);

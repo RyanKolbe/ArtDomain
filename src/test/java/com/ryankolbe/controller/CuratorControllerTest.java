@@ -28,8 +28,8 @@ public class CuratorControllerTest {
         Curator curator = CuratorFactory.createCurator("0001",
                  "Ryan", "Kolbe");
         uRL = "http://localhost:8080/curator";
-        ResponseEntity<Curator> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                curator, Curator.class);
+        ResponseEntity<Curator> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", curator, Curator.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class CuratorControllerTest {
     public void create() {
         Curator curator = CuratorFactory.createCurator("0002",
                  "Deidre", "Van Vuuren");
-        ResponseEntity<Curator> postResponse = testRestTemplate.postForEntity(uRL + "/create", curator,
-                Curator.class);
+        ResponseEntity<Curator> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", curator, Curator.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class CuratorControllerTest {
     public void delete() {
         Curator curator = CuratorFactory.createCurator("0002",
                  "Deidre","Kolbe");
-        ResponseEntity<Curator> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                curator, Curator.class);
+        ResponseEntity<Curator> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", curator, Curator.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Curator.class);

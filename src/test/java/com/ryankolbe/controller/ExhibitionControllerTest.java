@@ -29,8 +29,8 @@ public class ExhibitionControllerTest {
         Exhibition exhibition = ExhibitionFactory.createExhibition("0001",
                 "Paint The First Stones", LocalDate.parse("2018-05-16"), LocalDate.parse("2018-05-18"));
         uRL = "http://localhost:8080/exhibition";
-        ResponseEntity<Exhibition> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                exhibition, Exhibition.class);
+        ResponseEntity<Exhibition> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", exhibition, Exhibition.class);
         System.out.println(postResponse.toString());
     }
 
@@ -38,8 +38,8 @@ public class ExhibitionControllerTest {
     public void create() {
         Exhibition exhibition = ExhibitionFactory.createExhibition("0002",
                 "Truth Through Material", LocalDate.parse("2018-05-16"), LocalDate.parse("2018-05-18"));
-        ResponseEntity<Exhibition> postResponse = testRestTemplate.postForEntity(uRL + "/create", exhibition,
-                Exhibition.class);
+        ResponseEntity<Exhibition> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", exhibition, Exhibition.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -65,8 +65,8 @@ public class ExhibitionControllerTest {
         Exhibition exhibition = ExhibitionFactory.createExhibition("0002",
                 "Addressing The Cultural Divide Through Canvas",
                 LocalDate.parse("2018-05-16"), LocalDate.parse("2018-05-18"));
-        ResponseEntity<Exhibition> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                exhibition, Exhibition.class);
+        ResponseEntity<Exhibition> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", exhibition, Exhibition.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Exhibition.class);

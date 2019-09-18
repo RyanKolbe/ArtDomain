@@ -5,15 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PaintingControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PermissionControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ReturnsControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/SculptureControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ServicesControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/security/ArtDomainSecurity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArtDomain.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AccountControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AddressControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AddressControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtCourseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtCourseControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtStockControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtStockControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtistControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtistControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ContactControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ContactControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CourierControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CourierControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CuratorControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CuratorControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CustomerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CustomerControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/EventControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/EventControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ExhibitionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ExhibitionControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/GalleryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/GalleryControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/JobRoleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/JobRoleControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LocalityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LocalityControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LoginControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LoginControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/MemberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/MemberControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/OrderControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PackagingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PackagingControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PaintingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PaintingControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PermissionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PermissionControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ReturnsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ReturnsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/SculptureControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/SculptureControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ServicesControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ServicesControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ArtDomain.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/ArtDomain.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/ArtDomain.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/AccountControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/AccountControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/AddressControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/AddressControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/AdminControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ArtCourseControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ArtCourseControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ArtStockControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ArtStockControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ArtistControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ArtistControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ContactControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ContactControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/CourierControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/CourierControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/CuratorControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/CuratorControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/CustomerControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/CustomerControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/EventControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/EventControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ExhibitionControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ExhibitionControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/GalleryControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/GalleryControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/JobRoleControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/JobRoleControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/LocalityControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/LocalityControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/LoginControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/LoginControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/MemberControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/MemberControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/OrderControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/OrderControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/PackagingControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/PackagingControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/PaintingControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/PaintingControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/PermissionControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/PermissionControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ReturnsControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ReturnsControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/SculptureControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/SculptureControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ServicesControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ryankolbe/controller/ServicesControllerTest.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +71,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="251" />
+    <option name="myElementSize" value="318" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -54,17 +104,14 @@
       </favorite_root>
     </favorites_list>
   </component>
-  <component name="FileEditorManager">
-    <leaf />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Gradle Kotlin DSL Build Script" />
         <option value="Singleton" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,63 +123,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/ServicesServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/util/MiscTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AddressController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ServicesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/SculptureController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ReturnsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PermissionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PaintingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PackagingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LocalityController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/JobRoleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/GalleryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ExhibitionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/EventController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CuratorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CourierController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ContactController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtStockController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtistController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtCourseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AbstractControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AccountControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AddressControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AdminControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtCourseControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtistControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtStockControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ContactControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CourierControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CuratorControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CustomerControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/EventControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ExhibitionControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/GalleryControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/JobRoleControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LocalityControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LoginControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/MemberControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/OrderControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PackagingControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PaintingControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PermissionControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ReturnsControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/SculptureControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ServicesControllerTest.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -140,34 +130,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ArtDomain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="745" />
-  </component>
+  <component name="ProjectId" id="1Qvgz150WeoGuDi6sQPjA5592Ig" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -183,7 +148,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ryankolbe/repository" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -191,7 +156,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -227,11 +192,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in ArtDomain (1)">
-    <configuration name="All in ArtDomain (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in ArtDomain">
+    <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryankolbe.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryankolbe.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.AccountControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtDomain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryankolbe.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryankolbe.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.AccountControllerTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArtDomain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryankolbe.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryankolbe.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.AdminControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,7 +247,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnsControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArtCourseControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
         <pattern>
@@ -253,37 +256,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryankolbe.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.ReturnsControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SculptureControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArtDomain" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ryankolbe.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.SculptureControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServicesControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ArtDomain" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ryankolbe.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ryankolbe.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.ServicesControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryankolbe.controller.ArtCourseControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ArtDomain (1)" />
         <item itemvalue="JUnit.All in ArtDomain" />
-        <item itemvalue="JUnit.ServicesControllerTest" />
-        <item itemvalue="JUnit.SculptureControllerTest" />
-        <item itemvalue="JUnit.ReturnsControllerTest" />
+        <item itemvalue="JUnit.ArtCourseControllerTest" />
+        <item itemvalue="JUnit.AdminControllerTest" />
+        <item itemvalue="JUnit.AccountControllerTest" />
+        <item itemvalue="JUnit.AccountControllerTest.delete" />
       </list>
     </recent_temporary>
   </component>
@@ -360,43 +333,18 @@
       <workItem from="1560266321027" duration="121000" />
       <workItem from="1560267403311" duration="16814000" />
       <workItem from="1560323617373" duration="18836000" />
+      <workItem from="1560353757414" duration="2126000" />
+      <workItem from="1562772919376" duration="2149000" />
+      <workItem from="1568656752854" duration="15453000" />
+      <workItem from="1568732375119" duration="1735000" />
+      <workItem from="1568734969391" duration="82000" />
+      <workItem from="1568748779958" duration="1022000" />
+      <workItem from="1568787105297" duration="3048000" />
+      <workItem from="1568808620006" duration="651000" />
+      <workItem from="1568809677959" duration="609000" />
+      <workItem from="1568810696115" duration="3634000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="LoginControllerTest - 2019.06.12 at 16h 16m 24s.xml">
-      <configuration name="LoginControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MemberControllerTest - 2019.06.12 at 16h 18m 45s.xml">
-      <configuration name="MemberControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderControllerTest - 2019.06.12 at 16h 21m 26s.xml">
-      <configuration name="OrderControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PackagingControllerTest - 2019.06.12 at 16h 23m 50s.xml">
-      <configuration name="PackagingControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_ArtDomain - 2019.06.12 at 16h 24m 21s.xml">
-      <configuration name="All in ArtDomain" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PaintingControllerTest - 2019.06.12 at 16h 28m 51s.xml">
-      <configuration name="PaintingControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PermissionControllerTest - 2019.06.12 at 16h 31m 42s.xml">
-      <configuration name="PermissionControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReturnsControllerTest - 2019.06.12 at 16h 35m 00s.xml">
-      <configuration name="ReturnsControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SculptureControllerTest - 2019.06.12 at 16h 37m 37s.xml">
-      <configuration name="SculptureControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ServicesControllerTest - 2019.06.12 at 16h 41m 14s.xml">
-      <configuration name="ServicesControllerTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,605 +355,34 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52818036" weight="0.22844176" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Web" order="5" sideWeight="0.47181964" side_tool="true" weight="0.19969743" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41545895" />
-      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.3993559" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32850242" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49016643" side_tool="true" weight="0.3268921" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.26797387" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32850242" />
-      <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.5098336" weight="0.33816424" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.22866344" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.32850242" />
-      <window_info anchor="bottom" id="Java Enterprise" order="17" show_stripe_button="false" weight="0.32850242" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" show_stripe_button="false" weight="0.24962178" />
-      <window_info anchor="right" id="Ant Build" order="2" show_stripe_button="false" weight="0.24962178" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.17473525" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.4773071" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.43317232" weight="0.2065053" />
-      <window_info anchor="right" id="Database" order="10" weight="0.33908948" />
-      <window_info anchor="right" id="Bean Validation" order="11" show_stripe_button="false" weight="0.32980332" />
-      <window_info anchor="right" x="92" y="92" width="1182" height="554" id="Byte Code Viewer" order="12" show_stripe_button="false" type="FLOATING" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.52818036" weight="0.22844176" />
-      <window_info id="Designer" order="1" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Web" order="5" sideWeight="0.47181964" side_tool="true" weight="0.19969743" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41545895" />
-      <window_info anchor="bottom" id="Debug" order="3" show_stripe_button="false" weight="0.3993559" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.32850242" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49016643" side_tool="true" weight="0.3268921" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.26797387" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32850242" />
-      <window_info anchor="bottom" id="Favorites" order="13" weight="0.20933977" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.5098336" weight="0.33816424" />
-      <window_info anchor="bottom" id="Inspection Results" order="15" weight="0.22866344" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="16" weight="0.32850242" />
-      <window_info anchor="bottom" id="Java Enterprise" order="17" show_stripe_button="false" weight="0.32850242" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" show_stripe_button="false" weight="0.24962178" />
-      <window_info anchor="right" id="Ant Build" order="2" show_stripe_button="false" weight="0.24962178" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.17473525" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.4773071" />
-      <window_info anchor="right" id="Structure" order="9" sideWeight="0.43317232" weight="0.2065053" />
-      <window_info anchor="right" id="Database" order="10" weight="0.33908948" />
-      <window_info anchor="right" id="Bean Validation" order="11" show_stripe_button="false" weight="0.32980332" />
-      <window_info anchor="right" x="92" y="92" width="1182" height="554" id="Byte Code Viewer" order="12" show_stripe_button="false" type="FLOATING" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ArtDomain$All_in_ArtDomain__2_.ic" NAME="All in ArtDomain (2) Coverage Results" MODIFIED="1560353985318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ArtDomain$com_ryankolbe_util_in_ArtDomain.ic" NAME="com.ryankolbe.util in ArtDomain Coverage Results" MODIFIED="1560200826977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.ryankolbe.util.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/ArtDomain$All_in_ArtDomain.ic" NAME="All in ArtDomain Coverage Results" MODIFIED="1560200490572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/repository/IRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/service/implementation/AccountServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AbstractControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AccountControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AddressController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AddressControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/AdminControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtCourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtCourseControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtistControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtistController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ArtStockControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtStockController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ContactControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CourierController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CourierControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CuratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CuratorControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/CustomerControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/EventControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="66" column="44" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/EventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ExhibitionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ExhibitionControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="46" lean-forward="true" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/GalleryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/GalleryControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/JobRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/JobRoleControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="79" column="16" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LocalityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LocalityControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/LoginControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/MemberController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/MemberControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/OrderControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PackagingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PackagingControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PaintingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PaintingControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PermissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/PermissionControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="69" selection-start-line="65" selection-start-column="69" selection-end-line="65" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ReturnsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ReturnsControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/SculptureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/SculptureControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ServicesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/ryankolbe/controller/ServicesControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="963">
-          <caret line="65" column="95" selection-start-line="65" selection-start-column="95" selection-end-line="65" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/ArtDomain$All_in_ArtDomain__3_.ic" NAME="All in ArtDomain (3) Coverage Results" MODIFIED="1560354191174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ArtDomain$All_in_ArtDomain__1_.ic" NAME="All in ArtDomain (1) Coverage Results" MODIFIED="1560350527182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ArtDomain$All_in_ArtDomain.ic" NAME="All in ArtDomain Coverage Results" MODIFIED="1568814317996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="masterDetails">
     <states>

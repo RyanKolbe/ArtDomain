@@ -28,8 +28,8 @@ public class JobRoleControllerTest {
         JobRole jobRole = JobRoleFactory.createJobRole("0001",
                 "Artist", 8500.00);
         uRL = "http://localhost:8080/jobRole";
-        ResponseEntity<JobRole> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                jobRole, JobRole.class);
+        ResponseEntity<JobRole> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", jobRole, JobRole.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class JobRoleControllerTest {
     public void create() {
         JobRole jobRole = JobRoleFactory.createJobRole("0002",
                 "Curator", 8000.00);
-        ResponseEntity<JobRole> postResponse = testRestTemplate.postForEntity(uRL + "/create", jobRole,
-                JobRole.class);
+        ResponseEntity<JobRole> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", jobRole, JobRole.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class JobRoleControllerTest {
     public void delete() {
         JobRole jobRole = JobRoleFactory.createJobRole("0002",
                 "Driver", 6000.00);
-        ResponseEntity<JobRole> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                jobRole, JobRole.class);
+        ResponseEntity<JobRole> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", jobRole, JobRole.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, JobRole.class);

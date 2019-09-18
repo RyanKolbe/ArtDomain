@@ -28,8 +28,8 @@ public class PermissionControllerTest {
         Permission permission = PermissionFactory.createPermission("0001",
                 "End User", "Admin End User");
         uRL = "http://localhost:8080/permission";
-        ResponseEntity<Permission> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                permission, Permission.class);
+        ResponseEntity<Permission> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", permission, Permission.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class PermissionControllerTest {
     public void create() {
         Permission permission = PermissionFactory.createPermission("0002",
                 "End User", "Database End User");
-        ResponseEntity<Permission> postResponse = testRestTemplate.postForEntity(uRL + "/create", permission,
-                Permission.class);
+        ResponseEntity<Permission> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", permission, Permission.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class PermissionControllerTest {
     public void delete() {
         Permission permission = PermissionFactory.createPermission("0002",
                 "Administrator", "Network Administrator");
-        ResponseEntity<Permission> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                permission, Permission.class);
+        ResponseEntity<Permission> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", permission, Permission.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Permission.class);

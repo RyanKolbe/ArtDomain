@@ -28,8 +28,8 @@ public class SculptureControllerTest {
         Sculpture sculpture = SculptureFactory.createSculpture("0001",
                 "Man Of Steel", "Marble");
         uRL = "http://localhost:8080/sculpture";
-        ResponseEntity<Sculpture> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                sculpture, Sculpture.class);
+        ResponseEntity<Sculpture> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", sculpture, Sculpture.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class SculptureControllerTest {
     public void create() {
         Sculpture sculpture = SculptureFactory.createSculpture("0002",
                 "Greek Goddess Of Life", "Marble");
-        ResponseEntity<Sculpture> postResponse = testRestTemplate.postForEntity(uRL + "/create", sculpture,
-                Sculpture.class);
+        ResponseEntity<Sculpture> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", sculpture, Sculpture.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class SculptureControllerTest {
     public void delete() {
         Sculpture sculpture = SculptureFactory.createSculpture("0002",
                 "Nature Of The Beast", "Reclaimed Wood");
-        ResponseEntity<Sculpture> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                sculpture, Sculpture.class);
+        ResponseEntity<Sculpture> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", sculpture, Sculpture.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Sculpture.class);

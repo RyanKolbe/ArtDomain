@@ -28,8 +28,8 @@ public class OrderControllerTest {
         Order order = OrderFactory.createOrder("0001",
                 2, 250.00);
         uRL = "http://localhost:8080/order";
-        ResponseEntity<Order> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                order, Order.class);
+        ResponseEntity<Order> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", order, Order.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class OrderControllerTest {
     public void create() {
         Order order = OrderFactory.createOrder("0002",
                 6, 120.00);
-        ResponseEntity<Order> postResponse = testRestTemplate.postForEntity(uRL + "/create", order,
-                Order.class);
+        ResponseEntity<Order> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", order, Order.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class OrderControllerTest {
     public void delete() {
         Order order = OrderFactory.createOrder("0002",
                 2, 157.00);
-        ResponseEntity<Order> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                order, Order.class);
+        ResponseEntity<Order> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", order, Order.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Order.class);

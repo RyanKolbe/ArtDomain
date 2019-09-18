@@ -3,13 +3,15 @@ package com.ryankolbe.controller;
 import com.ryankolbe.domain.Account;
 import com.ryankolbe.service.AccountService;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Set;
 
 @RestController
-@RequestMapping(value = "/account")
+@RequestMapping("/account")
 public class AccountController {
     private final AccountService accountService;
 
@@ -17,9 +19,8 @@ public class AccountController {
         this.accountService = accountService;
     }
 
-    @PostMapping("/create")
-    @ResponseBody
-    public Account create(@RequestBody Account account) {
+    @PostMapping(value = "/create", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public Account  create(@RequestBody Account account) {
         return accountService.create(account);
     }
 

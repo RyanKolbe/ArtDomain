@@ -28,8 +28,8 @@ public class ReturnsControllerTest {
         Returns returns = ReturnsFactory.createReturns("0001",
                 "Damaged", 1, 800.00);
         uRL = "http://localhost:8080/returns";
-        ResponseEntity<Returns> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                returns, Returns.class);
+        ResponseEntity<Returns> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", returns, Returns.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class ReturnsControllerTest {
     public void create() {
         Returns returns = ReturnsFactory.createReturns("0002",
                 "Quality", 1, 1000.00);
-        ResponseEntity<Returns> postResponse = testRestTemplate.postForEntity(uRL + "/create", returns,
-                Returns.class);
+        ResponseEntity<Returns> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", returns, Returns.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class ReturnsControllerTest {
     public void delete() {
         Returns returns = ReturnsFactory.createReturns("0002",
                 "Damaged", 2, 700.00);
-        ResponseEntity<Returns> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                returns, Returns.class);
+        ResponseEntity<Returns> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", returns, Returns.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Returns.class);

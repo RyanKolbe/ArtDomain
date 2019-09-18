@@ -28,8 +28,8 @@ public class PaintingControllerTest {
         Painting painting = PaintingFactory.createPainting("0001",
                 "Flying Home", "Water Painting");
         uRL = "http://localhost:8080/painting";
-        ResponseEntity<Painting> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                painting, Painting.class);
+        ResponseEntity<Painting> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", painting, Painting.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class PaintingControllerTest {
     public void create() {
         Painting painting = PaintingFactory.createPainting("0002",
                 "Vehicle Fuming", "Oil Painting");
-        ResponseEntity<Painting> postResponse = testRestTemplate.postForEntity(uRL + "/create", painting,
-                Painting.class);
+        ResponseEntity<Painting> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", painting, Painting.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class PaintingControllerTest {
     public void delete() {
         Painting painting = PaintingFactory.createPainting("0002",
                 "Life On Display", "Pastel Painting");
-        ResponseEntity<Painting> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                painting, Painting.class);
+        ResponseEntity<Painting> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", painting, Painting.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Painting.class);

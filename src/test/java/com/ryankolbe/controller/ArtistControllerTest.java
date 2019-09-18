@@ -28,8 +28,8 @@ public class ArtistControllerTest {
         Artist artist = ArtistFactory.createArtist("0001",
                 "Ryan", "Kolbe");
         uRL = "http://localhost:8080/artist";
-        ResponseEntity<Artist> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                artist, Artist.class);
+        ResponseEntity<Artist> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artist, Artist.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class ArtistControllerTest {
     public void create() {
         Artist artist = ArtistFactory.createArtist("0002",
                 "Deidre", "Van Vuuren");
-        ResponseEntity<Artist> postResponse = testRestTemplate.postForEntity(uRL + "/create", artist,
-                Artist.class);
+        ResponseEntity<Artist> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artist, Artist.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -61,8 +61,8 @@ public class ArtistControllerTest {
     @Test
     public void delete() {
         Artist artist = ArtistFactory.createArtist("0002", "Deidre", "Kolbe");
-        ResponseEntity<Artist> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                artist, Artist.class);
+        ResponseEntity<Artist> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artist, Artist.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Artist.class);

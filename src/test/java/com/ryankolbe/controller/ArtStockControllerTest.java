@@ -28,8 +28,8 @@ public class ArtStockControllerTest {
         ArtStock artStock = ArtStockFactory.createArtStock("0001",
                 "Black Ink", 1, "Ink");
         uRL = "http://localhost:8080/artStock";
-        ResponseEntity<ArtStock> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                artStock, ArtStock.class);
+        ResponseEntity<ArtStock> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artStock, ArtStock.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class ArtStockControllerTest {
     public void create() {
         ArtStock artStock = ArtStockFactory.createArtStock("0002",
                 "White Paper", 3, "Paper");
-        ResponseEntity<ArtStock> postResponse = testRestTemplate.postForEntity(uRL + "/create", artStock,
-                ArtStock.class);
+        ResponseEntity<ArtStock> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artStock, ArtStock.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class ArtStockControllerTest {
     public void delete() {
         ArtStock artStock = ArtStockFactory.createArtStock("0002",
                 "2HB Pencil", 2, "Pencils");
-        ResponseEntity<ArtStock> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                artStock, ArtStock.class);
+        ResponseEntity<ArtStock> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artStock, ArtStock.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, ArtStock.class);

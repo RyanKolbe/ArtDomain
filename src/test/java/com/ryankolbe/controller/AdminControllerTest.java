@@ -27,16 +27,16 @@ public class AdminControllerTest {
     public void setUp() {
         Admin admin = AdminFactory.createAdmin("0001","1234", "Ryan");
         uRL = "http://localhost:8080/admin";
-        ResponseEntity<Admin> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                admin, Admin.class);
+        ResponseEntity<Admin> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", admin, Admin.class);
         System.out.println(postResponse.toString());
     }
 
     @Test
     public void create() {
         Admin admin = AdminFactory.createAdmin("0002","2465", "Deidre");
-        ResponseEntity<Admin> postResponse = testRestTemplate.postForEntity(uRL + "/create", admin,
-                Admin.class);
+        ResponseEntity<Admin> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", admin, Admin.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -59,8 +59,8 @@ public class AdminControllerTest {
     @Test
     public void delete() {
         Admin admin = AdminFactory.createAdmin("0002","2465", "Deidre");
-        ResponseEntity<Admin> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                admin, Admin.class);
+        ResponseEntity<Admin> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", admin, Admin.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Admin.class);

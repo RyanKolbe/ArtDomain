@@ -29,8 +29,8 @@ public class LocalityControllerTest {
                 "Steenberg", "Western Cape", "South Africa",
                 "7958");
         uRL = "http://localhost:8080/locality";
-        ResponseEntity<Locality> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                locality, Locality.class);
+        ResponseEntity<Locality> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", locality, Locality.class);
         System.out.println(postResponse.toString());
     }
 
@@ -39,8 +39,8 @@ public class LocalityControllerTest {
         Locality locality = LocalityFactory.createLocality("0002",
                 "Wynberg", "Western Cape", "South Africa",
                 "4679");
-        ResponseEntity<Locality> postResponse = testRestTemplate.postForEntity(uRL + "/create", locality,
-                Locality.class);
+        ResponseEntity<Locality> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", locality, Locality.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -67,8 +67,8 @@ public class LocalityControllerTest {
         Locality locality = LocalityFactory.createLocality("0002",
                 "Brackenfell", "Western Cape", "South Africa",
                 "8594");
-        ResponseEntity<Locality> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                locality, Locality.class);
+        ResponseEntity<Locality> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", locality, Locality.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Locality.class);

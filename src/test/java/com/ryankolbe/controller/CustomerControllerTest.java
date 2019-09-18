@@ -28,8 +28,8 @@ public class CustomerControllerTest {
         Customer customer = CustomerFactory.createCustomer("0001",
                 "Ryan", "0820546897");
         uRL = "http://localhost:8080/customer";
-        ResponseEntity<Customer> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                customer, Customer.class);
+        ResponseEntity<Customer> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", customer, Customer.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class CustomerControllerTest {
     public void create() {
         Customer customer = CustomerFactory.createCustomer("0002",
                 "Deidre", "0764985612");
-        ResponseEntity<Customer> postResponse = testRestTemplate.postForEntity(uRL + "/create", customer,
-                Customer.class);
+        ResponseEntity<Customer> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", customer, Customer.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class CustomerControllerTest {
     public void delete() {
         Customer customer = CustomerFactory.createCustomer("0002",
                  "Deidre", "0762825979");
-        ResponseEntity<Customer> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                customer, Customer.class);
+        ResponseEntity<Customer> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", customer, Customer.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Customer.class);

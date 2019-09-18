@@ -28,8 +28,8 @@ public class MemberControllerTest {
         Member member = MemberFactory.createMember("0001",
                 "Deidre", "Gold");
         uRL = "http://localhost:8080/member";
-        ResponseEntity<Member> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                member, Member.class);
+        ResponseEntity<Member> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", member, Member.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class MemberControllerTest {
     public void create() {
         Member member = MemberFactory.createMember("0002",
                 "Deidre", "Silver");
-        ResponseEntity<Member> postResponse = testRestTemplate.postForEntity(uRL + "/create", member,
-                Member.class);
+        ResponseEntity<Member> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", member, Member.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class MemberControllerTest {
     public void delete() {
         Member member = MemberFactory.createMember("0002",
                  "Deidre", "Bronze");
-        ResponseEntity<Member> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                member, Member.class);
+        ResponseEntity<Member> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", member, Member.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Member.class);

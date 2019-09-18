@@ -28,8 +28,8 @@ public class GalleryControllerTest {
         Gallery gallery = GalleryFactory.createGallery("0001",
                 "Artscapes", "700");
         uRL = "http://localhost:8080/gallery";
-        ResponseEntity<Gallery> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                gallery, Gallery.class);
+        ResponseEntity<Gallery> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", gallery, Gallery.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class GalleryControllerTest {
     public void create() {
         Gallery gallery = GalleryFactory.createGallery("0002",
                 "Returning Culture", "654");
-        ResponseEntity<Gallery> postResponse = testRestTemplate.postForEntity(uRL + "/create", gallery,
-                Gallery.class);
+        ResponseEntity<Gallery> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", gallery, Gallery.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class GalleryControllerTest {
     public void delete() {
         Gallery gallery = GalleryFactory.createGallery("0002",
                 "Ryan and Deidre Art Studio", "687");
-        ResponseEntity<Gallery> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                gallery, Gallery.class);
+        ResponseEntity<Gallery> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", gallery, Gallery.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Gallery.class);

@@ -28,8 +28,8 @@ public class ContactControllerTest {
         Contact contact = ContactFactory.createContact("0001",
                 "1234.@email.com", "0729597000", "0219597000");
         uRL = "http://localhost:8080/contact";
-        ResponseEntity<Contact> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                contact, Contact.class);
+        ResponseEntity<Contact> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", contact, Contact.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class ContactControllerTest {
     public void create() {
         Contact contact = ContactFactory.createContact("0002",
                 "2465@email.com", "0761459875", "0219487654");
-        ResponseEntity<Contact> postResponse = testRestTemplate.postForEntity(uRL + "/create", contact,
-                Contact.class);
+        ResponseEntity<Contact> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", contact, Contact.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class ContactControllerTest {
     public void delete() {
         Contact contact = ContactFactory.createContact("0002",
                 "2465@email.com", "0862654987", "0412657985");
-        ResponseEntity<Contact> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                contact, Contact.class);
+        ResponseEntity<Contact> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", contact, Contact.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Contact.class);

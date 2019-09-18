@@ -28,8 +28,8 @@ public class ArtCourseControllerTest {
         ArtCourse artCourse = ArtCourseFactory.createArtCourse("0001",
                 "Painting 101", true);
         uRL = "http://localhost:8080/artCourse";
-        ResponseEntity<ArtCourse> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                artCourse, ArtCourse.class);
+        ResponseEntity<ArtCourse> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artCourse, ArtCourse.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class ArtCourseControllerTest {
     public void create() {
         ArtCourse artCourse = ArtCourseFactory.createArtCourse("0002",
                 "Pottery 101", true);
-        ResponseEntity<ArtCourse> postResponse = testRestTemplate.postForEntity(uRL + "/create", artCourse,
-                ArtCourse.class);
+        ResponseEntity<ArtCourse> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artCourse, ArtCourse.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class ArtCourseControllerTest {
     public void delete() {
         ArtCourse artCourse = ArtCourseFactory.createArtCourse("0002",
                 "Sketching 101", true);
-        ResponseEntity<ArtCourse> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                artCourse, ArtCourse.class);
+        ResponseEntity<ArtCourse> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", artCourse, ArtCourse.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, ArtCourse.class);

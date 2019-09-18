@@ -28,8 +28,8 @@ public class CourierControllerTest {
         Courier courier = CourierFactory.createCourier("0001",
                 "DHL", "0215957656");
         uRL = "http://localhost:8080/courier";
-        ResponseEntity<Courier> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                courier, Courier.class);
+        ResponseEntity<Courier> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", courier, Courier.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class CourierControllerTest {
     public void create() {
         Courier courier = CourierFactory.createCourier("0002",
                 "FedEx", "0217659784");
-        ResponseEntity<Courier> postResponse = testRestTemplate.postForEntity(uRL + "/create", courier,
-                Courier.class);
+        ResponseEntity<Courier> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", courier, Courier.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class CourierControllerTest {
     public void delete() {
         Courier courier = CourierFactory.createCourier("0002",
                 "Mr Delivery", "0114758965");
-        ResponseEntity<Courier> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                courier, Courier.class);
+        ResponseEntity<Courier> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", courier, Courier.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Courier.class);

@@ -28,8 +28,8 @@ public class AccountControllerTest {
         Account account = AccountFactory.createAccount("0001",
                 "1234", "Ryan", "Yolo");
         uRL = "http://localhost:8080/account";
-        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                account, Account.class);
+        ResponseEntity<Account> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", account, Account.class);
         System.out.println(postResponse.toString());
     }
 
@@ -37,8 +37,8 @@ public class AccountControllerTest {
     public void create() {
         Account account = AccountFactory.createAccount("0002",
                 "2465", "Deidre", "Credit");
-        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create", account,
-                Account.class);
+        ResponseEntity<Account> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", account, Account.class);
         Assert.assertEquals(HttpStatus.OK, postResponse.getStatusCode());
         System.out.println(postResponse.toString());
     }
@@ -63,8 +63,8 @@ public class AccountControllerTest {
     public void delete() {
         Account account = AccountFactory.createAccount("0002",
                 "2465", "Deidre", "Credit");
-        ResponseEntity<Account> postResponse = testRestTemplate.postForEntity(uRL + "/create",
-                account, Account.class);
+        ResponseEntity<Account> postResponse = testRestTemplate.withBasicAuth("admin", "admin")
+                .postForEntity(uRL + "/create", account, Account.class);
         Map<String, String> parameters = new HashMap<>();
         parameters.put("id", "0002");
         testRestTemplate.delete(uRL + "/delete/" + parameters, Account.class);
