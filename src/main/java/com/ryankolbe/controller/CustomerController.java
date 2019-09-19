@@ -28,13 +28,13 @@ public class CustomerController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Customer read(@PathVariable(required = true) String id) {
+    public Customer read(@PathVariable String id) {
         return customerService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         customerService.delete(id);
     }
 

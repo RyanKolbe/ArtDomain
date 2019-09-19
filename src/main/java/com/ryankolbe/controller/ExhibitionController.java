@@ -28,13 +28,13 @@ public class ExhibitionController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Exhibition read(@PathVariable(required = true) String id) {
+    public Exhibition read(@PathVariable String id) {
         return exhibitionService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         exhibitionService.delete(id);
     }
 

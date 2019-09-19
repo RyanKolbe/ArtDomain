@@ -27,13 +27,13 @@ public class AccountController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Account read(@PathVariable(required = true) String id) {
+    public Account read(@PathVariable String id) {
         return accountService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         accountService.delete(id);
     }
 

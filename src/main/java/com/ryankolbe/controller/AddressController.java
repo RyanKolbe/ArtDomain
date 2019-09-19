@@ -28,13 +28,13 @@ public class AddressController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Address read(@PathVariable(required = true) String id) {
+    public Address read(@PathVariable String id) {
         return addressService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         addressService.delete(id);
     }
 

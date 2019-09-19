@@ -28,13 +28,13 @@ public class JobRoleController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public JobRole read(@PathVariable(required = true) String id) {
+    public JobRole read(@PathVariable String id) {
         return jobRoleService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         jobRoleService.delete(id);
     }
 

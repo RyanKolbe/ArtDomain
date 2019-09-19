@@ -28,13 +28,13 @@ public class AdminController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Admin read(@PathVariable(required = true) String id) {
+    public Admin read(@PathVariable String id) {
         return adminService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         adminService.delete(id);
     }
 

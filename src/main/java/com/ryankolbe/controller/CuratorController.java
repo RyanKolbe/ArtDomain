@@ -28,13 +28,13 @@ public class CuratorController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Curator read(@PathVariable(required = true) String id) {
+    public Curator read(@PathVariable String id) {
         return curatorService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         curatorService.delete(id);
     }
 

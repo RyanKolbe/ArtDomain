@@ -28,13 +28,13 @@ public class ArtistController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Artist read(@PathVariable(required = true) String id) {
+    public Artist read(@PathVariable String id) {
         return artistService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         artistService.delete(id);
     }
 

@@ -28,13 +28,13 @@ public class PermissionController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Permission read(@PathVariable(required = true) String id) {
+    public Permission read(@PathVariable String id) {
         return permissionService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         permissionService.delete(id);
     }
 

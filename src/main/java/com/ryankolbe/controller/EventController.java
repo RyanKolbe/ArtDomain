@@ -28,13 +28,13 @@ public class EventController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Event read(@PathVariable(required = true) String id) {
+    public Event read(@PathVariable String id) {
         return eventService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         eventService.delete(id);
     }
 

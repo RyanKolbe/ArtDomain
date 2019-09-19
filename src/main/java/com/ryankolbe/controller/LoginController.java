@@ -28,13 +28,13 @@ public class LoginController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Login read(@PathVariable(required = true) String id) {
+    public Login read(@PathVariable String id) {
         return loginService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         loginService.delete(id);
     }
 

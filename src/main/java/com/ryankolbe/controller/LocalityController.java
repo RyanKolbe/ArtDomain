@@ -28,13 +28,13 @@ public class LocalityController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Locality read(@PathVariable(required = true) String id) {
+    public Locality read(@PathVariable String id) {
         return localityService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         localityService.delete(id);
     }
 

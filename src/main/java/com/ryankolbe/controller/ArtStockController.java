@@ -28,13 +28,13 @@ public class ArtStockController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public ArtStock read(@PathVariable(required = true) String id) {
+    public ArtStock read(@PathVariable String id) {
         return artStockService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         artStockService.delete(id);
     }
 

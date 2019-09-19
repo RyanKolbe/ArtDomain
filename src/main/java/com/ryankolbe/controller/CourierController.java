@@ -28,13 +28,13 @@ public class CourierController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Courier read(@PathVariable(required = true) String id) {
+    public Courier read(@PathVariable String id) {
         return courierService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         courierService.delete(id);
     }
 

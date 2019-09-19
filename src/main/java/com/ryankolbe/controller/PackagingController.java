@@ -28,13 +28,13 @@ public class PackagingController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Packaging read(@PathVariable(required = true) String id) {
+    public Packaging read(@PathVariable String id) {
         return packagingService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable(required = true) String id) {
+    public void delete(@PathVariable String id) {
         packagingService.delete(id);
     }
 

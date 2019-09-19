@@ -22,13 +22,13 @@ public class MemberController {
 
     @PutMapping("/update")
     @ResponseBody
-    public Member update(@RequestBody(required = true) Member member) {
+    public Member update(@RequestBody Member member) {
         return memberService.update(member);
     }
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Member read(@PathVariable(required = true) String id) {
+    public Member read(@PathVariable String id) {
         return memberService.read(id);
     }
 
