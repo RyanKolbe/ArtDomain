@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Admin implements Comparable<Admin> {
+    @Id
     private String adminId;
     private String adminLogin;
     private String adminPassword;

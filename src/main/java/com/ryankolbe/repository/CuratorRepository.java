@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Curator;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface CuratorRepository extends IRepository<Curator, String> {
-    Set<Curator> getAll();
+@Repository
+public interface CuratorRepository extends JpaRepository<Curator, String> {
 }

@@ -2,42 +2,42 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Account;
 import com.ryankolbe.repository.AccountRepository;
-import com.ryankolbe.repository.implementation.AccountRepositoryImpl;
 import com.ryankolbe.service.AccountService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("AccountServiceImpl")
 public class AccountServiceImpl implements AccountService {
-    private final AccountRepository accountRepository;
 
-    private AccountServiceImpl() {
-        this.accountRepository = AccountRepositoryImpl.getAccountRepository();
-    }
+    @Autowired
+    private AccountRepository accountRepository;
 
     @Override
-    public Set<Account> getAll() {
-        return this.accountRepository.getAll();
+    public List<Account> getAll() {
+        return this.accountRepository.findAll();
     }
 
     @Override
     public Account create(Account account) {
-        return this.accountRepository.create(account);
+        return this.accountRepository.save(account);
     }
 
     @Override
     public Account read(String accountId) {
-        return this.accountRepository.read(accountId);
+        Optional<Account> byId = this.accountRepository.findById(accountId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Account update(Account account) {
-        return this.accountRepository.update(account);
+        return this.accountRepository.save(account);
     }
 
     @Override
     public void delete(String accountId) {
-        this.accountRepository.delete(accountId);
+        this.accountRepository.deleteById(accountId);
     }
 }

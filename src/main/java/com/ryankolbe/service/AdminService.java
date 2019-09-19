@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Admin;
 
-import java.util.Set;
+import java.util.List;
 
 public interface AdminService extends IService<Admin, String> {
-    Set<Admin> getAll();
+    List<Admin> getAll();
 }

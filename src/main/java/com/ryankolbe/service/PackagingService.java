@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Packaging;
 
-import java.util.Set;
+import java.util.List;
 
 public interface PackagingService extends IService<Packaging, String> {
-    Set<Packaging> getAll();
+    List<Packaging> getAll();
 }

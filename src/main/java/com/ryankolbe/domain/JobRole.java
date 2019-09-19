@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class JobRole implements Comparable<JobRole> {
+    @Id
     private String jobRoleId;
     private String jobRoleDescription;
     private double jobRoleSalary;

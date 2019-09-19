@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -67,7 +68,7 @@ public class LocalityServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Locality> localitySet = localityService.getAll();
+        List<Locality> localitySet = localityService.getAll();
         Assert.assertEquals(localitySet.size(), localityService.getAll().size());
     }
 }

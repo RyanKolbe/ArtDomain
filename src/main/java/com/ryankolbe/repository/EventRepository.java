@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Event;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface EventRepository extends IRepository<Event, String> {
-    Set<Event> getAll();
+@Repository
+public interface EventRepository extends JpaRepository<Event, String> {
 }

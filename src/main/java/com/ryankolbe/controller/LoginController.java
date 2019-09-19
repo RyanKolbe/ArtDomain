@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Login;
 import com.ryankolbe.service.LoginService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/login")
 public class LoginController {
-    private final LoginService loginService;
 
-    public LoginController(@Qualifier("LoginServiceImpl") LoginService loginService) {
-        this.loginService = loginService;
-    }
+    @Autowired
+    private LoginService loginService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class LoginController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Login read(@PathVariable String id) {
+    public Login read(@PathVariable(required = true) String id) {
         return loginService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         loginService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Login> getAll() {
+    public List<Login> getAll() {
         return loginService.getAll();
     }
 }

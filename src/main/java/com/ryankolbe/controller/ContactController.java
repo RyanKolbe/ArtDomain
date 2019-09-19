@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Contact;
 import com.ryankolbe.service.ContactService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/contact")
 public class ContactController {
-    private final ContactService contactService;
 
-    public ContactController(@Qualifier("ContactServiceImpl") ContactService contactService) {
-        this.contactService = contactService;
-    }
+    @Autowired
+    private ContactService contactService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class ContactController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Contact read(@PathVariable String id) {
+    public Contact read(@PathVariable(required = true) String id) {
         return contactService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         contactService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Contact> getAll() {
+    public List<Contact> getAll() {
         return contactService.getAll();
     }
 }

@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Courier;
 import com.ryankolbe.repository.CourierRepository;
-import com.ryankolbe.repository.implementation.CourierRepositoryImpl;
 import com.ryankolbe.service.CourierService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("CourierServiceImpl")
 public class CourierServiceImpl implements CourierService {
-    private final CourierRepository courierRepository;
-
-    private CourierServiceImpl() {
-        this.courierRepository = CourierRepositoryImpl.getCourierRepository();
-    }
+    @Autowired
+    private CourierRepository courierRepository;
 
     @Override
-    public Set<Courier> getAll() {
-        return this.courierRepository.getAll();
+    public List<Courier> getAll() {
+        return this.courierRepository.findAll();
     }
 
     @Override
     public Courier create(Courier courier) {
-        return this.courierRepository.create(courier);
+        return this.courierRepository.save(courier);
     }
 
     @Override
     public Courier read(String courierId) {
-        return this.courierRepository.read(courierId);
+        Optional<Courier> byId = this.courierRepository.findById(courierId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Courier update(Courier courier) {
-        return this.courierRepository.update(courier);
+        return this.courierRepository.save(courier);
     }
 
     @Override
     public void delete(String courierId) {
-        this.courierRepository.delete(courierId);
+        this.courierRepository.deleteById(courierId);
     }
 }

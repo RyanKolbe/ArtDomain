@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -66,7 +67,7 @@ public class ArtStockServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<ArtStock> artStockSet = artStockService.getAll();
+        List<ArtStock> artStockSet = artStockService.getAll();
         Assert.assertEquals(artStockSet.size(), artStockService.getAll().size());
     }
 }

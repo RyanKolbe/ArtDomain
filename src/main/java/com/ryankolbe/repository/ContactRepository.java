@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Contact;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface ContactRepository extends IRepository<Contact, String> {
-    Set<Contact> getAll();
+@Repository
+public interface ContactRepository extends JpaRepository<Contact, String> {
 }

@@ -1,10 +1,14 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Objects;
 
+@Entity
 public class Event implements Comparable<Event> {
+    @Id
     private String eventId;
     private String eventName;
     private LocalDate eventDate;

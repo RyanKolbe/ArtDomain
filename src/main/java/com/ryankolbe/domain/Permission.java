@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Permission implements Comparable<Permission> {
+    @Id
     private String permissionId;
     private String permissionRole;
     private String permissionTitle;

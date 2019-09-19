@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Courier;
@@ -61,4 +62,4 @@ public class CourierRepositoryImpl implements CourierRepository {
     public Set<Courier> getAll() {
         return this.couriers;
     }
-}
+}*/

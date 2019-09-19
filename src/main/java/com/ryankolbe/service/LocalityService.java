@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Locality;
 
-import java.util.Set;
+import java.util.List;
 
 public interface LocalityService extends IService<Locality, String> {
-    Set<Locality> getAll();
+    List<Locality> getAll();
 }

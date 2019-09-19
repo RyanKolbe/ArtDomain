@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Permission;
@@ -61,4 +62,4 @@ public class PermissionRepositoryImpl implements PermissionRepository {
     public Set<Permission> getAll() {
         return this.permissions;
     }
-}
+}*/

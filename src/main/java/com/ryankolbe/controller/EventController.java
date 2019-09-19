@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Event;
 import com.ryankolbe.service.EventService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/event")
 public class EventController {
-    private final EventService eventService;
 
-    public EventController(@Qualifier("EventServiceImpl") EventService eventService) {
-        this.eventService = eventService;
-    }
+    @Autowired
+    private EventService eventService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class EventController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Event read(@PathVariable String id) {
+    public Event read(@PathVariable(required = true) String id) {
         return eventService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         eventService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Event> getAll() {
+    public List<Event> getAll() {
         return eventService.getAll();
     }
 }

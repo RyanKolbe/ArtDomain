@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.JobRole;
@@ -61,4 +62,4 @@ public class JobRoleRepositoryImpl implements JobRoleRepository {
     public Set<JobRole> getAll() {
         return this.jobRoles;
     }
-}
+}*/

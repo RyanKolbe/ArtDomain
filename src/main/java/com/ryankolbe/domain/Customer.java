@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Customer implements Comparable<Customer> {
+    @Id
     private String customerId;
     private String customerName;
     private String customerCell;

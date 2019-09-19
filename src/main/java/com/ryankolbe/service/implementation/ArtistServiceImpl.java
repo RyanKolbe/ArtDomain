@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Artist;
 import com.ryankolbe.repository.ArtistRepository;
-import com.ryankolbe.repository.implementation.ArtistRepositoryImpl;
 import com.ryankolbe.service.ArtistService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("ArtistServiceImpl")
 public class ArtistServiceImpl implements ArtistService {
-    private final ArtistRepository artistRepository;
-
-    private ArtistServiceImpl() {
-        this.artistRepository = ArtistRepositoryImpl.getArtistRepository();
-    }
+    @Autowired
+    private ArtistRepository artistRepository;
 
     @Override
     public Artist create(Artist artist) {
-        return this.artistRepository.create(artist);
+        return this.artistRepository.save(artist);
     }
 
     @Override
     public Artist read(String artistId) {
-        return this.artistRepository.read(artistId);
+        Optional<Artist> byId = this.artistRepository.findById(artistId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Artist update(Artist artist) {
-        return this.artistRepository.update(artist);
+        return this.artistRepository.save(artist);
     }
 
     @Override
     public void delete(String artistId) {
-        this.artistRepository.delete(artistId);
+        this.artistRepository.deleteById(artistId);
     }
 
     @Override
-    public Set<Artist> getAll() {
-        return this.artistRepository.getAll();
+    public List<Artist> getAll() {
+        return this.artistRepository.findAll();
     }
 }

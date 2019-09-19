@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Permission;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface PermissionRepository extends IRepository<Permission, String> {
-    Set<Permission> getAll();
+@Repository
+public interface PermissionRepository extends JpaRepository<Permission, String> {
 }

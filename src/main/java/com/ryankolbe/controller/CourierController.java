@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Courier;
 import com.ryankolbe.service.CourierService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/courier")
 public class CourierController {
-    private final CourierService courierService;
 
-    public CourierController(@Qualifier("CourierServiceImpl") CourierService courierService) {
-        this.courierService = courierService;
-    }
+    @Autowired
+    private CourierService courierService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class CourierController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Courier read(@PathVariable String id) {
+    public Courier read(@PathVariable(required = true) String id) {
         return courierService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         courierService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Courier> getAll() {
+    public List<Courier> getAll() {
         return courierService.getAll();
     }
 }

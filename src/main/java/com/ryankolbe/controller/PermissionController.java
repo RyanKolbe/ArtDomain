@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Permission;
 import com.ryankolbe.service.PermissionService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/permission")
 public class PermissionController {
-    private final PermissionService permissionService;
 
-    public PermissionController(@Qualifier("PermissionServiceImpl") PermissionService permissionService) {
-        this.permissionService = permissionService;
-    }
+    @Autowired
+    private PermissionService permissionService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class PermissionController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Permission read(@PathVariable String id) {
+    public Permission read(@PathVariable(required = true) String id) {
         return permissionService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         permissionService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Permission> getAll() {
+    public List<Permission> getAll() {
         return permissionService.getAll();
     }
 }

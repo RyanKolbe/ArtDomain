@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Account;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface AccountRepository extends IRepository<Account, String> {
-    Set<Account> getAll();
+@Repository
+public interface AccountRepository extends JpaRepository<Account, String> {
 }

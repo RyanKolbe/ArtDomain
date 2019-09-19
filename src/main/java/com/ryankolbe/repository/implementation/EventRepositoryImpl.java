@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Event;
@@ -61,4 +62,4 @@ public class EventRepositoryImpl implements EventRepository {
     public Set<Event> getAll() {
         return this.events;
     }
-}
+}*/

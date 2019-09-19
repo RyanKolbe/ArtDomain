@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Packaging;
@@ -61,4 +62,4 @@ public class PackagingRepositoryImpl implements PackagingRepository {
     public Set<Packaging> getAll() {
         return this.packagings;
     }
-}
+}*/

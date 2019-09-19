@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Login;
 import com.ryankolbe.repository.LoginRepository;
-import com.ryankolbe.repository.implementation.LoginRepositoryImpl;
 import com.ryankolbe.service.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("LoginServiceImpl")
 public class LoginServiceImpl implements LoginService {
-    private final LoginRepository loginRepository;
-
-    private LoginServiceImpl() {
-        this.loginRepository = LoginRepositoryImpl.getLoginRepository();
-    }
+    @Autowired
+    private LoginRepository loginRepository;
 
     @Override
     public Login create(Login login) {
-        return this.loginRepository.create(login);
+        return this.loginRepository.save(login);
     }
 
     @Override
     public Login read(String loginId) {
-        return this.loginRepository.read(loginId);
+        Optional<Login> byId = this.loginRepository.findById(loginId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Login update(Login login) {
-        return this.loginRepository.update(login);
+        return this.loginRepository.save(login);
     }
 
     @Override
     public void delete(String loginId) {
-        this.loginRepository.delete(loginId);
+        this.loginRepository.deleteById(loginId);
     }
 
     @Override
-    public Set<Login> getAll() {
-        return this.loginRepository.getAll();
+    public List<Login> getAll() {
+        return this.loginRepository.findAll();
     }
 }

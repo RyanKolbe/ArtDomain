@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Asset;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface AssetRepository extends IRepository<Asset, String> {
-    Set<Asset> getAll();
+@Repository
+public interface AssetRepository extends JpaRepository<Asset, String> {
 }

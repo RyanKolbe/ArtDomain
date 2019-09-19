@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Packaging implements Comparable<Packaging> {
+    @Id
     private String packagingId;
     private String packagingHeight;
     private String packagingWidth;

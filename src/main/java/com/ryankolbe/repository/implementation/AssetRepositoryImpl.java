@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Asset;
@@ -61,4 +62,4 @@ public class AssetRepositoryImpl implements AssetRepository {
     public Set<Asset> getAll() {
         return this.assets;
     }
-}
+}*/

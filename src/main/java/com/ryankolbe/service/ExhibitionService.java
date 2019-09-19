@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Exhibition;
 
-import java.util.Set;
+import java.util.List;
 
 public interface ExhibitionService extends IService<Exhibition, String> {
-    Set<Exhibition> getAll();
+    List<Exhibition> getAll();
 }

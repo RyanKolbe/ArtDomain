@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Member;
 import com.ryankolbe.repository.MemberRepository;
-import com.ryankolbe.repository.implementation.MemberRepositoryImpl;
 import com.ryankolbe.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("MemberServiceImpl")
 public class MemberServiceImpl implements MemberService {
-    private final MemberRepository memberRepository;
-
-    private MemberServiceImpl() {
-        this.memberRepository = MemberRepositoryImpl.getMemberRepository();
-    }
+    @Autowired
+    private MemberRepository memberRepository;
 
     @Override
     public Member create(Member member) {
-        return this.memberRepository.create(member);
+        return this.memberRepository.save(member);
     }
 
     @Override
     public Member read(String memberId) {
-        return this.memberRepository.read(memberId);
+        Optional<Member> byId = this.memberRepository.findById(memberId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Member update(Member member) {
-        return this.memberRepository.update(member);
+        return this.memberRepository.save(member);
     }
 
     @Override
     public void delete(String memberId) {
-        this.memberRepository.delete(memberId);
+        this.memberRepository.deleteById(memberId);
     }
 
     @Override
-    public Set<Member> getAll() {
-        return this.memberRepository.getAll();
+    public List<Member> getAll() {
+        return this.memberRepository.findAll();
     }
 }

@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Gallery;
@@ -66,4 +67,4 @@ public class GalleryRepositoryImplTest {
         Set<Gallery> gallerySet = galleryRepository.getAll();
         Assert.assertEquals(gallerySet, galleryRepository.getAll());
     }
-}
+}*/

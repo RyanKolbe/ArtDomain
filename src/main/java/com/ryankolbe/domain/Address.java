@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Address implements Comparable<Address> {
+    @Id
     private String addressId;
     private String streetNumber;
     private String streetName;

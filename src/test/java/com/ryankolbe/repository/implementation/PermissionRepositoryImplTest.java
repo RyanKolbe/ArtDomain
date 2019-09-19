@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Permission;
@@ -67,4 +68,4 @@ public class PermissionRepositoryImplTest {
         Set<Permission> permissionSet = permissionRepository.getAll();
         Assert.assertEquals(permissionSet.size(), permissionRepository.getAll().size());
     }
-}
+}*/

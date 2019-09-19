@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Sculpture implements Comparable<Sculpture> {
+    @Id
     private String sculptureId;
     private String sculptureName;
     private String sculptureType;

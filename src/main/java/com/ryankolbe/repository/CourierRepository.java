@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Courier;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface CourierRepository extends IRepository<Courier, String> {
-    Set<Courier> getAll();
+@Repository
+public interface CourierRepository extends JpaRepository<Courier, String> {
 }

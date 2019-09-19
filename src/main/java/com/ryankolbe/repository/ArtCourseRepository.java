@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.ArtCourse;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface ArtCourseRepository extends IRepository<ArtCourse, String> {
-    Set<ArtCourse> getAll();
+@Repository
+public interface ArtCourseRepository extends JpaRepository<ArtCourse, String> {
 }

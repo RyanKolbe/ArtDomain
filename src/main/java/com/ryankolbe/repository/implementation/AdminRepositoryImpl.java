@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Admin;
@@ -60,4 +61,4 @@ public class AdminRepositoryImpl implements AdminRepository {
     public Set<Admin> getAll() {
         return this.admins;
     }
-}
+}*/

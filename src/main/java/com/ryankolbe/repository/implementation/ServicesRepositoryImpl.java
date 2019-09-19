@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Services;
@@ -61,4 +62,4 @@ public class ServicesRepositoryImpl implements ServicesRepository {
     public Set<Services> getAll() {
         return this.services;
     }
-}
+}*/

@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Locality;
 import com.ryankolbe.service.LocalityService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/locality")
 public class LocalityController {
-    private final LocalityService localityService;
 
-    public LocalityController(@Qualifier("LocalityServiceImpl") LocalityService localityService) {
-        this.localityService = localityService;
-    }
+    @Autowired
+    private LocalityService localityService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class LocalityController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Locality read(@PathVariable String id) {
+    public Locality read(@PathVariable(required = true) String id) {
         return localityService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         localityService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Locality> getAll() {
+    public List<Locality> getAll() {
         return localityService.getAll();
     }
 }

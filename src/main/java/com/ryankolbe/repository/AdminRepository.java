@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Admin;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface AdminRepository extends IRepository<Admin, String> {
-    Set<Admin> getAll();
+@Repository
+public interface AdminRepository extends JpaRepository<Admin, String> {
 }

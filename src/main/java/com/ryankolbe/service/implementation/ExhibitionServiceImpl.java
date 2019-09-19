@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Exhibition;
 import com.ryankolbe.repository.ExhibitionRepository;
-import com.ryankolbe.repository.implementation.ExhibitionRepositoryImpl;
 import com.ryankolbe.service.ExhibitionService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("ExhibitionServiceImpl")
 public class ExhibitionServiceImpl implements ExhibitionService {
-    private final ExhibitionRepository exhibitionRepository;
-
-    private ExhibitionServiceImpl() {
-        this.exhibitionRepository = ExhibitionRepositoryImpl.getExhibitionRepository();
-    }
+    @Autowired
+    private ExhibitionRepository exhibitionRepository;
 
     @Override
     public Exhibition create(Exhibition exhibition) {
-        return this.exhibitionRepository.create(exhibition);
+        return this.exhibitionRepository.save(exhibition);
     }
 
     @Override
     public Exhibition read(String exhibitionId) {
-        return this.exhibitionRepository.read(exhibitionId);
+        Optional<Exhibition> byId = this.exhibitionRepository.findById(exhibitionId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Exhibition update(Exhibition exhibition) {
-        return this.exhibitionRepository.update(exhibition);
+        return this.exhibitionRepository.save(exhibition);
     }
 
     @Override
     public void delete(String exhibitionId) {
-        this.exhibitionRepository.delete(exhibitionId);
+        this.exhibitionRepository.deleteById(exhibitionId);
     }
 
     @Override
-    public Set<Exhibition> getAll() {
-        return this.exhibitionRepository.getAll();
+    public List<Exhibition> getAll() {
+        return this.exhibitionRepository.findAll();
     }
 }

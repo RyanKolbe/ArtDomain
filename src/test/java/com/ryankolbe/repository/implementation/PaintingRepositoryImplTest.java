@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Painting;
@@ -67,4 +68,4 @@ public class PaintingRepositoryImplTest {
         Set<Painting> paintingSet = paintingRepository.getAll();
         Assert.assertEquals(paintingSet.size(), paintingRepository.getAll().size());
     }
-}
+}*/

@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.ArtCourse;
@@ -66,4 +67,4 @@ public class ArtCourseRepositoryImplTest {
         Set<ArtCourse> artCourseSet = artCourseRepository.getAll();
         Assert.assertEquals(artCourseSet, artCourseRepository.getAll());
     }
-}
+}*/

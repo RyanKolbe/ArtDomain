@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface OrderRepository extends IRepository<Order, String> {
-    Set<Order> getAll();
+@Repository
+public interface OrderRepository extends JpaRepository<Order, String> {
 }

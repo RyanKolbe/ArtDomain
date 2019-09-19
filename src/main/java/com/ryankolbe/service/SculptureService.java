@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Sculpture;
 
-import java.util.Set;
+import java.util.List;
 
 public interface SculptureService extends IService<Sculpture, String> {
-    Set<Sculpture> getAll();
+    List<Sculpture> getAll();
 }

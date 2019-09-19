@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Asset;
@@ -67,4 +68,4 @@ public class AssetRepositoryImplTest {
         Set<Asset> assetSet = assetRepository.getAll();
         Assert.assertEquals(assetSet, assetRepository.getAll());
     }
-}
+}*/

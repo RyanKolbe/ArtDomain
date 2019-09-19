@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Sculpture;
 import com.ryankolbe.service.SculptureService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/sculpture")
 public class SculptureController {
-    private final SculptureService sculptureService;
 
-    public SculptureController(@Qualifier("SculptureServiceImpl") SculptureService sculptureService) {
-        this.sculptureService = sculptureService;
-    }
+    @Autowired
+    private SculptureService sculptureService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class SculptureController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Sculpture read(@PathVariable String id) {
+    public Sculpture read(@PathVariable(required = true) String id) {
         return sculptureService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         sculptureService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Sculpture> getAll() {
+    public List<Sculpture> getAll() {
         return sculptureService.getAll();
     }
 }

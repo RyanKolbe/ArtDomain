@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Curator;
@@ -64,4 +65,4 @@ public class CuratorRepositoryImplTest {
         Set<Curator> curatorSet = curatorRepository.getAll();
         Assert.assertEquals(curatorSet, curatorRepository.getAll());
     }
-}
+}*/

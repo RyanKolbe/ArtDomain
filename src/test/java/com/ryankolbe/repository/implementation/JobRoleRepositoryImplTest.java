@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.JobRole;
@@ -67,4 +68,4 @@ public class JobRoleRepositoryImplTest {
         Set<JobRole> jobRoleSet = jobRoleRepository.getAll();
         Assert.assertEquals(jobRoleSet, jobRoleRepository.getAll());
     }
-}
+}*/

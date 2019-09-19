@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Exhibition;
@@ -68,4 +69,4 @@ public class ExhibitionRepositoryImplTest {
         Set<Exhibition> exhibitionSet = exhibitionRepository.getAll();
         Assert.assertEquals(exhibitionSet, exhibitionRepository.getAll());
     }
-}
+}*/

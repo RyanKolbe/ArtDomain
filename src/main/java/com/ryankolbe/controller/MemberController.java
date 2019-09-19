@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Member;
 import com.ryankolbe.service.MemberService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/member")
 public class MemberController {
-    private final MemberService memberService;
 
-    public MemberController(@Qualifier("MemberServiceImpl") MemberService memberService) {
-        this.memberService = memberService;
-    }
+    @Autowired
+    private MemberService memberService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -24,13 +22,13 @@ public class MemberController {
 
     @PutMapping("/update")
     @ResponseBody
-    public Member update(@RequestBody Member member) {
+    public Member update(@RequestBody(required = true) Member member) {
         return memberService.update(member);
     }
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Member read(@PathVariable String id) {
+    public Member read(@PathVariable(required = true) String id) {
         return memberService.read(id);
     }
 
@@ -42,7 +40,7 @@ public class MemberController {
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Member> getAll() {
+    public List<Member> getAll() {
         return memberService.getAll();
     }
 }

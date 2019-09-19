@@ -1,9 +1,10 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Exhibition;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
 
-public interface ExhibitionRepository extends IRepository<Exhibition, String> {
-    Set<Exhibition> getAll();
+@Repository
+public interface ExhibitionRepository extends JpaRepository<Exhibition, String> {
 }

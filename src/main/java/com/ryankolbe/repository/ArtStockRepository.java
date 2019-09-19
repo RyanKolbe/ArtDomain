@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.ArtStock;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface ArtStockRepository extends IRepository<ArtStock, String> {
-    Set<ArtStock> getAll();
+@Repository
+public interface ArtStockRepository extends JpaRepository<ArtStock, String> {
 }

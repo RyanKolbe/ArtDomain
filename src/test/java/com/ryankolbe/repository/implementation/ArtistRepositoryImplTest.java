@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Artist;
@@ -64,4 +65,4 @@ public class ArtistRepositoryImplTest {
         Set<Artist> artistSet = artistRepository.getAll();
         Assert.assertEquals(artistSet, artistRepository.getAll());
     }
-}
+}*/

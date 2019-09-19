@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Customer;
@@ -66,4 +67,4 @@ public class CustomerRepositoryImplTest {
         Set<Customer> customerSet = customerRepository.getAll();
         Assert.assertEquals(customerSet, customerRepository.getAll());
     }
-}
+}*/

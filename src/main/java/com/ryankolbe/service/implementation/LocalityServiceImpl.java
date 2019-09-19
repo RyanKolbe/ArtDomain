@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Locality;
 import com.ryankolbe.repository.LocalityRepository;
-import com.ryankolbe.repository.implementation.LocalityRepositoryImpl;
 import com.ryankolbe.service.LocalityService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("LocalityServiceImpl")
 public class LocalityServiceImpl implements LocalityService {
-    private final LocalityRepository localityRepository;
-
-    private LocalityServiceImpl() {
-        this.localityRepository = LocalityRepositoryImpl.getLocalityRepository();
-    }
+    @Autowired
+    private LocalityRepository localityRepository;
 
     @Override
     public Locality create(Locality locality) {
-        return this.localityRepository.create(locality);
+        return this.localityRepository.save(locality);
     }
 
     @Override
     public Locality read(String localityId) {
-        return this.localityRepository.read(localityId);
+        Optional<Locality> byId = this.localityRepository.findById(localityId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Locality update(Locality locality) {
-        return this.localityRepository.update(locality);
+        return this.localityRepository.save(locality);
     }
 
     @Override
     public void delete(String localityId) {
-        this.localityRepository.delete(localityId);
+        this.localityRepository.deleteById(localityId);
     }
 
     @Override
-    public Set<Locality> getAll() {
-        return this.localityRepository.getAll();
+    public List<Locality> getAll() {
+        return this.localityRepository.findAll();
     }
 }

@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.JobRole;
 import com.ryankolbe.service.JobRoleService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/jobRole")
 public class JobRoleController {
-    private final JobRoleService jobRoleService;
 
-    public JobRoleController(@Qualifier("JobRoleServiceImpl") JobRoleService jobRoleService) {
-        this.jobRoleService = jobRoleService;
-    }
+    @Autowired
+    private JobRoleService jobRoleService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class JobRoleController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public JobRole read(@PathVariable String id) {
+    public JobRole read(@PathVariable(required = true) String id) {
         return jobRoleService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         jobRoleService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<JobRole> getAll() {
+    public List<JobRole> getAll() {
         return jobRoleService.getAll();
     }
 }

@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.Returns;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface ReturnsRepository extends IRepository<Returns, String> {
-    Set<Returns> getAll();
+@Repository
+public interface ReturnsRepository extends JpaRepository<Returns, String> {
 }

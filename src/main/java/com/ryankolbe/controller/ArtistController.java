@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Artist;
 import com.ryankolbe.service.ArtistService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/artist")
 public class ArtistController {
-    private final ArtistService artistService;
 
-    public ArtistController(@Qualifier("ArtistServiceImpl") ArtistService artistService) {
-        this.artistService = artistService;
-    }
+    @Autowired
+    private ArtistService artistService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class ArtistController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Artist read(@PathVariable String id) {
+    public Artist read(@PathVariable(required = true) String id) {
         return artistService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         artistService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Artist> getAll() {
+    public List<Artist> getAll() {
         return artistService.getAll();
     }
 }

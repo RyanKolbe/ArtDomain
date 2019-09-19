@@ -1,8 +1,13 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Account implements Comparable<Account> {
+
+    @Id
     private String accountId;
     private String accountNumber;
     private String accountName;

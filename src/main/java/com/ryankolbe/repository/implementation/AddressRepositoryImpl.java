@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Address;
@@ -60,4 +61,4 @@ public class AddressRepositoryImpl implements AddressRepository {
     public Set<Address> getAll() {
         return this.addresses;
     }
-}
+}*/

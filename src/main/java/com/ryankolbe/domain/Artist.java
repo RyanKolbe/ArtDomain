@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Artist implements Comparable<Artist> {
+    @Id
     private String artistId;
     private String artistName;
     private String artistSurname;

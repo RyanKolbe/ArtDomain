@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -66,7 +67,7 @@ public class AssetServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Asset> assetSet = assetService.getAll();
+        List<Asset> assetSet = assetService.getAll();
         Assert.assertEquals(assetSet.size(), assetService.getAll().size());
     }
 }

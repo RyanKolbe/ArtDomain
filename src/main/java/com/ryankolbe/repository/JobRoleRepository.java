@@ -1,9 +1,9 @@
 package com.ryankolbe.repository;
 
 import com.ryankolbe.domain.JobRole;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.Set;
-
-public interface JobRoleRepository extends IRepository<JobRole, String> {
-    Set<JobRole> getAll();
+@Repository
+public interface JobRoleRepository extends JpaRepository<JobRole, String> {
 }

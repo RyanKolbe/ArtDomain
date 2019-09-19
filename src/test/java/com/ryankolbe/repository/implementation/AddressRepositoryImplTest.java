@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Address;
@@ -69,4 +70,4 @@ public class AddressRepositoryImplTest {
         Set<Address> addresses = addressRepository.getAll();
         Assert.assertEquals(addresses.size(), addressRepository.getAll().size());
     }
-}
+}*/

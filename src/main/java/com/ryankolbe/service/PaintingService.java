@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Painting;
 
-import java.util.Set;
+import java.util.List;
 
 public interface PaintingService extends IService<Painting, String> {
-    Set<Painting> getAll();
+    List<Painting> getAll();
 }

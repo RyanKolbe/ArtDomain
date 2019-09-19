@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Locality;
@@ -67,4 +68,4 @@ public class LocalityRepositoryImplTest {
         Set<Locality> localitySet = localityRepository.getAll();
         Assert.assertEquals(localitySet, localityRepository.getAll());
     }
-}
+}*/

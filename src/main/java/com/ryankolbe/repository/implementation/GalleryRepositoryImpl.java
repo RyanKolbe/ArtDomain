@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Gallery;
@@ -61,4 +62,4 @@ public class GalleryRepositoryImpl implements GalleryRepository {
     public Set<Gallery> getAll() {
         return this.galleries;
     }
-}
+}*/

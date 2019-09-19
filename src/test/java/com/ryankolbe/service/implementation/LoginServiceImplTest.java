@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -65,7 +66,7 @@ public class LoginServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Login> loginSet = loginService.getAll();
+        List<Login> loginSet = loginService.getAll();
         Assert.assertEquals(loginSet.size(), loginService.getAll().size());
     }
 }

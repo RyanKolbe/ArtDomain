@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Login;
@@ -58,3 +59,4 @@ public class LoginRepositoryImpl implements LoginRepository {
         return null;
     }
 }
+*/

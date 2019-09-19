@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Locality;
@@ -61,4 +62,4 @@ public class LocalityRepositoryImpl implements LocalityRepository {
     public Set<Locality> getAll() {
         return this.localities;
     }
-}
+}*/

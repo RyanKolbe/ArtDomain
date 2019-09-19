@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.ArtCourse;
 
-import java.util.Set;
+import java.util.List;
 
 public interface ArtCourseService extends IService<ArtCourse, String> {
-    Set<ArtCourse> getAll();
+    List<ArtCourse> getAll();
 }

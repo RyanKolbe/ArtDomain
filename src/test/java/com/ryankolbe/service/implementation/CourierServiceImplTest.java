@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -66,7 +67,7 @@ public class CourierServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Courier> courierSet = courierService.getAll();
+        List<Courier> courierSet = courierService.getAll();
         Assert.assertEquals(courierSet.size(), courierService.getAll().size());
     }
 }

@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Order;
 
-import java.util.Set;
+import java.util.List;
 
 public interface OrderService extends IService<Order, String> {
-    Set<Order> getAll();
+    List<Order> getAll();
 }

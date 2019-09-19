@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Locality implements Comparable<Locality> {
+    @Id
     private String localizationId;
     private String registeredName;
     private String province;

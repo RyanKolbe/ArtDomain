@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Returns;
 
-import java.util.Set;
+import java.util.List;
 
 public interface ReturnsService extends IService<Returns, String> {
-    Set<Returns> getAll();
+    List<Returns> getAll();
 }

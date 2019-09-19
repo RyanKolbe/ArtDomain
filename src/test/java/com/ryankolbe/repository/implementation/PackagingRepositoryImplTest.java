@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Packaging;
@@ -67,4 +68,4 @@ public class PackagingRepositoryImplTest {
         Set<Packaging> packagingSet = packagingRepository.getAll();
         Assert.assertEquals(packagingSet.size(), packagingRepository.getAll().size());
     }
-}
+}*/

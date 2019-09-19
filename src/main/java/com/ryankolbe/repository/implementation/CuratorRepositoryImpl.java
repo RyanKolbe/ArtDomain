@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Curator;
@@ -61,4 +62,4 @@ public class CuratorRepositoryImpl implements CuratorRepository {
     public Set<Curator> getAll() {
         return this.curators;
     }
-}
+}*/

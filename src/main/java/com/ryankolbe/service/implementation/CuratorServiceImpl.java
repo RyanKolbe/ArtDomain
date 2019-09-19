@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Curator;
 import com.ryankolbe.repository.CuratorRepository;
-import com.ryankolbe.repository.implementation.CuratorRepositoryImpl;
 import com.ryankolbe.service.CuratorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("CuratorServiceImpl")
 public class CuratorServiceImpl implements CuratorService {
-    private final CuratorRepository curatorRepository;
-
-    private CuratorServiceImpl() {
-        this.curatorRepository = CuratorRepositoryImpl.getCuratorRepository();
-    }
+    @Autowired
+    private CuratorRepository curatorRepository;
 
     @Override
-    public Set<Curator> getAll() {
-        return this.curatorRepository.getAll();
+    public List<Curator> getAll() {
+        return this.curatorRepository.findAll();
     }
 
     @Override
     public Curator create(Curator curator) {
-        return this.curatorRepository.create(curator);
+        return this.curatorRepository.save(curator);
     }
 
     @Override
     public Curator read(String curatorId) {
-        return this.curatorRepository.read(curatorId);
+        Optional<Curator> byId = this.curatorRepository.findById(curatorId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Curator update(Curator curator) {
-        return this.curatorRepository.update(curator);
+        return this.curatorRepository.save(curator);
     }
 
     @Override
     public void delete(String curatorId) {
-        this.curatorRepository.delete(curatorId);
+        this.curatorRepository.deleteById(curatorId);
     }
 }

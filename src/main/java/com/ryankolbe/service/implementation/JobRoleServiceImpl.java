@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.JobRole;
 import com.ryankolbe.repository.JobRoleRepository;
-import com.ryankolbe.repository.implementation.JobRoleRepositoryImpl;
 import com.ryankolbe.service.JobRoleService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("JobRoleServiceImpl")
 public class JobRoleServiceImpl implements JobRoleService {
-    private final JobRoleRepository jobRoleRepository;
-
-    private JobRoleServiceImpl() {
-        this.jobRoleRepository = JobRoleRepositoryImpl.getJobRoleRepository();
-    }
+    @Autowired
+    private JobRoleRepository jobRoleRepository;
 
     @Override
     public JobRole create(JobRole jobRole) {
-        return this.jobRoleRepository.create(jobRole);
+        return this.jobRoleRepository.save(jobRole);
     }
 
     @Override
     public JobRole read(String jobRoleId) {
-        return this.jobRoleRepository.read(jobRoleId);
+        Optional<JobRole> byId = this.jobRoleRepository.findById(jobRoleId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public JobRole update(JobRole jobRole) {
-        return this.jobRoleRepository.update(jobRole);
+        return this.jobRoleRepository.save(jobRole);
     }
 
     @Override
     public void delete(String jobRoleId) {
-        this.jobRoleRepository.delete(jobRoleId);
+        this.jobRoleRepository.deleteById(jobRoleId);
     }
 
     @Override
-    public Set<JobRole> getAll() {
-        return this.jobRoleRepository.getAll();
+    public List<JobRole> getAll() {
+        return this.jobRoleRepository.findAll();
     }
 }

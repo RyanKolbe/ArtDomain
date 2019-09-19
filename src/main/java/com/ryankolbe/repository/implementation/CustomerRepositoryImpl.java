@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Customer;
@@ -61,4 +62,4 @@ public class CustomerRepositoryImpl implements CustomerRepository {
     public Set<Customer> getAll() {
         return this.customers;
     }
-}
+}*/

@@ -3,41 +3,41 @@ package com.ryankolbe.service.implementation;
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.repository.AddressRepository;
 import com.ryankolbe.service.AddressService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("AddressServiceImpl")
 public class AddressServiceImpl implements AddressService {
 
-    private final AddressRepository addressRepository;
-
-    public AddressServiceImpl(AddressRepository addressRepository) {
-        this.addressRepository = addressRepository;
-    }
+    @Autowired
+    private AddressRepository addressRepository;
 
     @Override
-    public Set<Address> getAll() {
-        return this.addressRepository.getAll();
+    public List<Address> getAll() {
+        return this.addressRepository.findAll();
     }
 
     @Override
     public Address create(Address address) {
-        return this.addressRepository.create(address);
+        return this.addressRepository.save(address);
     }
 
     @Override
     public Address read(String addressId) {
-        return this.addressRepository.read(addressId);
+        Optional<Address> byId = this.addressRepository.findById(addressId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Address update(Address address) {
-        return this.addressRepository.update(address);
+        return this.addressRepository.save(address);
     }
 
     @Override
     public void delete(String addressId) {
-        this.addressRepository.delete(addressId);
+        this.addressRepository.deleteById(addressId);
     }
 }

@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -63,7 +64,7 @@ public class OrderServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Order> orderSet = orderService.getAll();
+        List<Order> orderSet = orderService.getAll();
         Assert.assertEquals(orderSet.size(), orderService.getAll().size());
     }
 }

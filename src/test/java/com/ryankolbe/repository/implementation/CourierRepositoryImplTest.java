@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Courier;
@@ -66,4 +67,4 @@ public class CourierRepositoryImplTest {
         Set<Courier> courierSet = courierRepository.getAll();
         Assert.assertEquals(courierSet, courierRepository.getAll());
     }
-}
+}*/

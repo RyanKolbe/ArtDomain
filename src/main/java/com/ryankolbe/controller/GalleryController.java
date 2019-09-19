@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Gallery;
 import com.ryankolbe.service.GalleryService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/gallery")
 public class GalleryController {
-    private final GalleryService galleryService;
 
-    public GalleryController(@Qualifier("GalleryServiceImpl") GalleryService galleryService) {
-        this.galleryService = galleryService;
-    }
+    @Autowired
+    private GalleryService galleryService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class GalleryController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Gallery read(@PathVariable String id) {
+    public Gallery read(@PathVariable(required = true) String id) {
         return galleryService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         galleryService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Gallery> getAll() {
+    public List<Gallery> getAll() {
         return galleryService.getAll();
     }
 }

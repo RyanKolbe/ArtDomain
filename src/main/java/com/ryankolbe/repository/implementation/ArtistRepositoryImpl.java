@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Artist;
@@ -61,4 +62,4 @@ public class ArtistRepositoryImpl implements ArtistRepository {
     public Set<Artist> getAll() {
         return this.artists;
     }
-}
+}*/

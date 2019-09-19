@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Curator;
 
-import java.util.Set;
+import java.util.List;
 
 public interface CuratorService extends IService<Curator, String> {
-    Set<Curator> getAll();
+    List<Curator> getAll();
 }

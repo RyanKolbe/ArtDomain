@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Sculpture;
@@ -61,4 +62,4 @@ public class SculptureRepositoryImpl implements SculptureRepository {
     public Set<Sculpture> getAll() {
         return this.sculptures;
     }
-}
+}*/

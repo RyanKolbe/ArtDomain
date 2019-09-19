@@ -1,9 +1,13 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.util.Objects;
 
+@Entity
 public class Exhibition implements Comparable<Exhibition> {
+    @Id
     private String exhibitionId;
     private String exhibitionName;
     private LocalDate exhibitionStartDate;

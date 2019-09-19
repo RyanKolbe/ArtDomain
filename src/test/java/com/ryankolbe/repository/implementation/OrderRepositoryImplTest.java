@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Order;
@@ -64,4 +65,4 @@ public class OrderRepositoryImplTest {
         Set<Order> orderSet = orderRepository.getAll();
         Assert.assertEquals(orderSet.size(), orderRepository.getAll().size());
     }
-}
+}*/

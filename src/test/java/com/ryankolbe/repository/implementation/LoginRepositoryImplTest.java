@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Login;
@@ -64,4 +65,4 @@ public class LoginRepositoryImplTest {
         Set<Login> loginSet = loginRepository.getAll();
         Assert.assertEquals(loginSet, loginRepository.getAll());
     }
-}
+}*/

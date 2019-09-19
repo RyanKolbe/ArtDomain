@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Returns implements Comparable<Returns> {
+    @Id
     private String returnId;
     private String returnReason;
     private int returnQty;

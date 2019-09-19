@@ -2,19 +2,17 @@ package com.ryankolbe.controller;
 
 import com.ryankolbe.domain.Address;
 import com.ryankolbe.service.AddressService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import java.util.List;
 
 @RestController
 @RequestMapping("/address")
 public class AddressController {
-    private final AddressService addressService;
 
-    public AddressController(@Qualifier("AddressServiceImpl") AddressService addressService) {
-        this.addressService = addressService;
-    }
+    @Autowired
+    private AddressService addressService;
 
     @PostMapping("/create")
     @ResponseBody
@@ -30,19 +28,19 @@ public class AddressController {
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public Address read(@PathVariable String id) {
+    public Address read(@PathVariable(required = true) String id) {
         return addressService.read(id);
     }
 
     @DeleteMapping("/delete/{id}")
     @ResponseBody
-    public void delete(@PathVariable String id) {
+    public void delete(@PathVariable(required = true) String id) {
         addressService.delete(id);
     }
 
     @GetMapping("/getAll/all")
     @ResponseBody
-    public Set<Address> getAll() {
+    public List<Address> getAll() {
         return addressService.getAll();
     }
 }

@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Contact;
@@ -67,4 +68,4 @@ public class ContactRepositoryImplTest {
         Set<Contact> contactSet = contactRepository.getAll();
         Assert.assertEquals(contactSet, contactRepository.getAll());
     }
-}
+}*/

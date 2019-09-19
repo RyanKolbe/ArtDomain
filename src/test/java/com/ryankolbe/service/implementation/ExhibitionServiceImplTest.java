@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -68,7 +69,7 @@ public class ExhibitionServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Exhibition> exhibitionSet = exhibitionService.getAll();
+        List<Exhibition> exhibitionSet = exhibitionService.getAll();
         Assert.assertEquals(exhibitionSet.size(), exhibitionService.getAll().size());
     }
 }

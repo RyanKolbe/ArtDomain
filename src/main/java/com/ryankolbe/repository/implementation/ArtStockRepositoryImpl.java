@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.ArtStock;
@@ -61,4 +62,4 @@ public class ArtStockRepositoryImpl implements ArtStockRepository {
     public Set<ArtStock> getAll() {
         return this.artStocks;
     }
-}
+}*/

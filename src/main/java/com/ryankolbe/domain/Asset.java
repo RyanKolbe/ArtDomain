@@ -1,8 +1,12 @@
 package com.ryankolbe.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
 
+@Entity
 public class Asset implements Comparable<Asset> {
+    @Id
     private String assetId;
     private String assetNumber;
     private String assetModel;

@@ -2,8 +2,8 @@ package com.ryankolbe.service;
 
 import com.ryankolbe.domain.Account;
 
-import java.util.Set;
+import java.util.List;
 
 public interface AccountService extends IService<Account, String> {
-    Set<Account> getAll();
+    List<Account> getAll();
 }

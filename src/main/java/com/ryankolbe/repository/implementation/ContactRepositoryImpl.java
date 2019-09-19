@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Contact;
@@ -61,4 +62,4 @@ public class ContactRepositoryImpl implements ContactRepository {
     public Set<Contact> getAll() {
         return this.contacts;
     }
-}
+}*/

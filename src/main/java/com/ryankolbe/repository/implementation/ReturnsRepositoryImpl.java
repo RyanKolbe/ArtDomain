@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Returns;
@@ -62,4 +63,4 @@ public class ReturnsRepositoryImpl implements ReturnsRepository {
     public Set<Returns> getAll() {
         return this.returns;
     }
-}
+}*/

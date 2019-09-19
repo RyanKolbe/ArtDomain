@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Returns;
@@ -66,4 +67,4 @@ public class ReturnsRepositoryImplTest {
         Set<Returns> returnsGetAll = returnsRepository.getAll();
         Assert.assertEquals(returnsGetAll.size(), returnsRepository.getAll().size());
     }
-}
+}*/

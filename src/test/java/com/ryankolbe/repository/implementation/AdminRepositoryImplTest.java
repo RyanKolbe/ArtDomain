@@ -1,3 +1,4 @@
+/*
 package com.ryankolbe.repository.implementation;
 
 import com.ryankolbe.domain.Admin;
@@ -64,4 +65,4 @@ public class AdminRepositoryImplTest {
         Set<Admin> adminSet = adminRepository.getAll();
         Assert.assertEquals(adminSet, adminRepository.getAll());
     }
-}
+}*/

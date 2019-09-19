@@ -2,42 +2,41 @@ package com.ryankolbe.service.implementation;
 
 import com.ryankolbe.domain.Painting;
 import com.ryankolbe.repository.PaintingRepository;
-import com.ryankolbe.repository.implementation.PaintingRepositoryImpl;
 import com.ryankolbe.service.PaintingService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.List;
+import java.util.Optional;
 
 @Service("PaintingServiceImpl")
 public class PaintingServiceImpl implements PaintingService {
-    private final PaintingRepository paintingRepository;
-
-    private PaintingServiceImpl() {
-        this.paintingRepository = PaintingRepositoryImpl.getPaintingRepository();
-    }
+    @Autowired
+    private PaintingRepository paintingRepository;
 
     @Override
     public Painting create(Painting painting) {
-        return this.paintingRepository.create(painting);
+        return this.paintingRepository.save(painting);
     }
 
     @Override
     public Painting read(String paintingId) {
-        return this.paintingRepository.read(paintingId);
+        Optional<Painting> byId = this.paintingRepository.findById(paintingId);
+        return byId.orElseThrow(RuntimeException::new);
     }
 
     @Override
     public Painting update(Painting painting) {
-        return this.paintingRepository.update(painting);
+        return this.paintingRepository.save(painting);
     }
 
     @Override
     public void delete(String paintingId) {
-        this.paintingRepository.delete(paintingId);
+        this.paintingRepository.deleteById(paintingId);
     }
 
     @Override
-    public Set<Painting> getAll() {
-        return this.paintingRepository.getAll();
+    public List<Painting> getAll() {
+        return this.paintingRepository.findAll();
     }
 }

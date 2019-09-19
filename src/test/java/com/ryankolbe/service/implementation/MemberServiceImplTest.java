@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @SpringBootTest
@@ -67,7 +68,7 @@ public class MemberServiceImplTest {
 
     @Test
     public void getAll() {
-        Set<Member> memberSet = memberService.getAll();
+        List<Member> memberSet = memberService.getAll();
         Assert.assertEquals(memberSet.size(), memberService.getAll().size());
     }
 }
