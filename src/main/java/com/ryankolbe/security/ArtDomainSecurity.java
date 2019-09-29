@@ -22,22 +22,20 @@ public class ArtDomainSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("user")
-                .password(passwordEncoder().encode("user"))
-                .roles(USER_ROLE)
+                .withUser("user").password(passwordEncoder().encode("user")).roles(USER_ROLE)
                 .and()
-                .withUser("admin")
-                .password(passwordEncoder().encode("admin"))
-                .roles(USER_ROLE, ADMIN_ROLE);
+                .withUser("admin").password(passwordEncoder().encode("admin")).roles(USER_ROLE, ADMIN_ROLE);
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.httpBasic().and().authorizeRequests()
+        http
+                .csrf().disable()
+                .authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/**/create/**").hasRole(ADMIN_ROLE)
                 .antMatchers("/").permitAll()
-                .and().csrf().disable()
-                .formLogin();
+                .and().httpBasic()
+                .and().formLogin();
     }
 
     @Bean

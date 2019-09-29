@@ -5,30 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f3131bf-0d6c-4ba7-ae24-383f667fe6b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtCourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtCourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtStockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtStockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ArtistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CourierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CourierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CuratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CuratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ExhibitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ExhibitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/GalleryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/GalleryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/JobRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/JobRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LocalityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LocalityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PackagingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PackagingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PaintingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PaintingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/PermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ReturnsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ReturnsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/SculptureController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/SculptureController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ServicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/controller/ServicesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ryankolbe/security/ArtDomainSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ryankolbe/security/ArtDomainSecurity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AddressController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AddressController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ArtCourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ArtCourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ArtStockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ArtStockController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ArtistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ArtistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ContactController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ContactController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/CourierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/CourierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/CuratorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/CuratorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/EventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/EventController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ExhibitionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ExhibitionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/GalleryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/GalleryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/JobRoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/JobRoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/LocalityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/LocalityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/PackagingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/PackagingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/PaintingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/PaintingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/PermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/PermissionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ReturnsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ReturnsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/SculptureController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/SculptureController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ServicesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ryankolbe/controller/ServicesController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,13 +69,6 @@
         <item name="artdomain@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="artdomain: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="artdomain@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="artdomain: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="account: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -141,7 +138,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -151,21 +148,21 @@
       <recent name="com.ryankolbe.repository.implementation" />
       <recent name="com.ryankolbe.repository" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ryan Kolbe\IdeaProjects\ArtDomain\src\main" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ryankolbe.service.implementation" />
       <recent name="com.ryankolbe.repository.implementation" />
       <recent name="com.ryankolbe.repository" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ryankolbe.controller" />
       <recent name="com.ryankolbe.factory" />
       <recent name="com.ryankolbe.model" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan Kolbe\IdeaProjects\ArtDomain\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -180,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ArtDomainApplication">
+  <component name="RunManager" selected="JUnit.All in ArtDomain">
     <configuration name="AccountControllerTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ArtDomain" />
       <extension name="coverage">
@@ -250,9 +247,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in ArtDomain" />
         <item itemvalue="Spring Boot.ArtDomainApplication" />
         <item itemvalue="JUnit.AccountControllerTest.create" />
-        <item itemvalue="JUnit.All in ArtDomain" />
         <item itemvalue="JUnit.ArtCourseControllerTest" />
         <item itemvalue="JUnit.AdminControllerTest" />
       </list>
@@ -262,17 +259,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e7b671ec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@e7b671ec" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@78048bb7" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -355,7 +342,13 @@
       <workItem from="1568904441568" duration="56000" />
       <workItem from="1568904539036" duration="86000" />
       <workItem from="1568904788225" duration="143000" />
-      <workItem from="1568907760152" duration="19510000" />
+      <workItem from="1568907760152" duration="19809000" />
+      <workItem from="1568999065918" duration="678000" />
+      <workItem from="1569258438309" duration="395000" />
+      <workItem from="1569426383958" duration="1912000" />
+      <workItem from="1569744759678" duration="4345000" />
+      <workItem from="1569765915709" duration="820000" />
+      <workItem from="1569767624857" duration="11742000" />
     </task>
     <task id="LOCAL-00001" summary="Assignment 11 Springboot Security Commit">
       <created>1568814687344</created>
@@ -371,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568928421502</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed redundant parameters">
+      <created>1568929004853</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568929004853</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -403,7 +403,11 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Assignment 11 Springboot Security Commit" />
     <MESSAGE value="SpringBoot JPA mySQL update" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot JPA mySQL update" />
+    <MESSAGE value="Removed redundant parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant parameters" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

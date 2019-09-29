@@ -2,9 +2,11 @@ package com.ryankolbe.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
+@Table(name = "orders")
 public class Order implements Comparable<Order> {
     @Id
     private String orderId;
